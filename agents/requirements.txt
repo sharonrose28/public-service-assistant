@@ -1,0 +1,4 @@
+# Direct dependency versions checked against PyPI on 2026-09-19.
+strands-agents[ollama]==1.56.0
+ollama==0.6.2
+pydantic==2.13.5

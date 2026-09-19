@@ -1,0 +1,90 @@
+{
+  "records": [
+    {
+      "id": "cpgrams",
+      "department": "Department of Administrative Reforms and Public Grievances / responsible public authority",
+      "officialPortal": "https://pgportal.gov.in/",
+      "linkType": "portal",
+      "coverage": "Public-service grievances routed to participating Central Ministries/Departments and State/UT authorities; appeal guidance here is for Central Ministries/Departments.",
+      "description": "File a service-delivery grievance, track it by registration number and review the authority response. Use the portal feedback and eligible appeal route when dissatisfied with a Central Ministry or Department disposal.",
+      "steps": [
+        "Check that the matter is within CPGRAMS scope, then register or sign in and choose the relevant authority.",
+        "Describe the service problem and previous application or complaint reference accurately; submit through the portal and save its registration number.",
+        "Use View Status and Reminder/Clarification to follow up.",
+        "After disposal, review the response and give feedback. Where the Central Ministry/Department appeal option is enabled, use it if dissatisfied."
+      ],
+      "conditions": [
+        "CPGRAMS excludes RTI matters, court-related/subjudice matters and other categories listed on its official pages. Personal or family disputes are also outside the DARPG grievance scope.",
+        "State/UT grievances are forwarded to the concerned government; follow up with that government about pendency.",
+        "The CPGRAMS FAQ specifies 21 days for grievance redress, with an interim reply explaining delay. This is grievance-handling guidance, not a guaranteed completion time for the underlying certificate, licence or benefit.",
+        "The FAQ allows an appeal against a dissatisfied Central Ministry/Department disposal within 30 days; use the portal eligibility and feedback process.",
+        "Grievances emailed to CPGRAMS are not entertained. Use its grievance portal or published offline route."
+      ],
+      "fees": "No government fee for filing a grievance on CPGRAMS. A Common Service Centre may charge for assisted filing.",
+      "sourceUrls": [
+        "https://pgportal.gov.in/",
+        "https://pgportal.gov.in/Home/Faq"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED"
+    },
+    {
+      "id": "central-rti",
+      "department": "Department of Personnel and Training / selected Central public authority",
+      "officialPortal": "https://rtionline.gov.in/",
+      "linkType": "portal",
+      "coverage": "Indian citizens requesting information from Central Ministries/Departments and Central public authorities available on RTI Online.",
+      "description": "Request existing official information or records, such as recorded action on an application, through the Central RTI portal. RTI seeks information; it does not itself approve a service application or resolve a grievance.",
+      "steps": [
+        "Confirm that the information is held by a Central public authority listed on the portal.",
+        "Choose Submit Request and clearly identify the records or information sought.",
+        "Pay the prescribed application fee or upload the required BPL proof when claiming the exemption; save the registration number.",
+        "Track the reply through View Status. If the RTI response is missing after the applicable period or the decision is disputed, check the first-appeal procedure for that RTI request."
+      ],
+      "conditions": [
+        "Do not use this portal for State Government public authorities, including Government of NCT Delhi; such requests are returned without refund. Use the relevant state route or Public Information Officer.",
+        "Section 7 normally requires an RTI decision within 30 days; life-or-liberty information has a 48-hour rule. Statutory exceptions, transfers and fee-payment intervals can affect the calculation.",
+        "A first appeal is normally filed within 30 days of the RTI decision or expiry of the applicable response period. Delayed appeals may be admitted for sufficient cause.",
+        "The first appellate authority normally decides within 30 days, extendable to a total of 45 days with written reasons.",
+        "These periods apply to the RTI process, not to the original government-service request. Information remains subject to the RTI Act exemptions."
+      ],
+      "fees": "Central RTI application: INR 10 for a non-BPL applicant. BPL applicants are exempt with the required certificate. Additional information-copying charges may be notified. No fee for a first appeal on this portal.",
+      "sourceUrls": [
+        "https://rtionline.gov.in/",
+        "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d",
+        "https://rtionline.gov.in/viewPDF.php?file=um_citizen.pdf",
+        "https://rti.dopt.gov.in/Writereaddata/RTI%20Act,%202005%20(Amended)-English%20Version.PDF"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED"
+    },
+    {
+      "id": "rti-guidance",
+      "department": "Department of Personnel and Training",
+      "officialPortal": "https://rti.dopt.gov.in/",
+      "linkType": "guidance",
+      "coverage": "Official RTI Act and guidance; links to Central and State information-commission and RTI resources.",
+      "description": "Read the official RTI Act and find state RTI resources before choosing where to request records. For a state or local authority, confirm its Public Information Officer and the state-specific application route.",
+      "steps": [
+        "Identify the public authority holding the records.",
+        "Use the official RTI guidance and state links to confirm the correct authority, application route and applicable rules."
+      ],
+      "conditions": [
+        "This guidance page is not an RTI submission form.",
+        "The Central RTI Online portal is not the application route for State Government authorities or Government of NCT Delhi.",
+        "A service delay does not automatically trigger an RTI filing; choose a grievance route for redress and an RTI route when you need records."
+      ],
+      "fees": null,
+      "sourceUrls": [
+        "https://rti.dopt.gov.in/",
+        "https://rtionline.gov.in/",
+        "https://rti.dopt.gov.in/Writereaddata/RTI%20Act,%202005%20(Amended)-English%20Version.PDF"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED"
+    }
+  ]
+}

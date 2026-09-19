@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "category": "RATION",
+      "stateId": "tn",
+      "jurisdictionId": "tn-ration-food-services",
+      "role": "service",
+      "department": "Tamil Nadu — Civil Supplies and Consumer Protection Department",
+      "coverage": "Tamil Nadu ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://tnpds.gov.in/home.xhtml",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/TN",
+        "https://tnpds.gov.in/home.xhtml"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Tamil Nadu PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/TN",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "ka",
+      "jurisdictionId": "ka-ration-food-services",
+      "role": "service",
+      "department": "Karnataka — Food, Civil Supplies and Consumer Affairs Department",
+      "coverage": "Karnataka ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://ahara.karnataka.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/KA",
+        "https://ahara.karnataka.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Karnataka PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/KA",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "mh",
+      "jurisdictionId": "mh-ration-food-services",
+      "role": "service",
+      "department": "Maharashtra — Food, Civil Supplies and Consumer Protection Department",
+      "coverage": "Maharashtra ration-card and public distribution services",
+      "description": "NFSA links this Maharashtra citizen login for online ration-card applications. Choose the relevant available application service and review its current instructions.",
+      "officialPortal": "https://rcms.mahafood.gov.in/PublicLogin/frmPublicLogin.aspx",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/MH",
+        "https://rcms.mahafood.gov.in/PublicLogin/frmPublicLogin.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Open the RCMS citizen login linked by NFSA.",
+        "Choose the applicable available ration-card service, follow its instructions and retain the acknowledgement."
+      ],
+      "conditions": [
+        "A new ration-card application route does not guarantee that every amendment or dispute can be completed through the same service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Maharashtra PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/MH",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "helpline.mhpds@gov.in",
+        "purpose": "Maharashtra Food Department PDS helpline contact published by NFSA",
+        "sourceUrl": "https://nfsa.gov.in/State/MH",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "RATION",
+      "stateId": "up",
+      "jurisdictionId": "up-ration-food-services",
+      "role": "service",
+      "department": "Uttar Pradesh — Food and Civil Supplies Department",
+      "coverage": "Uttar Pradesh ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://fcs.up.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/UP",
+        "https://fcs.up.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "18001800150",
+        "purpose": "Uttar Pradesh PDS department contact published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/UP",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "dl",
+      "jurisdictionId": "dl-ration-food-services",
+      "role": "service",
+      "department": "Delhi — Food, Supplies and Consumer Affairs Department",
+      "coverage": "Delhi ration-card and public distribution services",
+      "description": "The Delhi Food Department publishes ration-card guidance, application notices and district contacts. Check its current notice for the service you need.",
+      "officialPortal": "https://fsd.delhi.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/DL",
+        "https://fsd.delhi.gov.in/",
+        "https://fsd.delhi.gov.in/fs/contact-us",
+        "https://fsd.delhi.gov.in/notifications"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Delhi ration-card enquiries and complaints helpline",
+        "sourceUrl": "https://fsd.delhi.gov.in/fs/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "cfood@nic.in",
+        "purpose": "Delhi Food, Supplies and Consumer Affairs Department correspondence",
+        "sourceUrl": "https://fsd.delhi.gov.in/fs/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "RATION",
+      "stateId": "tg",
+      "jurisdictionId": "tg-ration-food-services",
+      "role": "service",
+      "department": "Telangana — Consumer Affairs, Food and Civil Supplies Department",
+      "coverage": "Telangana ration-card and public distribution services",
+      "description": "The official NFSA directory lists Telangana ePDS for food-security and ration-card information. Confirm the application or amendment route with the Civil Supplies Department.",
+      "officialPortal": "https://epds.telangana.gov.in/FoodSecurityAct/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/TS",
+        "https://epds.telangana.gov.in/FoodSecurityAct/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service.",
+        "ePDS information and a food-security-card application are distinct; this link is not labeled as an application form."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Telangana PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/TS",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "ap",
+      "jurisdictionId": "ap-ration-food-services",
+      "role": "service",
+      "department": "Andhra Pradesh — Consumer Affairs, Food and Civil Supplies Department",
+      "coverage": "Andhra Pradesh ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://civilsupplies.ap.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/AP",
+        "https://civilsupplies.ap.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Andhra Pradesh PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/AP",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "kl",
+      "jurisdictionId": "kl-ration-food-services",
+      "role": "service",
+      "department": "Kerala — Food, Civil Supplies and Consumer Affairs Department",
+      "coverage": "Kerala ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://civilsupplieskerala.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/KL",
+        "https://civilsupplieskerala.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Kerala PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/KL",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "wb",
+      "jurisdictionId": "wb-ration-food-services",
+      "role": "service",
+      "department": "West Bengal — Food and Supplies Department",
+      "coverage": "West Bengal ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://food.wb.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/WB",
+        "https://food.wb.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "West Bengal PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/WB",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "gj",
+      "jurisdictionId": "gj-ration-food-services",
+      "role": "service",
+      "department": "Gujarat — Food, Civil Supplies and Consumer Affairs Department",
+      "coverage": "Gujarat ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://fcsca.gujarat.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/GJ",
+        "https://fcsca.gujarat.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Gujarat PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/GJ",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "rj",
+      "jurisdictionId": "rj-ration-food-services",
+      "role": "service",
+      "department": "Rajasthan — Food and Civil Supplies Department",
+      "coverage": "Rajasthan ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://food.rajasthan.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/RJ",
+        "https://food.rajasthan.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "18001806127",
+        "purpose": "Rajasthan PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/RJ",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "category": "RATION",
+      "stateId": "mp",
+      "jurisdictionId": "mp-ration-food-services",
+      "role": "service",
+      "department": "Madhya Pradesh — Food, Civil Supplies and Consumer Protection Department",
+      "coverage": "Madhya Pradesh ration-card and public distribution services",
+      "description": "Use the state's published food-services information to find the relevant ration-card or PDS service. Confirm the route for a new card, household change or eligibility enquiry.",
+      "officialPortal": "https://food.mp.gov.in/hi",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://www.nfsa.gov.in/State/MP",
+        "https://food.mp.gov.in/hi"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the specific ration-card or PDS service relevant to your request.",
+        "Confirm its current application channel and requirements with the Food Department before submitting."
+      ],
+      "conditions": [
+        "A department or transparency portal is not itself proof that every ration-card change can be submitted online.",
+        "Eligibility and household-change requirements must be checked for the selected state and service."
+      ],
+      "contactPhone": {
+        "number": "1967",
+        "purpose": "Madhya Pradesh PDS helpdesk published in the official NFSA state profile",
+        "sourceUrl": "https://www.nfsa.gov.in/State/MP",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    }
+  ]
+}

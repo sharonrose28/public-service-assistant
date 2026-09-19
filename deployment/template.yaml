@@ -1,0 +1,248 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "Public Service Assistant: one HTTPS origin for the static interface and stateless API. JSON syntax is valid YAML. Local interpretation is the default.",
+  "Parameters": {
+    "AIProvider": {
+      "Type": "String",
+      "Default": "local",
+      "AllowedValues": [
+        "local",
+        "bedrock"
+      ],
+      "Description": "Use local interpretation unless Bedrock inference and its charges are explicitly enabled."
+    },
+    "BedrockModelId": {
+      "Type": "String",
+      "Default": "",
+      "Description": "Regional foundation-model ID accepted by Converse; required only when AIProvider is bedrock."
+    },
+    "BedrockModelArn": {
+      "Type": "String",
+      "Default": "",
+      "AllowedPattern": "^$|^arn:(aws|aws-us-gov|aws-cn):bedrock:[a-z0-9-]+::foundation-model/[A-Za-z0-9._:-]+$",
+      "Description": "Exact ARN of the same regional foundation model. No wildcards or cross-region inference profiles are permitted by this template."
+    }
+  },
+  "Rules": {
+    "BedrockConfiguration": {
+      "RuleCondition": {
+        "Fn::Equals": [
+          {
+            "Ref": "AIProvider"
+          },
+          "bedrock"
+        ]
+      },
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Equals": [
+                  {
+                    "Ref": "BedrockModelId"
+                  },
+                  ""
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "Set BedrockModelId when enabling Bedrock."
+        },
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Equals": [
+                  {
+                    "Ref": "BedrockModelArn"
+                  },
+                  ""
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "Set the exact matching BedrockModelArn when enabling Bedrock."
+        }
+      ]
+    }
+  },
+  "Conditions": {
+    "UseBedrock": {
+      "Fn::Equals": [
+        {
+          "Ref": "AIProvider"
+        },
+        "bedrock"
+      ]
+    }
+  },
+  "Resources": {
+    "FunctionLogs": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "RetentionInDays": 14
+      }
+    },
+    "AccessLogs": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "RetentionInDays": 14
+      }
+    },
+    "FunctionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "WriteFunctionLogs",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents"
+                  ],
+                  "Resource": {
+                    "Fn::GetAtt": [
+                      "FunctionLogs",
+                      "Arn"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "BedrockModelPolicy": {
+      "Type": "AWS::IAM::Policy",
+      "Condition": "UseBedrock",
+      "Properties": {
+        "PolicyName": "InvokeSelectedFoundationModel",
+        "Roles": [
+          {
+            "Ref": "FunctionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "bedrock:InvokeModel",
+              "Resource": {
+                "Ref": "BedrockModelArn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "HttpApi": {
+      "Type": "AWS::Serverless::HttpApi",
+      "Properties": {
+        "StageName": "$default",
+        "DefaultRouteSettings": {
+          "ThrottlingBurstLimit": 10,
+          "ThrottlingRateLimit": 5,
+          "DetailedMetricsEnabled": false
+        },
+        "AccessLogSettings": {
+          "DestinationArn": {
+            "Fn::GetAtt": [
+              "AccessLogs",
+              "Arn"
+            ]
+          },
+          "Format": "{\"requestId\":\"$context.requestId\",\"method\":\"$context.httpMethod\",\"status\":\"$context.status\",\"responseLength\":\"$context.responseLength\"}"
+        }
+      }
+    },
+    "AssistantFunction": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "CodeUri": "../.build/aws/",
+        "Handler": "lambda.handler",
+        "Runtime": "nodejs24.x",
+        "Architectures": [
+          "arm64"
+        ],
+        "MemorySize": 256,
+        "Timeout": 25,
+        "Role": {
+          "Fn::GetAtt": [
+            "FunctionRole",
+            "Arn"
+          ]
+        },
+        "LoggingConfig": {
+          "LogGroup": {
+            "Ref": "FunctionLogs"
+          },
+          "LogFormat": "JSON",
+          "ApplicationLogLevel": "WARN",
+          "SystemLogLevel": "WARN"
+        },
+        "Environment": {
+          "Variables": {
+            "AI_PROVIDER": {
+              "Ref": "AIProvider"
+            },
+            "BEDROCK_MODEL_ID": {
+              "Ref": "BedrockModelId"
+            }
+          }
+        },
+        "Events": {
+          "AllRequests": {
+            "Type": "HttpApi",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 25000
+            }
+          }
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "AppUrl": {
+      "Description": "Public HTTPS interface and API on the same origin.",
+      "Value": {
+        "Fn::Sub": "https://${HttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/"
+      }
+    },
+    "FunctionName": {
+      "Description": "Lambda function name for operational inspection.",
+      "Value": {
+        "Ref": "AssistantFunction"
+      }
+    },
+    "AIProvider": {
+      "Description": "Selected request-interpretation provider.",
+      "Value": {
+        "Ref": "AIProvider"
+      }
+    }
+  }
+}

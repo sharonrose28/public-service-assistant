@@ -1,0 +1,12 @@
+**
+!package.json
+!server.mjs
+!lib/
+!lib/*.mjs
+!public/
+!public/*.js
+!public/*.html
+!public/*.css
+!data/
+!data/*.json
+!data/LOCATION-DATA-LICENSE.txt

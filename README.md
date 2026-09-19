@@ -2,58 +2,81 @@
 
 **Ask. Understand. Act.**
 
-A working version of five civic issue and five government service flows, with an English, Tamil and Hindi interface. Built with Node.js and browser-native JavaScript; no package installation is required.
+Choose a supported service or civic complaint, or describe it in English, Tamil or Hindi. The app provides official procedures, scoped links, verified phone/email contacts and an editable message draft. Common official portals and directories open without a state question. State selection is required only to choose between regional destinations when no applicable common entry point exists. There is no city selector; each municipal or utility option explicitly states its coverage.
 
-Supported services: birth certificate, death certificate, income certificate, property tax, and residence certificate (the selected additional certificate service). Supported civic issues: streetlights, garbage collection, road damage, drainage, and water supply. All categories have localized request buttons and structured next actions. Property tax produces a preparation checklist; the app does not make payments.
+## Run and validate
 
-The extended catalog lives in `public/catalog.js`. Its official references, reviewed on 17 September 2026, include the [Tamil Nadu e-Sevai service list](https://tnesevai.tn.gov.in/Citizen/Pages/ServiceList.aspx), [GCC property tax portal](https://chennaicorporation.gov.in/new_site/property-tax-online-payment/), and [PUNAL water/drainage FAQ](https://punal.tn.gov.in/faq.html). These regional sources are labelled as Tamil Nadu or GCC references, not nationwide instructions. Income and residence document guidance is a scoped summary of the official list; case-specific requirements must be confirmed. Road ownership and stormwater/sewer distinctions are explicitly raised before routing a complaint.
-
-## Run
-
-Requires Node.js 22 or newer.
+Requires Node.js 22 or newer; no package install is needed.
 
 ```sh
 node --env-file-if-exists=.env server.mjs
-```
-
-Open http://localhost:3000. The server binds to loopback for local use.
-
-```sh
 node --test
+node scripts/evaluate.mjs
 ```
 
-## Implemented
+Open http://localhost:3000/. The benchmark uses synthetic requests, not production outcome measurements.
 
-- Civic issue: language detection, `CIVIC_ISSUE` classification, streetlight identification, available location/duration extraction, curated guidance, source date and next action. Editable complaint draft and text download; nothing is submitted automatically.
-- Government service: `GOVERNMENT_SERVICE` classification, birth certificate description, department, eligibility/scope, document guidance, process, official portal, source and verification date. Interactive checklist with progress and download.
-- English, Tamil and Hindi switching and automatic script detection. Tamil and Hindi content uses complete localized sentences. Explicit language selection overrides detected language. User-supplied entity text is preserved verbatim to avoid changing facts.
-- Unsupported and ambiguous requests prompt for clarification. No invented service guidance.
-- Responsive layout, keyboard controls, labelled inputs, status announcements, escaped user/model text and downloadable artifacts.
+## Build It / Ship It
 
-## Amazon Bedrock
+Local development is account-free. The basic classifier needs only Node; optional Strands + Ollama runs model inference on the same machine. The AWS deployment targets **Mumbai (`ap-south-1`)** with SAM, Lambda, API Gateway and CloudWatch, and outputs a public HTTPS URL after a successful deployment. Cloud AI is disabled by default.
 
-Copy `.env.example` to `.env` and configure `AWS_REGION`, `BEDROCK_MODEL_ID` and `AWS_BEARER_TOKEN_BEDROCK` with an enabled Converse-compatible model and a valid Bedrock API key. Keys remain server-side. Use appropriately scoped, short-lived credentials for deployments. No AWS account or credentials are created by this project.
+See [the setup and deployment guide](docs/deployment.md), [local Strands instructions](agents/README.md), and [the AWS service choices and credit conditions](docs/aws-service-choices.md). The selected services cover this app's current needs; the other tools in the proposed AWS list are alternatives or future additions.
 
-The server calls the [Converse API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) using [Bedrock bearer authentication](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-use.html). Bedrock interprets colloquial language and transliteration and produces structured intent/entity output. Entity values are accepted only if they occur in the request; low-confidence classifications become unknown. Official URLs, dates, guidance and complaint templates come from trusted application data, never the model. Requests time out and fall back with a visible notice on failure.
+## Replacement categories
 
-Without credentials, a clearly labelled limited local mode supports the supplied examples using script detection, phrase matching, and authored multilingual responses. It is not a general language model or general translation system. Live Bedrock inference requires your configuration and is not verified by mocked tests.
+Government services:
 
-## Knowledge base and trust boundaries
+- Identity and civil status: Aadhaar updates/corrections; voter registration/address shift; ration card/NFSA inclusion.
+- Revenue and social welfare certificates: caste/community; legal heir/succession enquiry; domicile/residence.
+- Property and transport: driving licence/RC; encumbrance certificates and land records; building approvals/occupancy.
+- Benefits: old age, widow and disability pensions, including life-certificate enquiries.
 
-Source metadata is in `lib/assistant.mjs`; localized guidance is in `public/content.js`. Sources reviewed on **17 September 2026**:
+Civic complaints:
 
-- [Greater Chennai Corporation grievance portal](https://erp.chennaicorporation.gov.in/pgr/): online complaints, complaint number tracking and 1913. [Streetlight complaint coverage](https://www.chennaicorporation.gov.in/gcc/complaints/). This applies only to GCC limits. The user must enter Chennai in the location field before the result presents it as relevant; other locations receive a clearly scoped reference and general preparation steps.
-- [Registrar General of India Civil Registration FAQ](https://uat.crsorgi.gov.in/assets/download/FAQ_of_CRS_Latest.pdf): local registrar jurisdiction and institutional/home birth reporting. [Civil Registration System](https://dc.crsorgi.gov.in/) is the national entry point, not a guarantee of online application in every jurisdiction.
+- Sanitation: missed collection/dumping; sewer overflows/missing manhole covers.
+- Roads and safety: potholes/trenches; footpath encroachment/illegal parking; stray cattle/dog hazards.
+- Utilities: streetlights/dark spots; voltage/transformer faults; contaminated or low-pressure water.
+- Environment: mosquito breeding; construction dust/noise.
 
-The birth certificate record deliberately marks the exact local document list as requiring confirmation. A universal list, fees, eligibility decisions and processing deadlines are not invented. Preparation advice is distinct from sourced civic submission information. Verification dates represent the initial editorial review, not an automatic live check on every request.
+There are ten government-service and ten civic categories. The previous standalone birth/death/income certificate and property-tax categories remain retired. Requests for unsupported or multiple topics receive clarification. Supporting documents do not automatically create separate intents. Legal-heir administrative certificates and court-issued succession certificates are explicitly distinguished.
 
-## Data and scope
+## Official knowledge base
 
-Requests and drafts are not persisted by this app. With Bedrock enabled, request text is sent to AWS for inference. Browser downloads are user-created local files. Production deployment still needs authentication/rate limits appropriate to its audience, operational monitoring, source review ownership, broader jurisdiction records, and native-speaker review of localization. This version is an independent guide, not a government portal.
+The maintained files are `data/services-government.json`, `data/services-civic.json`, `data/civic-extras.json`, `data/civic-contacts.json`, `data/state-portals-a.json`, `data/state-portals-b.json` and `data/ration-portals.json`. `data/accountability.json` holds separate CPGRAMS and RTI guidance. National channels include UIDAI, ECI, NFSA, Parivahan and Jeevan Pramaan. Municipal, utility, revenue and building routes retain their published scope. Portal, directory, guidance and app links receive different UI labels.
+
+The dropdown lists all 36 states and union territories. Researched state-service and grievance coverage covers Tamil Nadu, Karnataka, Maharashtra, Uttar Pradesh, Delhi, Telangana, Andhra Pradesh, Kerala, West Bengal, Gujarat, Rajasthan and Madhya Pradesh. Coverage differs by category: a listed state is not a promise of every local service. Other states receive national guidance and official-directory fallback without borrowing contacts from another state. State selection never assigns a particular municipal authority.
+
+Routing uses reviewed record metadata, not a hard-coded category list. `stateSelection: "not_needed"` or `"on_portal"` identifies a common entry point. NFSA's food-portal directory, DoLR's land-record directory and Swachhata open immediately; an initially collapsed option exposes additional state-specific links and contacts. Choosing a state keeps the common link available. Aadhaar, voter and transport services need no state selector in this app. DoLR's `ENCUMBRANCE` and `KHATA` exclusions keep those specific requests on regional routing. Selecting the broad Land category shows the common directory with its limited purpose; typing a specific EC or Khata request still asks for state. Supporting or limited-purpose channels such as Jeevan Pramaan, eCourts and EESL do not establish a common route for every pension, legal-heir or streetlight request. Missing or expired common entries do not suppress a necessary state question.
+
+Each record includes category, department, coverage, official links, source URLs, verification and review dates. Responsibilities, steps, published requirements, fees and conditions come from those records. The model cannot supply links, contact addresses, document requirements, fees or deadlines. A null field means unverified. Expired, pending and future-dated records are not offered. Phone and email verification are checked independently. Verification records document a source review; they do not guarantee continuous portal availability.
+
+Coverage is not nationwide merely because a national directory is linked. No universal complaint number, processing deadline, caste eligibility rule or building-permission process is inferred. Consumer-grievance forums and state grievance channels are separated from first-contact services. EESL covers its maintained projects, SAMEER complaint guidance is scoped to Delhi-NCR, and city water-board numbers are never presented as state-wide contacts. Central RTI Online excludes state authorities; a delayed service does not automatically trigger an RTI application or a fixed escalation deadline.
+
+## Message drafts and privacy
+
+Service enquiries and complaints use localized templates and user-provided details. Missing facts remain placeholders. Users can edit, copy and download messages. Email addresses open the device's default mail handler with a recipient and subject. Including a generated message in the email requires review of the recipient and coverage; editing resets that review. Technical-helpdesk and status-only contacts remain visible with their purpose but are excluded from complaint-filled email actions. The app never sends or submits messages.
+
+Requests and drafts are not stored by the app. Local rules make no model calls; Strands sends text to the model on the same machine. With Bedrock selected, request text is sent to AWS for interpretation. Credentials remain on the backend. Browser downloads are user-created local files. Hosted logs contain operational metadata, not citizen text.
+
+## Interpretation and language support
+
+Copy `.env.example` to `.env` and select `AI_PROVIDER=local`, `strands` or `bedrock`. Local is the default and explicitly disables all model calls. Strands uses the optional loopback Python sidecar; Bedrock uses `AWS_REGION` and `BEDROCK_MODEL_ID`, with a bearer token for local development or an IAM role on Lambda. Structured output is validated against the catalog, intent and supported language codes. Extracted entities must occur verbatim in the request. Failed model calls use local rules with a visible notice.
+
+Reviewed interface/catalog text and message templates are English, Tamil and Hindi. A configured model may interpret other scheduled Indian languages; those currently use an explicit English response fallback. Official directory text may retain the source language. Live Strands inference requires Ollama and a downloaded model; live Bedrock inference requires AWS access. Mocked tests do not certify a model's classification quality.
 
 ## Structure
 
-- `server.mjs`: HTTP API and allowlisted static assets.
-- `lib/assistant.mjs`: validation, understanding, Bedrock adapter and curated retrieval.
-- `public/`: accessible interface, styles and authored translations.
-- `test/`: flow, multilingual, grounding, fallback and HTTP boundary tests.
+- `public/catalog.js`: grouped category names, localized explanations and local matching expressions.
+- `lib/understanding.mjs`: conservative offline classification and ambiguity handling.
+- `lib/assistant.mjs`, `lib/model.mjs`: validated interpretation with local, Strands and Bedrock providers, without official service routing.
+- `lib/http.mjs`, `server.mjs`, `lambda.mjs`: shared HTTP behavior with local-server and API Gateway adapters.
+- `deployment/`, `scripts/package-aws.mjs`: Mumbai SAM deployment and explicit runtime packaging allowlist.
+- `agents/`: optional Strands Python sidecar and boundary tests.
+- `lib/directory.mjs`: state-filtered service, phone and email retrieval.
+- `lib/workflow.mjs`: conditional state selection, applicable channels and safe draft assembly.
+- `public/app.js`: category/state selection, procedures, contact cards and draft controls.
+- `POST /api/assist`, `/api/understand`, `/api/resolve-service`: category results; pass optional `stateId` using an ID from `stateOptions`.
+- `POST /api/complaint-draft`, `/api/message-draft`: draft preparation.
+- Legacy city data/API remains for compatibility, without a city selector.
+
+To maintain a record, review its official source, update coverage and localized content, and set `lastVerifiedAt` and `reviewBy`. The application is an independent guide, not a government portal.

@@ -1,0 +1,122 @@
+{
+  "records": [
+    {
+      "category": "STREETLIGHT",
+      "jurisdictionId": "eesl-streetlighting",
+      "stateId": null,
+      "cityId": null,
+      "department": "Energy Efficiency Services Limited (EESL)",
+      "coverage": "Only streetlights maintained by EESL under an applicable local project; not every streetlight in India",
+      "description": "EESL publishes a consumer complaint channel for its projects. Confirm the streetlight operator with the local body before using this channel.",
+      "steps": [
+        "Check whether the affected streetlight belongs to an EESL-maintained project.",
+        "Report the precise street, landmark and pole identifier if known, with the observed problem and duration.",
+        "Save the complaint reference and use EESL's grievance route if the regular complaint remains unresolved."
+      ],
+      "conditions": [
+        "For another operator's streetlight, use the responsible municipality or operator's channel. Selecting a state does not establish EESL coverage."
+      ],
+      "officialPortal": "https://support.eeslindia.org/crmx/consumer",
+      "linkType": "portal",
+      "contactPhone": {
+        "number": "1800-180-3580",
+        "purpose": "EESL project complaints; confirm the asset is maintained by EESL",
+        "sourceUrl": "https://eeslindia.org/wp-content/uploads/2022/08/Chapter-15-RTI-Mandatory-Disclosure.pdf",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "helpline@eesl.co.in",
+        "purpose": "EESL published consumer complaint contact",
+        "sourceUrl": "https://eeslindia.org/wp-content/uploads/2022/08/Chapter-15-RTI-Mandatory-Disclosure.pdf",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://eeslindia.org/wp-content/uploads/2022/08/Chapter-15-RTI-Mandatory-Disclosure.pdf",
+        "https://support.eeslindia.org/crmx/consumer"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "serviceScope": "EESL-maintained projects only"
+    },
+    {
+      "category": "STREETLIGHT",
+      "jurisdictionId": "gcc-streetlighting",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — Electrical Department",
+      "coverage": "Streetlights maintained by Greater Chennai Corporation within its jurisdiction",
+      "description": "GCC's Electrical Department installs and maintains its streetlights. Use the municipal complaint system to report a non-burning light.",
+      "steps": [
+        "Describe the streetlight fault with the street, landmark and pole number if available.",
+        "Submit through GCC's complaint system or call its published complaint number.",
+        "Keep the complaint reference when following up with the electrical department."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "seelectrical@chennaicorporation.gov.in",
+        "purpose": "Electrical department correspondence and follow-up; use the complaint portal to obtain a reference",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "conditions": [
+        "This is a Chennai municipal channel, not a statewide Tamil Nadu streetlight service."
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED"
+    },
+    {
+      "category": "POLLUTION",
+      "jurisdictionId": "cpcb-sameer-delhi-ncr",
+      "stateId": null,
+      "stateIds": [
+        "dl",
+        "hr",
+        "up",
+        "rj"
+      ],
+      "cityId": null,
+      "department": "Central Pollution Control Board — SAMEER app",
+      "coverage": "Air-pollution complaints in Delhi-NCR; only NCR areas of Haryana, Uttar Pradesh and Rajasthan, not those entire states",
+      "description": "CPCB's published citizen guide describes SAMEER complaint submission and tracking for air pollution in Delhi-NCR, including observed dust sources.",
+      "steps": [
+        "Confirm that the pollution location is in Delhi-NCR and register in the SAMEER app.",
+        "Choose Public Complaint, check the detected location and select the appropriate category.",
+        "Add the observed details and a photo, submit, then save the complaint ID for tracking."
+      ],
+      "conditions": [
+        "This is an air-pollution channel, not a general noise complaint service.",
+        "The published complaint coverage is Delhi-NCR. Air-quality readings elsewhere do not establish local complaint coverage."
+      ],
+      "officialPortal": "https://play.google.com/store/apps/details?id=com.cpcb",
+      "linkType": "app",
+      "sourceUrls": [
+        "https://cpcb.nic.in/air/Citizen_Guideliines_Air_Complaints.pdf",
+        "https://play.google.com/store/apps/details?id=com.cpcb"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED"
+    }
+  ]
+}

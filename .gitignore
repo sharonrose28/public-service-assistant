@@ -4,3 +4,8 @@
 node_modules/
 coverage/
 *.log
+.build/
+.aws-sam/
+.venv/
+__pycache__/
+*.pyc

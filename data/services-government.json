@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "category": "AADHAAR",
+      "jurisdictionId": "uidai-update",
+      "stateId": null,
+      "cityId": null,
+      "department": "Unique Identification Authority of India (UIDAI)",
+      "coverage": "India - myAadhaar online services, Aadhaar updates and support",
+      "description": "Use myAadhaar for the online Aadhaar services offered there. The official Aadhaar app also supports mobile-number and address updates subject to its authentication conditions; biometric updates require an authorised centre.",
+      "requiredDetails": [],
+      "steps": [
+        "Choose the relevant service on myAadhaar; review the official update and accepted-document guidance for the detail being changed.",
+        "For an app mobile-number update, follow the official Aadhaar app instructions for OTP checks and Face Authentication.",
+        "Use an authorised enrolment or update centre for biometric changes, a first mobile-number registration, or when the old registered mobile number is unavailable.",
+        "Review the entered details, pay only the applicable published charge, and keep the acknowledgement or request number for tracking."
+      ],
+      "officialPortal": "https://myaadhaar.uidai.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "help@uidai.gov.in",
+        "purpose": "Aadhaar support and grievances",
+        "sourceUrl": "https://uidai.gov.in/en/grievance-feedback",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://uidai.gov.in/en/updating-data-on-aadhaar",
+        "https://uidai.gov.in/en/grievance-feedback",
+        "https://myaadhaar.uidai.gov.in/",
+        "https://www.uidai.gov.in/en/my-aadhaar",
+        "https://uidai.gov.in/en/aadhaar-app-faq",
+        "https://uidai.gov.in/images/Aadhaar_Enrolment__and__Update__-__English.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": "Standalone demographic update: INR 75, subject to published exemptions. A biometric update is INR 125 unless an applicable age-based exemption applies. Document update costs INR 75 at a centre and is free through myAadhaar until 14 June 2027. UIDAI lists an Aadhaar-app email-update fee waiver through 31 December 2026; check the current fee notice for other exemptions.",
+      "processingTime": null,
+      "onlineOption": "myAadhaar web portal; official Aadhaar app for the services and authentication modes it supports.",
+      "offlineOption": "Authorised Aadhaar enrolment/update centre; use the official Bhuvan locator.",
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": "Raise or track an Aadhaar grievance through the UIDAI grievance channels, helpline or verified support email.",
+      "conditions": [
+        "The Aadhaar app is separate from the myAadhaar website. App mobile-number updates require OTP verification and Face Authentication; the required OTPs depend on the number used to register the app.",
+        "If there is no access to the old registered mobile number, or no mobile number has been registered before, visit an authorised centre.",
+        "A biometric lock/unlock service does not change the stored photograph, fingerprints or iris data. Updating those biometrics requires a centre.",
+        "Document update verifies documents supporting existing details; it is a different service from correcting demographic details. Check the fee notice and the selected service before paying."
+      ],
+      "contactPhone": {
+        "number": "1947",
+        "purpose": "UIDAI Aadhaar support and grievances",
+        "sourceUrl": "https://uidai.gov.in/en/grievance-feedback",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "stateSelection": "not_needed"
+    },
+    {
+      "category": "AADHAAR",
+      "jurisdictionId": "uidai-centres",
+      "stateId": null,
+      "cityId": null,
+      "department": "UIDAI / National Remote Sensing Centre",
+      "coverage": "India - Aadhaar enrolment and update centres shown by the official locator",
+      "description": "Locate an Aadhaar enrolment or update centre. This map is a directory, not an online update submission form.",
+      "requiredDetails": [],
+      "steps": [
+        "Search the official locator by location or PIN code.",
+        "Check the centre details before visiting for the required enrolment or update service."
+      ],
+      "officialPortal": "https://bhuvan-app3.nrsc.gov.in/aadhaar/",
+      "linkType": "directory",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://uidai.gov.in/en/grievance-feedback",
+        "https://bhuvan-app3.nrsc.gov.in/aadhaar/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [],
+      "contactPhone": {
+        "number": "1947",
+        "purpose": "UIDAI Aadhaar support and centre queries",
+        "sourceUrl": "https://uidai.gov.in/en/grievance-feedback",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "VOTER",
+      "jurisdictionId": "eci-voter-services",
+      "stateId": null,
+      "cityId": null,
+      "department": "Election Commission of India",
+      "coverage": "India - electoral registration and EPIC services through the ECI portal",
+      "description": "Use Form 6 for new registration and Form 8 for shifting residence, correcting an existing entry or replacing an EPIC. The portal also provides application tracking.",
+      "requiredDetails": [],
+      "steps": [
+        "Use Form 6 for first-time electoral registration or Form 8 for shifting residence, correcting an existing entry or replacing an EPIC.",
+        "Complete the chosen form and follow its current supporting-document instructions.",
+        "Retain the acknowledgement number and track the application on the official voter portal.",
+        "For an electoral service query or grievance, use the official NGSP route, voter helpline or ECI complaint email."
+      ],
+      "officialPortal": "https://voters.eci.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": "complaints@eci.gov.in",
+      "contactEmail": {
+        "address": "complaints@eci.gov.in",
+        "purpose": "Election-related queries and grievances",
+        "sourceUrl": "https://www.eci.gov.in/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://voters.eci.gov.in/",
+        "https://voters.eci.gov.in/formspdf/Form_8_English.pdf",
+        "https://voters.eci.gov.in/home/ngsp/",
+        "https://voters.eci.gov.in/formspdf/Form_6_English.pdf",
+        "https://www.eci.gov.in/contact-us"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": "ECI Voters Service Portal; National Grievance Service Portal for electoral grievances.",
+      "offlineOption": "The relevant Electoral Registration Officer or Booth Level Officer, using the applicable ECI form.",
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": "Register and track election-related grievances through ECI NGSP: https://voters.eci.gov.in/home/ngsp/ .",
+      "conditions": [
+        "Form 6 is for a new electoral-roll application. An elector shifting an existing registration uses Form 8.",
+        "The ECI complaint email and helpline support electoral queries and grievances; submitting a query does not replace the applicable registration form.",
+        "Application approval and verification are handled by the electoral authorities. No universal approval or EPIC-delivery deadline is stated here."
+      ],
+      "contactPhone": {
+        "number": "1950",
+        "purpose": "ECI voter helpline and general enquiries",
+        "sourceUrl": "https://www.eci.gov.in/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "stateSelection": "not_needed"
+    },
+    {
+      "category": "RATION",
+      "jurisdictionId": "nfsa-state-food-directory",
+      "stateId": null,
+      "cityId": null,
+      "department": "Department of Food and Public Distribution / State and UT Food Departments",
+      "coverage": "India - directory of State and UT food and public distribution portals",
+      "description": "Find the responsible food department for ration-card applications and changes. NFSA identifies State and UT administrations as responsible for beneficiary identification and issuing AAY and PHH ration cards.",
+      "requiredDetails": [],
+      "steps": [],
+      "officialPortal": "https://nfsa.gov.in/portal/State_Food_Portals",
+      "linkType": "directory",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://nfsa.gov.in/portal/State_Food_Portals",
+        "https://nfsa.gov.in/portal/apply_ration_card"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": "Beneficiary identification and issuance of NFSA ration cards are handled by the respective State Government or UT Administration.",
+      "escalation": null,
+      "conditions": [
+        "This directory does not submit an application or decide NFSA eligibility. Ask the relevant State or UT food department about family inclusion, card splitting and eligibility disputes."
+      ],
+      "stateSelection": "on_portal"
+    },
+    {
+      "category": "LEGAL_HEIR",
+      "jurisdictionId": "ecourts-succession-directory",
+      "stateId": null,
+      "cityId": null,
+      "department": "District Judiciary / eCourts",
+      "coverage": "India - official district court directory; the competent court must be confirmed for the case",
+      "description": "For a court-issued succession certificate, use the official district court directory to locate a court website and seek filing guidance from its registry. This court process is separate from an administrative legal-heir certificate.",
+      "requiredDetails": [],
+      "steps": [
+        "Open the relevant district court website from the official directory.",
+        "Contact its registry for the applicable succession-certificate procedure and confirmation of the competent court."
+      ],
+      "officialPortal": "https://ecourts.gov.in/ecourts2.0/?p=dist_court",
+      "linkType": "directory",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://ecourts.gov.in/ecourts2.0/?p=dist_court",
+        "https://highcourtchd.gov.in/sub_pages/left_menu/Rules_orders/high_court_rules/vol-II-pdf/chap6partBV2.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "This directory does not submit a case or establish which court has jurisdiction.",
+        "No online filing availability, eligibility, document list, fee or processing time is confirmed by this directory record."
+      ]
+    },
+    {
+      "category": "TRANSPORT",
+      "jurisdictionId": "sarathi-driving-licence",
+      "stateId": null,
+      "cityId": null,
+      "department": "Ministry of Road Transport and Highways / State Transport Departments",
+      "coverage": "Participating States and UTs listed on Sarathi - driving and learner licences",
+      "description": "Sarathi provides driving-licence and learner-licence services. Choose the relevant state on the official portal to see the services available there.",
+      "requiredDetails": [],
+      "steps": [
+        "Open Sarathi and select the state from which the licence service is required.",
+        "Choose the learner-licence or driving-licence service and follow the state-specific instructions shown.",
+        "Keep the application number and complete any document, payment, appointment or test step required for that service."
+      ],
+      "officialPortal": "https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "helpdesk-sarathi@gov.in",
+        "purpose": "Sarathi technical support for learner and driving licence services",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do",
+        "https://www.nic.gov.in/project/etransport/",
+        "https://parivahan.gov.in/en/content/contact-us"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "Online availability and any appointment, test, document or fee requirements depend on the selected state and licence service.",
+        "The listed email and phone are technical support contacts. The responsible State Transport Department or RTO decides the application."
+      ],
+      "contactPhone": {
+        "number": "+91-120-4925505",
+        "purpose": "Parivahan technical helpdesk for licence-service portal issues",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "stateSelection": "on_portal"
+    },
+    {
+      "category": "TRANSPORT",
+      "jurisdictionId": "vahan-vehicle-services",
+      "stateId": null,
+      "cityId": null,
+      "department": "Ministry of Road Transport and Highways / State Transport Departments",
+      "coverage": "Participating registering authorities - vehicle registration and RC services",
+      "description": "Vahan offers vehicle services, including RC-related applications and hypothecation services where enabled by the registering authority.",
+      "requiredDetails": [],
+      "steps": [
+        "Open Vahan and select the applicable state or registering authority for the vehicle.",
+        "Choose the available RC, ownership, address or hypothecation service that matches the request.",
+        "Follow the service instructions and keep the application and payment references; complete an RTO visit if required."
+      ],
+      "officialPortal": "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "helpdesk-vahan@gov.in",
+        "purpose": "Vahan technical support for vehicle registration and related portal services",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml",
+        "https://www.nic.gov.in/project/etransport/",
+        "https://transport.maharashtra.gov.in/Site/Upload/Pdf/85-SERVICES.pdf",
+        "https://parivahan.gov.in/en/content/contact-us"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "Select the authority where the vehicle is registered and check the available service.",
+        "Authentication modes, published charges, supporting documents and any RTO visit depend on the state and service.",
+        "The listed email and phone handle technical problems; the registering authority decides the application. mParivahan app support uses a different email."
+      ],
+      "contactPhone": {
+        "number": "+91-120-4925505",
+        "purpose": "Parivahan technical helpdesk for vehicle-service portal issues",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "stateSelection": "on_portal"
+    },
+    {
+      "category": "TRANSPORT",
+      "jurisdictionId": "mparivahan-app",
+      "stateId": null,
+      "cityId": null,
+      "department": "Ministry of Road Transport and Highways / National Informatics Centre",
+      "coverage": "India - NextGen mParivahan app; service availability depends on the state and service",
+      "description": "Official information about the NextGen mParivahan mobile app and the transport services it supports. App technical-support queries have a separate email from Sarathi and Vahan web-service queries.",
+      "requiredDetails": [],
+      "steps": [
+        "Check the official app information and the services available for the relevant state.",
+        "Use the app support contact for an app-specific technical problem."
+      ],
+      "officialPortal": "https://mparivahan.parivahan.gov.in/",
+      "linkType": "guidance",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "helpdesk-mparivahan@gov.in",
+        "purpose": "NextGen mParivahan app technical support",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactPhone": {
+        "number": "+91-120-4925505",
+        "purpose": "Parivahan technical helpdesk for mParivahan app issues",
+        "sourceUrl": "https://parivahan.gov.in/en/content/contact-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://mparivahan.parivahan.gov.in/",
+        "https://mparivahan.parivahan.gov.in/privacy-policy.html",
+        "https://parivahan.gov.in/en/content/contact-us"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "For driving-licence web applications use Sarathi; for vehicle/RC web applications use Vahan. The app helpdesk does not decide RTO applications."
+      ]
+    },
+    {
+      "category": "LAND",
+      "jurisdictionId": "dolr-records-directory",
+      "stateId": null,
+      "cityId": null,
+      "department": "Department of Land Resources / State and UT Revenue Departments",
+      "coverage": "India - directory of State and UT Record of Rights portals",
+      "description": "Find the official state land-record portal for Record of Rights services. The directory includes Tamil Nadu land records and other state systems.",
+      "requiredDetails": [],
+      "steps": [],
+      "officialPortal": "https://dolr.gov.in/en/citizen-centric-services/",
+      "linkType": "directory",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://dolr.gov.in/en/citizen-centric-services/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": "Land records are maintained by State and UT Revenue Departments.",
+      "escalation": null,
+      "conditions": [
+        "This is a directory, not a national application form. It does not itself issue an Encumbrance Certificate or municipal Khata."
+      ],
+      "stateSelection": "on_portal",
+      "stateSelectionExclusions": [
+        "ENCUMBRANCE",
+        "KHATA"
+      ]
+    },
+    {
+      "category": "LAND",
+      "jurisdictionId": "gba-khata-directory",
+      "stateId": "ka",
+      "cityId": null,
+      "department": "Greater Bengaluru Authority / relevant Bengaluru City Corporation",
+      "coverage": "Bengaluru - applicable city corporation property records and Khata services",
+      "description": "The authority website links e-Aasthi, Khata services and an e-Khata helpdesk. Use its official services list to find the applicable property-record route.",
+      "requiredDetails": [],
+      "steps": [],
+      "officialPortal": "https://bbmp.gov.in/",
+      "linkType": "directory",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://bbmp.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "This option covers the relevant Bengaluru city corporation only. It is not a Karnataka-wide Record of Rights or EC portal."
+      ]
+    },
+    {
+      "category": "BUILDING",
+      "jurisdictionId": "mcd-building-permission",
+      "stateId": "dl",
+      "cityId": null,
+      "department": "Municipal Corporation of Delhi",
+      "coverage": "Delhi - building proposals within MCD responsibility",
+      "description": "MCD provides an Online Building Plan Approval System for building permits and occupancy-cum-completion certificates, with application tracking and published checklists.",
+      "requiredDetails": [],
+      "steps": [
+        "Review the official checklist and the relevant building category.",
+        "Use the official owner and professional registration routes as applicable.",
+        "Track the application through the portal and retain the issued documents."
+      ],
+      "officialPortal": "https://eodb.mcd.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "mcd-ithelpdesk@mcd.gov.in",
+        "purpose": "MCD building-permission portal IT helpdesk",
+        "sourceUrl": "https://eodb.mcd.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://eodb.mcd.gov.in/",
+        "https://eodb.mcd.gov.in/citizen_corner",
+        "https://eodb.mcd.gov.in/stages_approval"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": null,
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "Check that MCD is the responsible sanctioning authority for the property. Required NOCs, professional involvement and checks depend on the proposal."
+      ]
+    },
+    {
+      "category": "PENSION",
+      "jurisdictionId": "jeevan-pramaan",
+      "stateId": null,
+      "cityId": null,
+      "department": "Jeevan Pramaan - Ministry of Electronics and Information Technology",
+      "coverage": "India - digital life certificates for government pensioners using the service",
+      "description": "Generate or access a digital life certificate through the official Jeevan Pramaan service or its centres. This supports pension life certification; it does not apply for a new pension.",
+      "requiredDetails": [],
+      "steps": [],
+      "officialPortal": "https://jeevanpramaan.gov.in/v2.0/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "jeevanpramaan@gov.in",
+        "purpose": "Jeevan Pramaan service helpdesk",
+        "sourceUrl": "https://jeevanpramaan.gov.in/v2.0/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://jeevanpramaan.gov.in/v2.0/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "eligibility": null,
+      "documents": [],
+      "fees": null,
+      "processingTime": null,
+      "onlineOption": null,
+      "offlineOption": "Jeevan Pramaan centres listed on the official website",
+      "exceptions": [],
+      "responsibility": null,
+      "escalation": null,
+      "conditions": [
+        "Confirm your Pension Disbursing Agency and pension details when using the service."
+      ],
+      "serviceScope": "Digital life certificates for participating government pensioners; not a new pension application"
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "category": "WASTE",
+      "jurisdictionId": "swachhata-participating-cities",
+      "stateId": null,
+      "cityId": null,
+      "department": "Swachhata–MoHUA / participating urban local body",
+      "coverage": "Participating urban local bodies in India; confirm availability in the app",
+      "description": "The Swachhata app forwards photographed sanitation complaints to the relevant municipal body. This page explains the app; it is not a web submission form.",
+      "requiredDetails": [
+        "Photograph of the issue",
+        "Complaint location"
+      ],
+      "steps": [
+        "Open the official Swachhata platform and follow its citizen-app link.",
+        "Check that your municipal body is supported, then report the waste problem with its location.",
+        "Use the app's updates and feedback to follow the complaint."
+      ],
+      "officialPortal": "https://www.swachh.city/",
+      "linkType": "guidance",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://www.swachh.city/",
+        "https://www.ux4g.gov.in/aboutus/case-studies/ux4g-swachhata.php"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "Availability depends on the participating local body; this is not a universal municipal complaint channel."
+      ],
+      "rights": {
+        "responsibility": "The participating municipal body receives the complaint through the Swachhata system.",
+        "complaintOptions": "Report the issue in the citizen app and follow its status updates.",
+        "escalation": "Use the app's comments and feedback for an unresolved complaint.",
+        "sourceUrl": "https://www.swachh.city/"
+      },
+      "stateSelection": "on_portal"
+    },
+    {
+      "category": "WASTE",
+      "jurisdictionId": "gcc-solid-waste",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — Solid Waste Management",
+      "coverage": "Greater Chennai Corporation limits",
+      "description": "Report missed household waste collection or garbage dumped in public places within GCC's area.",
+      "requiredDetails": [],
+      "steps": [
+        "Register through GCC's complaint portal or call 1913.",
+        "Keep the complaint number for tracking."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "seswm@chennaicorporation.gov.in",
+        "purpose": "Solid Waste Management department contact",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/solid-waste-management/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/department/solid-waste-management/",
+        "https://www.chennaicorporation.gov.in/gcc/complaints/",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "For locations outside GCC, use your local body's channel or check Swachhata participation."
+      ],
+      "rights": {
+        "responsibility": "GCC's Solid Waste Management department manages waste clearance and door-to-door collection.",
+        "complaintOptions": "GCC online grievance system or 1913.",
+        "escalation": "The official complaints page lists the Solid Waste Management department's supervisory contacts.",
+        "sourceUrl": "https://www.chennaicorporation.gov.in/gcc/complaints/"
+      },
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "SEWER",
+      "jurisdictionId": "tn-punal-sewerage",
+      "stateId": "tn",
+      "cityId": null,
+      "department": "PUNAL — Tamil Nadu water and drainage grievance centre",
+      "coverage": "Tamil Nadu; routed to the responsible water, sewerage or local-body service",
+      "description": "PUNAL accepts sewerage, drainage and related maintenance complaints.",
+      "requiredDetails": [
+        "Issue and location",
+        "Mobile number for OTP"
+      ],
+      "steps": [
+        "Log in using mobile OTP.",
+        "Enter the issue and location under New Grievance.",
+        "Keep the grievance ID for tracking."
+      ],
+      "officialPortal": "https://punal.tn.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "punal@tn.gov.in",
+        "purpose": "PUNAL official correspondence",
+        "sourceUrl": "https://punal.tn.gov.in/faq.html",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://punal.tn.gov.in/faq.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "Tamil Nadu PUNAL: call 1916.",
+      "exceptions": [
+        "The responsible operator must confirm whether the opening belongs to a sewer, storm-water drain or another utility."
+      ],
+      "escalation": "Track the grievance ID through PUNAL or ask 1916 for assistance."
+    },
+    {
+      "category": "ROAD",
+      "jurisdictionId": "gcc-roads",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — Roads / zonal engineering",
+      "coverage": "Roads maintained by Greater Chennai Corporation",
+      "description": "Report potholes, damaged road surfaces and unrepaired road cuts on GCC-maintained roads.",
+      "requiredDetails": [],
+      "steps": [
+        "Register through GCC's complaint portal or call 1913.",
+        "Keep the complaint number for tracking."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "sebrr@chennaicorporation.gov.in",
+        "purpose": "Bus Route Roads department contact; confirm the road's owner",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/road/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/department/road/",
+        "https://www.chennaicorporation.gov.in/gcc/complaints/",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "A road inside Chennai may belong to another agency. Confirm ownership before using this route."
+      ],
+      "rights": {
+        "responsibility": "GCC maintains its bus-route and interior roads and attends to road-cut damage.",
+        "complaintOptions": "GCC online grievance system or 1913.",
+        "escalation": "Use the road-maintenance and zonal engineering contacts on the official complaints page for follow-up.",
+        "sourceUrl": "https://www.chennaicorporation.gov.in/gcc/complaints/"
+      },
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "ENCROACHMENT",
+      "jurisdictionId": "gcc-road-obstruction",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — zonal engineering; traffic police for parked vehicles",
+      "coverage": "Obstructions on GCC-maintained public roads and footpaths in Chennai",
+      "description": "GCC publishes a road-obstruction complaint route. Its transport policy identifies traffic-police involvement for vehicles parked on footpaths.",
+      "requiredDetails": [],
+      "steps": [
+        "Register a public-road or footpath obstruction through GCC's complaint portal.",
+        "Keep the complaint number and confirm the responsible agency for parked vehicles."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/rules-and-procedure/road-maintenance/",
+        "https://www.chennaicorporation.gov.in/images/nmt%20english.pdf",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "This is a municipal obstruction channel. A direct Chennai traffic-police parking complaint link or email has not been verified here."
+      ],
+      "rights": {
+        "responsibility": "GCC handles obstructions on its roads; parked-vehicle enforcement can require traffic police.",
+        "complaintOptions": "GCC complaint cell or the relevant zonal office for municipal road obstruction.",
+        "escalation": "The road-maintenance page lists engineering contacts for follow-up.",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/rules-and-procedure/road-maintenance/"
+      },
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "ANIMALS",
+      "jurisdictionId": "gcc-veterinary",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — Veterinary / Public Health",
+      "coverage": "Greater Chennai Corporation limits",
+      "description": "GCC's veterinary teams receive public complaints about stray dogs and monitor stray-cattle complaints with zonal health officers.",
+      "requiredDetails": [],
+      "steps": [
+        "Register through GCC's complaint portal or call 1913.",
+        "Keep the complaint number for tracking."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "ho@chennaicorporation.gov.in",
+        "purpose": "City Health Officer / Public Health department contact",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/health/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/veterinary/about/",
+        "https://chennaicorporation.gov.in/gcc/department/health/",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "This route requests municipal action; it does not provide treatment for a bite or promise relocation of animals."
+      ],
+      "rights": {
+        "responsibility": "GCC's veterinary service operates animal birth control and rabies-vaccination work and monitors stray cattle with zonal health officers.",
+        "complaintOptions": "Public grievance complaints are used by the veterinary teams to identify locations needing attention.",
+        "escalation": "Follow up with the zonal veterinary or public-health office using the complaint reference.",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/veterinary/about/"
+      },
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "POWER",
+      "jurisdictionId": "tnpdcl-consumer-grievances",
+      "stateId": "tn",
+      "cityId": null,
+      "department": "Tamil Nadu Power Distribution Corporation — Consumer Grievance Redressal Forum",
+      "coverage": "TNPDCL consumers in the relevant Tamil Nadu electricity distribution circle",
+      "description": "The CGRF complaint form covers low voltage, voltage fluctuations and supply interruptions. For a current supply or transformer problem, use TNPDCL's published power-support line; the forum is a grievance route.",
+      "requiredDetails": [
+        "Service connection number where applicable",
+        "Service address",
+        "Dates and times of the supply problem",
+        "Complaint details and complete postal address"
+      ],
+      "steps": [
+        "Review the CGRF guidelines and identify the correct electricity distribution circle.",
+        "File the petition online or use the official written complaint format.",
+        "Keep the petition ID and check its status."
+      ],
+      "officialPortal": "https://www.tnebltd.gov.in/cgrfonline/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://www.tnebltd.gov.in/cgrfonline/",
+        "https://www.tnebltd.gov.in/cgrfonline/cgrf-english-format.pdf",
+        "https://www.tnebltd.gov.in/cgrfonline/viewstatus.xhtml",
+        "https://www.tnebltd.gov.in/cgrfonline/CGRF_ADDRESS.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "TNPDCL publishes power-support number 9498794987. Written CGRF petitions go to the concerned forum chairperson.",
+      "exceptions": [
+        "This channel is for TNPDCL consumers. Other states and distribution companies have their own complaint systems.",
+        "Forum contact emails vary by distribution circle; consult the official CGRF address directory."
+      ],
+      "escalation": "The CGRF page describes an appeal to the Electricity Ombudsman against a forum order; review the current official procedure.",
+      "role": "grievance"
+    },
+    {
+      "category": "WATER",
+      "jurisdictionId": "tn-punal-water",
+      "stateId": "tn",
+      "cityId": null,
+      "department": "PUNAL — Tamil Nadu water and drainage grievance centre",
+      "coverage": "Tamil Nadu; routed to the relevant water service or local body",
+      "description": "PUNAL accepts drinking-water supply, pipeline and maintenance grievances.",
+      "requiredDetails": [
+        "Issue and location",
+        "Mobile number for OTP"
+      ],
+      "steps": [
+        "Log in using mobile OTP.",
+        "Enter the issue and location under New Grievance.",
+        "Keep the grievance ID for tracking."
+      ],
+      "officialPortal": "https://punal.tn.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "punal@tn.gov.in",
+        "purpose": "PUNAL official correspondence",
+        "sourceUrl": "https://punal.tn.gov.in/faq.html",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://punal.tn.gov.in/faq.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "Tamil Nadu PUNAL: call 1916.",
+      "exceptions": [],
+      "escalation": "Track the grievance ID through PUNAL or ask 1916 for assistance."
+    },
+    {
+      "category": "MOSQUITO",
+      "jurisdictionId": "gcc-vector-control",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Greater Chennai Corporation — Public Health / Vector Control",
+      "coverage": "Greater Chennai Corporation limits",
+      "description": "GCC's vector-control team monitors mosquito-breeding habitats, including waterways and storm-water drains.",
+      "requiredDetails": [],
+      "steps": [
+        "Register through GCC's complaint portal or call 1913.",
+        "Keep the complaint number for tracking."
+      ],
+      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "ho@chennaicorporation.gov.in",
+        "purpose": "City Health Officer / Public Health department contact",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/health/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://chennaicorporation.gov.in/gcc/department/health/",
+        "https://erp.chennaicorporation.gov.in/pgr/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [],
+      "rights": {
+        "responsibility": "GCC Public Health undertakes vector-control work and monitors mosquito-breeding sources.",
+        "complaintOptions": "Report the breeding site through GCC's grievance system.",
+        "escalation": "Use the Public Health department contact for follow-up with the complaint reference.",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/health/"
+      },
+      "contactPhone": {
+        "number": "1913",
+        "purpose": "Greater Chennai Corporation complaints within GCC jurisdiction",
+        "sourceUrl": "https://chennaicorporation.gov.in/gcc/department/electrical/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "category": "POLLUTION",
+      "jurisdictionId": "tnpcb-environmental-complaints",
+      "stateId": "tn",
+      "cityId": null,
+      "department": "Tamil Nadu Pollution Control Board",
+      "coverage": "Environmental and industrial pollution matters within TNPCB's Tamil Nadu remit",
+      "description": "TNPCB accepts environmental and industrial pollution complaints. For construction dust or noise, describe the source and ask the board to confirm whether it or the local designated authority handles the matter.",
+      "requiredDetails": [
+        "Name and full postal address",
+        "Mobile number for OTP",
+        "Complaint type and location",
+        "Description of the observed pollution"
+      ],
+      "steps": [
+        "Read the online complaint instructions and enter the required details.",
+        "Verify your mobile number with OTP and describe the pollution source.",
+        "Keep the complaint number to check status."
+      ],
+      "officialPortal": "https://tnpcb.gov.in/olgprs/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": {
+        "address": "complaint@tnpcb.gov.in",
+        "purpose": "TNPCB published complaint contact",
+        "sourceUrl": "https://tnpcb.gov.in/CitizenCharter.php",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://tnpcb.gov.in/olgprs/",
+        "https://tnpcb.gov.in/CitizenCharter.php",
+        "https://cpcb.gov.in/noise-pollution-rules/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "TNPCB states it cannot redress complaints outside its remit.",
+        "Noise enforcement may fall to a designated district or police authority. Confirm the municipal authority's construction responsibilities separately.",
+        "If the portal is unavailable, use the published complaint contact and retain your correspondence."
+      ],
+      "escalation": null
+    },
+    {
+      "category": "POLLUTION",
+      "jurisdictionId": "cpcb-noise-authority-guidance",
+      "stateId": null,
+      "cityId": null,
+      "department": "CPCB guidance — designated state or local noise authority",
+      "coverage": "India: guidance and authority notifications; the responsible authority depends on the state and locality",
+      "description": "CPCB publishes noise rules and designated-authority information. Use it to identify the competent authority for a construction-noise complaint; this page does not submit a complaint.",
+      "requiredDetails": [],
+      "steps": [
+        "Open the official guidance and consult the state or union territory's authority notification.",
+        "Confirm the designated local authority before sending the reviewed draft."
+      ],
+      "officialPortal": "https://cpcb.gov.in/noise-pollution-rules/",
+      "linkType": "guidance",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "sourceUrls": [
+        "https://cpcb.gov.in/noise-pollution-rules/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "exceptions": [
+        "A pollution-control board is not automatically the designated authority for every noise complaint."
+      ],
+      "rights": {
+        "responsibility": "Noise enforcement is assigned to the designated authority, which may include a district magistrate, police commissioner or other authorized officer.",
+        "complaintOptions": "Use the applicable state notification to identify where the complaint belongs.",
+        "escalation": null,
+        "sourceUrl": "https://cpcb.gov.in/noise-pollution-rules/"
+      }
+    }
+  ]
+}

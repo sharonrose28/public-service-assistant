@@ -1,0 +1,16 @@
+# Copy to samconfig.toml in this directory when configuring your own AWS account.
+# Run the packaging script from the repository root, then run SAM from deployment/.
+# This file does not create or deploy resources by itself.
+version = 0.1
+
+[default.global.parameters]
+stack_name = "public-service-assistant"
+region = "ap-south-1"
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+s3_prefix = "public-service-assistant"
+fail_on_empty_changeset = false
+parameter_overrides = "AIProvider=\"local\""

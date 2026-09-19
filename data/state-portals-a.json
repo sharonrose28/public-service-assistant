@@ -1,0 +1,1234 @@
+{
+  "records": [
+    {
+      "categories": [
+        "CASTE"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-esevai-caste",
+      "role": "service",
+      "department": "Tamil Nadu Revenue Administration / e-Sevai",
+      "coverage": "Tamil Nadu - Community Certificate service REV-101",
+      "description": "Tamil Nadu e-Sevai lists Community Certificate as a Revenue service. Check the current certificate type and applicable evidence with the service before applying.",
+      "officialPortal": "https://www.tnesevai.tn.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.tnesevai.tn.gov.in/",
+        "https://www.tnesevai.tn.gov.in/Default.aspx",
+        "https://www.tnesevai.tn.gov.in/Citizen/UserManual.html",
+        "https://www.tnesevai.tn.gov.in/citizen/Pages/ServiceList.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the appropriate revenue certificate through the citizen service or an e-Sevai centre.",
+        "Follow that service’s instructions and retain the application acknowledgement."
+      ],
+      "conditions": [
+        "This option is for Tamil Nadu. Community Certificate and OBC Certificate are separately listed services."
+      ],
+      "contactPhone": {
+        "number": "18004256000",
+        "purpose": "e-Sevai helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "tnesevaihelpdesk@tn.gov.in",
+        "purpose": "Tamil Nadu e-Sevai portal helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "offlineOption": "Tamil Nadu e-Sevai centre"
+    },
+    {
+      "categories": [
+        "LEGAL_HEIR"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-esevai-legal-heir",
+      "role": "service",
+      "department": "Tamil Nadu Revenue Administration / e-Sevai",
+      "coverage": "Tamil Nadu - administrative Legal Heir Certificate service REV-114",
+      "description": "Apply through the published e-Sevai route for an administrative legal-heir certificate. A court-issued succession certificate is a different legal process; this is not an application for one.",
+      "officialPortal": "https://www.tnesevai.tn.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.tnesevai.tn.gov.in/",
+        "https://www.tnesevai.tn.gov.in/Default.aspx",
+        "https://www.tnesevai.tn.gov.in/Citizen/UserManual.html",
+        "https://chennai.nic.in/work-flow/",
+        "https://highcourtchd.gov.in/sub_pages/left_menu/Rules_orders/high_court_rules/vol-II-pdf/chap6partBV2.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the appropriate revenue certificate through the citizen service or an e-Sevai centre.",
+        "Follow that service’s instructions and retain the application acknowledgement."
+      ],
+      "conditions": [
+        "The administrative Legal Heir Certificate is not a court-issued succession certificate.",
+        "The Chennai district workflow lists the Tahsildar as approver and uses the deceased person's residence before death.",
+        "Confirm which document the bank or receiving institution needs; this administrative certificate does not replace a court succession certificate."
+      ],
+      "contactPhone": {
+        "number": "18004256000",
+        "purpose": "e-Sevai helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "tnesevaihelpdesk@tn.gov.in",
+        "purpose": "Tamil Nadu e-Sevai portal helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "offlineOption": "Tamil Nadu e-Sevai centre"
+    },
+    {
+      "categories": [
+        "RESIDENCE"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-esevai-residence",
+      "role": "service",
+      "department": "Tamil Nadu Revenue Administration / e-Sevai",
+      "coverage": "Tamil Nadu - Residence Certificate REV-116 and Nativity Certificate REV-102",
+      "description": "The official service list provides separate residence and nativity certificate routes. Confirm the exact certificate required for your purpose before applying.",
+      "officialPortal": "https://www.tnesevai.tn.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.tnesevai.tn.gov.in/",
+        "https://www.tnesevai.tn.gov.in/Default.aspx",
+        "https://www.tnesevai.tn.gov.in/Citizen/UserManual.html",
+        "https://www.tnesevai.tn.gov.in/citizen/Pages/ServiceList.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the appropriate revenue certificate through the citizen service or an e-Sevai centre.",
+        "Follow that service’s instructions and retain the application acknowledgement."
+      ],
+      "conditions": [
+        "This is a Tamil Nadu option. Residence, nativity and domicile requirements are not interchangeable across all jurisdictions."
+      ],
+      "contactPhone": {
+        "number": "18004256000",
+        "purpose": "e-Sevai helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "tnesevaihelpdesk@tn.gov.in",
+        "purpose": "Tamil Nadu e-Sevai portal helpdesk",
+        "sourceUrl": "https://www.tnesevai.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "offlineOption": "Tamil Nadu e-Sevai centre"
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-land-records",
+      "role": "service",
+      "department": "Tamil Nadu Revenue and Disaster Management Department",
+      "coverage": "Tamil Nadu land records",
+      "description": "View Patta, Chitta, FMB and related revenue records. Land-record extracts and an Encumbrance Certificate use separate services.",
+      "officialPortal": "https://eservices.tn.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://eservices.tn.gov.in/",
+        "https://tn.nic.in/news/additional-land-records-services-launch-by-honourable-minister-for-revenue-and-disaster-management-tamil-nadu/",
+        "https://services.india.gov.in/service/detail/e-services-of-land-records-tamil-nadu"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the relevant record service.",
+        "Enter the property identifiers requested by that service and review the result."
+      ],
+      "conditions": [
+        "Choose the record and rural/urban coverage relevant to the property. An extract is not itself an application to change ownership."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-encumbrance-registration",
+      "role": "service",
+      "department": "Tamil Nadu Registration Department — TNREGINET",
+      "coverage": "Registered-property records within Tamil Nadu",
+      "description": "Use the Registration Department’s Encumbrance Certificate service for registration entries; Patta and survey records are handled separately.",
+      "officialPortal": "https://tnreginet.gov.in/portal/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://tnreginet.gov.in/portal/",
+        "https://www.tnreginet.gov.in/portal/document/ec_portal.pdf",
+        "https://www.tnesevai.tn.gov.in/citizen/Pages/ServiceList.aspx",
+        "https://www.tnesevai.tn.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the official EC application manual.",
+        "Use the EC service and retain its acknowledgement."
+      ],
+      "conditions": [
+        "The EC service covers registration records. Confirm the required search period and property particulars on the official portal."
+      ],
+      "contactPhone": null,
+      "contactEmail": null,
+      "offlineOption": "An e-Sevai centre can help identify the listed Encumbrance Certificate service."
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-social-security-pension",
+      "role": "service",
+      "department": "Tamil Nadu Commissioner of Social Security Scheme / e-Sevai",
+      "coverage": "Tamil Nadu social-security pension schemes",
+      "description": "The official social-security pension page directs citizen applications to e-Sevai. Select the applicable old-age, widow or disability scheme.",
+      "officialPortal": "https://www.tnesevai.tn.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.tnesevai.tn.gov.in/",
+        "https://oap.tn.gov.in/",
+        "https://cra.tn.gov.in/about_schemes_t.php"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the appropriate social-security scheme at e-Sevai or its service centre.",
+        "Review its requirements before applying."
+      ],
+      "conditions": [
+        "This is the social-security pension route. The OAP site’s sign-in is for back-office users; it is not the citizen application form.",
+        "Eligibility depends on the selected scheme.",
+        "Old-age, widow and disability schemes have different eligibility conditions. This record does not establish an applicant's eligibility."
+      ],
+      "contactPhone": {
+        "number": "18004251090",
+        "purpose": "Social Security Scheme enquiry",
+        "sourceUrl": "https://oap.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "craofficera5@gmail.com",
+        "purpose": "Commissioner of Social Security Scheme contact",
+        "sourceUrl": "https://oap.tn.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "offlineOption": "Tamil Nadu e-Sevai centre",
+      "responsibility": "Revenue officials verify applications; the Special Tahsildar for Social Security Schemes issues orders for eligible applicants."
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "tn",
+      "jurisdictionId": "tn-cm-grievances",
+      "role": "grievance",
+      "department": "Tamil Nadu Mudhalvarin Mugavari / CM Helpline",
+      "coverage": "Tamil Nadu government departments and applicable public services",
+      "description": "Use this channel to follow up on a public-service grievance with the responsible state authority. It does not replace the service application.",
+      "officialPortal": "https://cmhelpline.tnega.org/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://cmhelpline.tnega.org/",
+        "https://cmhelpline.tnega.org/portal/en/kb/articles/about-us",
+        "https://cmhelpline.tnega.org/portal/en/kb/articles/tamil-nadu-cm-helpline-faqs"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the portal’s remit and select the appropriate department.",
+        "Explain the unresolved issue and include any existing application or complaint reference.",
+        "Retain the grievance reference for follow-up."
+      ],
+      "conditions": [
+        "For service-delivery complaints within the listed jurisdiction; not a certificate, benefit or permit application."
+      ],
+      "contactPhone": {
+        "number": "1100",
+        "purpose": "Tamil Nadu CM grievance helpline",
+        "sourceUrl": "https://cmhelpline.tnega.org/portal/en/kb/articles/about-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "cmhelpline@tn.gov.in",
+        "purpose": "Tamil Nadu CM grievance submission",
+        "sourceUrl": "https://cmhelpline.tnega.org/portal/en/kb/articles/about-us",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE"
+      ],
+      "stateId": "ka",
+      "jurisdictionId": "ka-nadakacheri-certificates",
+      "role": "service",
+      "department": "Karnataka Revenue Department — Nadakacheri / AJSK",
+      "coverage": "Karnataka; service and jurisdiction must be chosen on Nadakacheri",
+      "description": "The official service list includes caste, domicile and Surviving Family Members certificates. Choose the precise service needed.",
+      "officialPortal": "https://nadakacheri.karnataka.gov.in/ajsk",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nadakacheri.karnataka.gov.in/ajsk",
+        "https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/2023/02/2023022262.pdf",
+        "https://bagalkot.nic.in/en/service/nadakacheri-ajsk/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review Nadakacheri’s service list and follow Apply Online for the matching service.",
+        "For an unavailable service or portal error, contact the Nadakacheri helpdesk or office."
+      ],
+      "conditions": [
+        "A Surviving Family Members Certificate does not replace a judicial succession certificate.",
+        "Online availability and the responsible office depend on the specific service."
+      ],
+      "contactPhone": {
+        "number": "080-22214551",
+        "purpose": "Nadakacheri technical helpdesk",
+        "sourceUrl": "https://bagalkot.nic.in/en/service/nadakacheri-ajsk/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "helpdeskajsk@gmail.com",
+        "purpose": "Nadakacheri technical helpdesk",
+        "sourceUrl": "https://bagalkot.nic.in/en/service/nadakacheri-ajsk/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "ka",
+      "jurisdictionId": "ka-bhoomi-land-records",
+      "role": "service",
+      "department": "Karnataka Revenue Department — Bhoomi",
+      "coverage": "Karnataka revenue land records",
+      "description": "Bhoomi provides RTC and mutation-related land-record services. Use the property’s applicable revenue-record service.",
+      "officialPortal": "https://landrecords.karnataka.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://landrecords.karnataka.gov.in/",
+        "https://bengalurusouth.nic.in/en/service/land-records/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the relevant land-record or mutation service.",
+        "Confirm the district, taluk, village and property identifiers on the official portal."
+      ],
+      "conditions": [
+        "Bhoomi revenue records are distinct from registration Encumbrance Certificates and urban property-account services."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "ka",
+      "jurisdictionId": "ka-kaveri-official-guidance",
+      "role": "service",
+      "department": "Karnataka Department of Stamps and Registration — Kaveri 2.0",
+      "coverage": "Karnataka registered-document and Encumbrance Certificate services",
+      "description": "This official government overview identifies Kaveri 2.0 for EC and registration services. It is guidance, not an application form.",
+      "officialPortal": "https://negd.gov.in/isl/Directory/statedata/416",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://negd.gov.in/isl/Directory/statedata/416"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "A current direct Kaveri application destination was not confirmed in this review. Confirm it with the Registration Department before entering personal details."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "ka",
+      "jurisdictionId": "ka-nadakacheri-social-pensions",
+      "role": "service",
+      "department": "Karnataka Revenue Department — Nadakacheri social-security pensions",
+      "coverage": "Karnataka; scheme-specific eligibility",
+      "description": "Nadakacheri’s service list includes social-security pensions, including disability, old-age and Sandhya Suraksha services.",
+      "officialPortal": "https://nadakacheri.karnataka.gov.in/ajsk",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://nadakacheri.karnataka.gov.in/ajsk",
+        "https://bagalkot.nic.in/en/service/nadakacheri-ajsk/",
+        "https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/2023/02/2023022262.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Choose the applicable pension scheme. The student State Scholarship Portal is not this pension route."
+      ],
+      "contactPhone": {
+        "number": "080-22214551",
+        "purpose": "Nadakacheri technical helpdesk",
+        "sourceUrl": "https://bagalkot.nic.in/en/service/nadakacheri-ajsk/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "ka",
+      "jurisdictionId": "ka-janaspandana-grievances",
+      "role": "grievance",
+      "department": "Karnataka Janaspandana — Integrated Public Grievance Redressal System",
+      "coverage": "Karnataka government departments onboarded to iPGRS",
+      "description": "Use this channel to follow up on a public-service grievance with the responsible state authority. It does not replace the service application.",
+      "officialPortal": "https://ipgrs.karnataka.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://ipgrs.karnataka.gov.in/",
+        "https://negd.gov.in/isl/Directory/statedata/418"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the portal’s remit and select the appropriate department.",
+        "Explain the unresolved issue and include any existing application or complaint reference.",
+        "Retain the grievance reference for follow-up."
+      ],
+      "conditions": [
+        "For service-delivery complaints within the listed jurisdiction; not a certificate, benefit or permit application."
+      ],
+      "contactPhone": {
+        "number": "1902",
+        "purpose": "Karnataka Janaspandana grievance registration",
+        "sourceUrl": "https://ipgrs.karnataka.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE"
+      ],
+      "stateId": "mh",
+      "jurisdictionId": "mh-aaple-sarkar-certificates",
+      "role": "service",
+      "department": "Maharashtra Revenue Department — Aaple Sarkar",
+      "coverage": "Maharashtra; relevant revenue district",
+      "description": "The portal lists caste, domicile and temporary-residence services. Select the specific certificate and review its instructions.",
+      "officialPortal": "https://aaplesarkar.mahaonline.gov.in/en",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://aaplesarkar.mahaonline.gov.in/en",
+        "https://rdd.maharashtra.gov.in/en/service/aaple-sarkar/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the relevant Revenue Department service.",
+        "Follow its application instructions or consult an Aaple Sarkar Seva Kendra."
+      ],
+      "conditions": [
+        "Certificate types have different eligibility and evidence requirements. No general legal-heir application route has been verified here."
+      ],
+      "contactPhone": {
+        "number": "18001208040",
+        "purpose": "Aaple Sarkar citizen call centre",
+        "sourceUrl": "https://aaplesarkar.mahaonline.gov.in/en",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "mh",
+      "jurisdictionId": "mh-mahabhumi-land-records",
+      "role": "service",
+      "department": "Maharashtra Settlement Commissioner / Land Records Department",
+      "coverage": "Maharashtra land records; rural, urban and Mumbai services differ",
+      "description": "Mahabhumi links to records of rights, property-card services and the appropriate mutation application systems.",
+      "officialPortal": "https://mahabhumi.gov.in/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://mahabhumi.gov.in/",
+        "https://mahabhumi.gov.in/Mahabhumilink_test/login/login"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Choose the rural, urban or Mumbai mutation service appropriate to the property. Viewing a record is a separate action from requesting a change."
+      ],
+      "contactPhone": {
+        "number": "020-25712712",
+        "purpose": "Mahabhumi helpline",
+        "sourceUrl": "https://mahabhumi.gov.in/Mahabhumilink_test/login/login",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "mh",
+      "jurisdictionId": "mh-social-assistance-pensions",
+      "role": "service",
+      "department": "Maharashtra Social Justice and Special Assistance Department",
+      "coverage": "Maharashtra social-assistance schemes",
+      "description": "Official guidance links to Sanjay Gandhi Niradhar, Shravanbal and national old-age, widow and disability pension schemes.",
+      "officialPortal": "https://sjsa.maharashtra.gov.in/en/service/special-assistance-schemes/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://sjsa.maharashtra.gov.in/en/service/special-assistance-schemes/",
+        "https://sjsa.maharashtra.gov.in/en/scheme/sanjay-gandhi-niradhar-anudan-yojana/",
+        "https://sjsa.maharashtra.gov.in/en/scheme/indira-gandhi-national-old-age-pension-scheme/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the applicable pension or assistance scheme.",
+        "Follow its How To Apply instructions; the cited scheme pages direct applications to the relevant Collector, Tehsildar, scheme branch or Talathi office."
+      ],
+      "conditions": [
+        "This is an official scheme directory, not a universal online pension application."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "mh",
+      "jurisdictionId": "mh-aaple-sarkar-grievances",
+      "role": "grievance",
+      "department": "Maharashtra Aaple Sarkar Grievance Redressal",
+      "coverage": "Maharashtra government departments and applicable district authorities",
+      "description": "Use this channel to follow up on a public-service grievance with the responsible state authority. It does not replace the service application.",
+      "officialPortal": "https://grievances.maharashtra.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://grievances.maharashtra.gov.in/",
+        "https://grievances.maharashtra.gov.in/en/officer-contact",
+        "https://grievances.maharashtra.gov.in/en/citizens/login?redirect=%2Fen%2Fpost-suggestion%2Fadd"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the portal’s remit and select the appropriate department.",
+        "Explain the unresolved issue and include any existing application or complaint reference.",
+        "Retain the grievance reference for follow-up."
+      ],
+      "conditions": [
+        "For service-delivery complaints within the listed jurisdiction; not a certificate, benefit or permit application."
+      ],
+      "contactPhone": {
+        "number": "18001208040",
+        "purpose": "Maharashtra grievance portal helpline",
+        "sourceUrl": "https://grievances.maharashtra.gov.in/en/officer-contact",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE"
+      ],
+      "stateId": "up",
+      "jurisdictionId": "up-edistrict-certificates",
+      "role": "service",
+      "department": "Uttar Pradesh e-District / e-Sathi — Revenue services",
+      "coverage": "Uttar Pradesh; relevant district and approving authority",
+      "description": "e-District provides caste and residence-certificate services and links to the e-Sathi citizen portal.",
+      "officialPortal": "https://edistrict.up.gov.in/edistrictup/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://edistrict.up.gov.in/edistrictup/",
+        "https://services.india.gov.in/service/detail/uttar-pradesh-e-district-services"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the matching certificate and read its current service instructions.",
+        "Use the linked e-Sathi citizen portal or an authorized service centre."
+      ],
+      "conditions": [
+        "No general legal-heir application route has been verified in this record."
+      ],
+      "contactPhone": {
+        "number": "0522-2304706",
+        "purpose": "Uttar Pradesh e-District helpdesk",
+        "sourceUrl": "https://edistrict.up.gov.in/edistrictup/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "ceghelpdesk@gmail.com",
+        "purpose": "Uttar Pradesh e-District helpdesk",
+        "sourceUrl": "https://edistrict.up.gov.in/edistrictup/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "up",
+      "jurisdictionId": "up-bhulekh-land-records",
+      "role": "service",
+      "department": "Uttar Pradesh Board of Revenue — Bhulekh",
+      "coverage": "Uttar Pradesh revenue land records",
+      "description": "Bhulekh provides the state’s real-time Khatauni service. Select the applicable record using the property identifiers.",
+      "officialPortal": "https://upbhulekh.gov.in/bhulekh/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://upbhulekh.gov.in/bhulekh/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "This land-record lookup is not an Encumbrance Certificate or a universal mutation application."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "up",
+      "jurisdictionId": "up-integrated-social-pensions",
+      "role": "service",
+      "department": "Uttar Pradesh — Integrated Social Pension Portal",
+      "coverage": "Uttar Pradesh social-pension schemes",
+      "description": "The state pension system covers old-age, widow, disability and leprosy-pension services. Choose the relevant scheme.",
+      "officialPortal": "https://sspy-up.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://sspy-up.gov.in/",
+        "https://meerut.nic.in/service/integrated-pension-portal/",
+        "https://up.nic.in/news/two-month-advance-pension-to-beneficiaries-through-integrated-pension-portal-developed-by-nic-up/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Eligibility, application options and the responsible department differ by scheme."
+      ],
+      "contactPhone": {
+        "number": "18004190001",
+        "purpose": "Social Welfare pension enquiry",
+        "sourceUrl": "https://meerut.nic.in/service/integrated-pension-portal/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "up",
+      "jurisdictionId": "up-jansunwai-grievances",
+      "role": "grievance",
+      "department": "Uttar Pradesh Jansunwai–Samadhan / CM Helpline",
+      "coverage": "Uttar Pradesh government service-delivery grievances",
+      "description": "Use this channel to follow up on a public-service grievance with the responsible state authority. It does not replace the service application.",
+      "officialPortal": "https://jansunwai.up.nic.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://jansunwai.up.nic.in/",
+        "https://lucknow.nic.in/hi/%E0%A4%B9%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AA-%E0%A4%B2%E0%A4%BE%E0%A4%88%E0%A4%A8/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the portal’s remit and select the appropriate department.",
+        "Explain the unresolved issue and include any existing application or complaint reference.",
+        "Retain the grievance reference for follow-up."
+      ],
+      "conditions": [
+        "Follow-up for government service delivery, not a new benefit or certificate application.",
+        "The portal excludes matters such as RTI, subjudice cases and requests for financial assistance or employment. Review its full exclusions."
+      ],
+      "contactPhone": {
+        "number": "1076",
+        "purpose": "Uttar Pradesh Chief Minister helpline",
+        "sourceUrl": "https://lucknow.nic.in/hi/%E0%A4%B9%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AA-%E0%A4%B2%E0%A4%BE%E0%A4%88%E0%A4%A8/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "jansunwai-up@gov.in",
+        "purpose": "Jansunwai website queries; submit grievances through the portal",
+        "sourceUrl": "https://jansunwai.up.nic.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-edistrict-revenue-certificates",
+      "role": "service",
+      "department": "Delhi Department of Revenue — e-District",
+      "coverage": "Government of NCT of Delhi; competent revenue subdivision",
+      "description": "Delhi’s official certificate guidance includes caste, domicile and Surviving Members certificates. Choose the relevant Revenue Department service.",
+      "officialPortal": "https://edistrict.delhi.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://edistrict.delhi.gov.in/",
+        "https://revenue.delhi.gov.in/revenue/certificates-faqshelp",
+        "https://revenue.delhi.gov.in/revenue/surviving-members-certificate"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the service-specific guidance, then use e-District’s Apply Service option.",
+        "Retain the application reference for tracking."
+      ],
+      "conditions": [
+        "A Surviving Members Certificate is not a judicial succession certificate.",
+        "Check the applicable residence, caste and certificate-purpose conditions on the selected official service."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-indraprastha-bhulekh",
+      "role": "service",
+      "department": "Delhi Department of Revenue — Indraprastha Bhu-Lekh",
+      "coverage": "Delhi revenue records covered by the DLR or PLR systems",
+      "description": "View Khasra/Khatauni or Jamabandi details on the current Delhi land-records portal.",
+      "officialPortal": "https://dlrc.delhi.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://dlrc.delhi.gov.in/",
+        "https://services.india.gov.in/service/detail/record-of-rights-ror-details-under-e-district-delhi"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "The portal displays information; contact the relevant revenue tehsil for other record questions or changes."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-ngdrs-registration-records",
+      "role": "service",
+      "department": "Delhi Department of Revenue — NGDRS",
+      "coverage": "Delhi registered-document services; search periods differ",
+      "description": "The current registration system offers separate citizen searches for the DORIS period before January 2024 and NGDRS period after January 2024.",
+      "officialPortal": "https://www.ngdrs.delhi.gov.in/NGDRS_DL/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.ngdrs.delhi.gov.in/NGDRS_DL/",
+        "https://ddoris.delhigovt.nic.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "The legacy DORIS page says all sub-registrar offices have migrated to NGDRS. Choose the correct period for historical searches."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-edistrict-social-pensions",
+      "role": "service",
+      "department": "Delhi Social Welfare / Women and Child Development departments",
+      "coverage": "NCT of Delhi; scheme-specific eligibility",
+      "description": "e-District lists pension and assistance services. Choose the applicable old-age, disability or women-in-distress scheme and read its guidance.",
+      "officialPortal": "https://edistrict.delhi.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://edistrict.delhi.gov.in/",
+        "https://socialwelfare.delhi.gov.in/hi/node/1385",
+        "https://edistrict.delhi.gov.in/Public/Services?q=JjzAPiUTZ3A4+Z8iHjUfMw%3D%3D",
+        "https://edistrict.delhigovt.nic.in/in/en/Public/ServiceGuideline.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Availability and eligibility must be confirmed for the selected scheme; these are not universal pension rules."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-pgms-grievances",
+      "role": "grievance",
+      "department": "Delhi Public Grievance Monitoring System",
+      "coverage": "Government of NCT of Delhi departments and covered service authorities",
+      "description": "Use this channel to follow up on a public-service grievance with the responsible state authority. It does not replace the service application.",
+      "officialPortal": "https://pgms.delhi.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://pgms.delhi.gov.in/",
+        "https://dmnewdelhi.delhi.gov.in/service/how-to-lodge-a-grievance/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the portal’s remit and select the appropriate department.",
+        "Explain the unresolved issue and include any existing application or complaint reference.",
+        "Retain the grievance reference for follow-up."
+      ],
+      "conditions": [
+        "Use for service-delivery follow-up, not to replace an application.",
+        "The portal excludes subjudice matters, personal or family disputes, service matters and RTI. Review its complete exclusions."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "dl",
+      "jurisdictionId": "dl-public-grievances-commission",
+      "role": "grievance",
+      "department": "Delhi Public Grievances Commission",
+      "coverage": "Delhi government departments, local bodies and covered organizations",
+      "description": "The Commission provides a grievance-redressal route for complaints concerning covered public authorities. Review its remit before contacting it.",
+      "officialPortal": "https://pgc.delhi.gov.in/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://pgc.delhi.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "This is the Commission’s contact and guidance page, not the PGMS application portal."
+      ],
+      "contactPhone": {
+        "number": "011-23379900",
+        "purpose": "Delhi Public Grievances Commission office",
+        "sourceUrl": "https://pgc.delhi.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "pgcdelhi@nic.in",
+        "purpose": "Delhi Public Grievances Commission contact",
+        "sourceUrl": "https://pgc.delhi.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-meeseva-certificates",
+      "role": "service",
+      "department": "Telangana Revenue Department — MeeSeva",
+      "coverage": "Telangana; relevant revenue mandal and certificate purpose",
+      "description": "MeeSeva lists integrated caste/nativity certificates and residence-certificate services. Select the exact certificate required.",
+      "officialPortal": "https://www.meeseva.telangana.gov.in/meeseva/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.meeseva.telangana.gov.in/meeseva/",
+        "https://ts.meeseva.telangana.gov.in/TSDeptPortal/UserInterface/Services.html",
+        "https://www.telangana.gov.in/services/meeseva-services/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Certificate purposes and conditions differ; review the chosen service."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LEGAL_HEIR"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-meeseva-family-members",
+      "role": "service",
+      "department": "Telangana Revenue Department — MeeSeva Family Member Certificate",
+      "coverage": "Telangana; the listed Family Member Certificate covers social-security schemes and government employees/pensioners",
+      "description": "The service directory lists a Family Member Certificate for specific social-security and government employee/pensioner purposes.",
+      "officialPortal": "https://www.meeseva.telangana.gov.in/meeseva/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.meeseva.telangana.gov.in/meeseva/",
+        "https://ts.meeseva.telangana.gov.in/TSDeptPortal/UserInterface/Services.html",
+        "https://wanaparthy.telangana.gov.in/service/family-membership-certificate/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Confirm that your purpose fits the listed service. Do not treat this as a general court-issued succession certificate."
+      ],
+      "contactPhone": {
+        "number": "18004251110",
+        "purpose": "MeeSeva enquiry published by the district service page",
+        "sourceUrl": "https://wanaparthy.telangana.gov.in/service/family-membership-certificate/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-bhu-bharati-land",
+      "role": "service",
+      "department": "Telangana Revenue Department — Bhu Bharati",
+      "coverage": "Telangana land-record and land-transaction services covered by Bhu Bharati",
+      "description": "The current state directory identifies Bhu Bharati for land services, including mutation and passbook-related requests.",
+      "officialPortal": "https://bhubharati.telangana.gov.in/homePage?lang=en",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://bhubharati.telangana.gov.in/homePage?lang=en",
+        "https://www.telangana.gov.in/state-web-directory/",
+        "https://bhubharati.telangana.gov.in/assets/images/userManuals/Application_for_Pending_Mutation.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Review the official instructions for the exact land service.",
+        "Register or sign in and retain the transaction reference."
+      ],
+      "conditions": [
+        "Choose the applicable land service. An EC or another registration search may require a separate Registration Department service."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-meeseva-encumbrance-guidance",
+      "role": "service",
+      "department": "Telangana MeeSeva / Registration Department",
+      "coverage": "Telangana Encumbrance Certificate service",
+      "description": "The state MeeSeva directory lists the Registration Department’s Encumbrance Certificate form separately from revenue land services.",
+      "officialPortal": "https://www.telangana.gov.in/services/meeseva-services/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://www.telangana.gov.in/services/meeseva-services/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Choose the Registration section’s Encumbrance Certificate service. This directory itself does not submit the application."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-aasara-pension-directory",
+      "role": "service",
+      "department": "Telangana Rural Development — Aasara social-security pensions",
+      "coverage": "Telangana; selected Aasara scheme and applicable eligibility",
+      "description": "The current state directory links to Aasara pensions. The government’s mobile-services guidance also describes pension applications through MeeSeva.",
+      "officialPortal": "https://www.telangana.gov.in/state-web-directory/",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://www.telangana.gov.in/state-web-directory/",
+        "https://mgov.telangana.gov.in/faqnew.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [],
+      "conditions": [
+        "Follow the current Aasara link from the official directory or consult MeeSeva for the relevant application.",
+        "A direct pension application form was not verified during this review; eligibility and application availability must be confirmed."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "tg",
+      "jurisdictionId": "tg-prajavani-grievance-guidance",
+      "role": "grievance",
+      "department": "Telangana Prajavani — Praja Bhavan",
+      "coverage": "Telangana public grievances; submission through the offices described on the official page",
+      "description": "The current Prajavani page explains petition submission at Praja Bhavan and lists district, division and mandal offices. The online citizen options provide receipts and grievance-status tracking.",
+      "officialPortal": "https://prajavani.cgg.gov.in/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://prajavani.cgg.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Consult Reach Us and confirm the relevant Prajavani office and submission arrangements.",
+        "Submit the reviewed petition through the stated office process.",
+        "Use your mobile number or reference ID to retrieve the receipt and track status online."
+      ],
+      "conditions": [
+        "The listed website is guidance and tracking; it is not a verified online new-petition submission form.",
+        "A grievance is follow-up for the relevant public authority, not a replacement service application."
+      ],
+      "contactPhone": null,
+      "contactEmail": {
+        "address": "support.prajavani@cgg.gov.in",
+        "purpose": "Prajavani support contact",
+        "sourceUrl": "https://prajavani.cgg.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    }
+  ]
+}

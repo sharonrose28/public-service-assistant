@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "category": [
+        "WATER",
+        "SEWER"
+      ],
+      "jurisdictionId": "djb-water-sewer-complaints",
+      "stateId": "dl",
+      "cityId": "delhi",
+      "department": "Delhi Jal Board",
+      "coverage": "Delhi Jal Board water and sewerage service areas in NCT Delhi; confirm the local operator for the address.",
+      "description": "Delhi Jal Board publishes 1916 for water and sewer complaints. Its official control-room page also lists locality-specific water contacts.",
+      "requiredDetails": [],
+      "steps": [
+        "Call the DJB complaint helpline and explain the water or sewer issue and its location.",
+        "Keep the complaint reference number and use it when checking status or following up."
+      ],
+      "officialPortal": "https://delhijalboard.delhi.gov.in/jalboard/water-emergency",
+      "linkType": "guidance",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "contactPhone": {
+        "number": "1916",
+        "purpose": "Delhi Jal Board water and sewer complaint helpline",
+        "sourceUrl": "https://delhijalboard.delhi.gov.in/jalboard/water-emergency",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://delhijalboard.delhi.gov.in/jalboard/water-emergency",
+        "https://delhijalboard.delhi.gov.in/sites/default/files/Jalboard/universal-tab/sap_2021_0.pdf",
+        "https://delhijalboard.delhi.gov.in/sites/default/files/Jalboard/pdf_files/citizen_s_charter_2022.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "DJB also publishes 1800117118 as a toll-free central control-room number.",
+      "exceptions": [
+        "This is a DJB contact and does not cover every water supplier in India. Confirm that the problem belongs to DJB.",
+        "The linked page is official contact guidance, not an online complaint form."
+      ],
+      "conditions": [
+        "Storm-water drainage and sewerage can have different responsible authorities; ask DJB to confirm responsibility for the reported asset."
+      ],
+      "escalation": "Use the saved complaint reference to request status through the DJB helpline.",
+      "fees": null,
+      "processingTime": null
+    },
+    {
+      "category": [
+        "WATER",
+        "SEWER"
+      ],
+      "jurisdictionId": "bwssb-water-sewer-complaints",
+      "stateId": "ka",
+      "cityId": "bengaluru",
+      "department": "Bangalore Water Supply and Sewerage Board (BWSSB)",
+      "coverage": "BWSSB-served areas of Bengaluru; confirm the applicable BWSSB service station.",
+      "description": "Use the BWSSB complaint form or its 1916 helpline for water-supply and sewerage issues within the board service area.",
+      "requiredDetails": [
+        "Consumer name",
+        "Contact number",
+        "Address",
+        "Complaint category and description"
+      ],
+      "steps": [
+        "Open the official complaint form and provide the required contact, address and complaint details.",
+        "Choose the applicable category and provide the RR number if available.",
+        "Submit after review and retain the complaint reference; use View Complaint or call 1916 for follow-up."
+      ],
+      "officialPortal": "https://cms.bwssb.gov.in/module/complain/new_complaint",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "contactPhone": {
+        "number": "1916",
+        "purpose": "BWSSB water and sewer service helpline",
+        "sourceUrl": "https://bwssb.gov.in/complaint",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://cms.bwssb.gov.in/module/complain/new_complaint",
+        "https://bwssb.gov.in/complaint",
+        "https://www.bwssb.gov.in/home",
+        "https://owc.bwssb.gov.in/docs/Consumer-Manual-English.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "Call the BWSSB helpline on 1916.",
+      "exceptions": [
+        "BWSSB is not the water operator for all Karnataka locations. Use this contact only for the board service area."
+      ],
+      "conditions": [
+        "The complaint form accepts an RR number but does not mark it mandatory; provide it if available.",
+        "Confirm whether a drainage issue concerns a BWSSB sewer or an asset maintained by another authority."
+      ],
+      "escalation": "Track the complaint using the official complaint system or ask the helpline for the responsible service station.",
+      "fees": null,
+      "processingTime": null
+    },
+    {
+      "category": [
+        "WATER",
+        "SEWER"
+      ],
+      "jurisdictionId": "cmwssb-water-sewer-complaints",
+      "stateId": "tn",
+      "cityId": "chennai",
+      "department": "Chennai Metropolitan Water Supply and Sewerage Board (CMWSSB)",
+      "coverage": "CMWSSB operational area in Chennai; confirm the responsible area or depot office for the address.",
+      "description": "Chennai Metrowater operates a water and sewer complaint cell on 044-45674567. The official guidance explains telephone, area-office and online complaint routes.",
+      "requiredDetails": [],
+      "steps": [
+        "Call the complaint cell and describe the water or sewer problem and its exact location.",
+        "Retain the complaint registration number or SMS for follow-up with the relevant area or depot office.",
+        "Check the official complaint guidance for current online availability and further redressal options."
+      ],
+      "officialPortal": "https://cmwssb.tn.gov.in/complaint-redressal",
+      "linkType": "guidance",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "contactPhone": {
+        "number": "044-45674567",
+        "purpose": "Chennai Metrowater 24-hour water and sewer complaint cell",
+        "sourceUrl": "https://cmwssb.tn.gov.in/complaint-redressal",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://cmwssb.tn.gov.in/",
+        "https://cmwssb.tn.gov.in/complaint-redressal",
+        "https://cms-cmwssb.tn.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "CMWSSB also publishes 1916 for water/sewer complaints and accepts complaints through its area or depot offices.",
+      "exceptions": [
+        "This contact is for CMWSSB operations, not every water service in Tamil Nadu.",
+        "The linked CMWSSB online complaint system displayed a maintenance page when checked on 19 September 2026; use the published phone route if online filing remains unavailable."
+      ],
+      "conditions": [
+        "The action link opens official complaint guidance. It is not itself a submission form.",
+        "CMWSSB sewerage and municipal storm-water drains can have different responsibilities; confirm the relevant asset and office."
+      ],
+      "escalation": "Use the complaint reference when following up with the area/depot office or Grievance Cell described in the official guidance.",
+      "fees": null,
+      "processingTime": null
+    },
+    {
+      "category": "POWER",
+      "jurisdictionId": "tnpdcl-power-faults",
+      "stateId": "tn",
+      "cityId": null,
+      "role": "primary",
+      "department": "Tamil Nadu Power Distribution Corporation (TNPDCL) - Minnagam / CCMS",
+      "coverage": "TNPDCL electricity consumers and distribution assets in Tamil Nadu; confirm the supplier shown on the electricity bill.",
+      "description": "Report a power failure or other TNPDCL supply complaint through the Consumer Complaint Management System or the Minnagam call centre on 9498794987.",
+      "requiredDetails": [
+        "Valid mobile number for portal registration and OTP"
+      ],
+      "steps": [
+        "Call Minnagam or open CCMS and register using a valid mobile number and OTP.",
+        "Choose the applicable service-related or general complaint and describe the supply fault and location.",
+        "Keep the complaint reference and use CCMS to track the complaint."
+      ],
+      "officialPortal": "https://ccms.tangedco.org/tangedco-public/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "contactPhone": {
+        "number": "9498794987",
+        "purpose": "TNPDCL Minnagam 24-hour consumer complaint and power-support line",
+        "sourceUrl": "https://ccms.tangedco.org/tangedco-public/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://ccms.tangedco.org/tangedco-public/",
+        "https://www.tnebltd.gov.in/theftonline/petitionentry.xhtml",
+        "https://www.tnebltd.gov.in/bp/BPsearchEmployee"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "Call Minnagam on 9498794987 for TNPDCL complaints.",
+      "exceptions": [
+        "This route is for TNPDCL customers and assets, not every electricity provider in India."
+      ],
+      "conditions": [
+        "CCMS is the direct consumer complaint route. The Consumer Grievance Redressal Forum is a separate grievance procedure.",
+        "The complaint channel does not establish a universal fault-repair deadline."
+      ],
+      "escalation": "Track the complaint in CCMS or follow up with Minnagam using its reference number.",
+      "fees": null,
+      "processingTime": null
+    },
+    {
+      "category": "POWER",
+      "jurisdictionId": "bescom-power-faults",
+      "stateId": "ka",
+      "cityId": null,
+      "role": "primary",
+      "department": "Bangalore Electricity Supply Company Limited (BESCOM)",
+      "coverage": "BESCOM consumers in its Karnataka distribution area, including Bengaluru; other Karnataka distribution companies use their own service channels.",
+      "description": "BESCOM publishes 1912 for customer help and provides service-request and complaint functions on its consumer portal. Use this route for a supply problem when BESCOM is the electricity supplier.",
+      "requiredDetails": [],
+      "steps": [
+        "Confirm that the electricity bill identifies BESCOM as the supplier.",
+        "Call 1912 to report the supply fault, or use the consumer portal complaint/service-request function.",
+        "Provide the affected address and available account details, then retain the complaint or request reference for follow-up."
+      ],
+      "officialPortal": "https://www.bescom.co.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "contactEmail": null,
+      "contactPhone": {
+        "number": "1912",
+        "purpose": "BESCOM customer help and electricity complaint line",
+        "sourceUrl": "https://www.bescom.co.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "sourceUrls": [
+        "https://www.bescom.co.in/",
+        "https://www.bescom.co.in/bescom/main/faq",
+        "https://www.bescom.co.in/bescom/main/associated-sites",
+        "https://www.bescom.co.in/bescom/dashboard/consumer-dashboard/track-service-request"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "offlineOption": "Call BESCOM customer care on 1912.",
+      "exceptions": [
+        "BESCOM does not supply all Karnataka locations. This record does not claim nationwide or statewide coverage for 1912."
+      ],
+      "conditions": [
+        "Use the supplier shown on the bill to confirm jurisdiction.",
+        "Portal functions may require consumer registration or login. No universal restoration time is promised."
+      ],
+      "escalation": "Use the portal request tracker or customer care with the existing complaint reference.",
+      "fees": null,
+      "processingTime": null,
+      "serviceScope": "BESCOM consumers within its distribution area only"
+    }
+  ]
+}

@@ -1,0 +1,1098 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "categories": [
+        "CASTE"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-seva-caste",
+      "role": "service",
+      "department": "Andhra Pradesh Revenue Department / AP Seva",
+      "coverage": "Andhra Pradesh; integrated community certificate services",
+      "description": "AP Seva provides the citizen entry point for the integrated community, nativity and date-of-birth certificate service.",
+      "officialPortal": "https://apseva.ap.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://vswsonline.ap.gov.in/assets/User-Manuals/SOPs.pdf",
+        "https://vswsonline.ap.gov.in/#/home"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Open AP Seva and choose Citizen Login.",
+        "Select Integrated Certificate and read the current instructions.",
+        "Keep the application reference for tracking."
+      ],
+      "conditions": [
+        "This route covers the integrated certificate service; choose the applicable certificate type."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RESIDENCE"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-residence-guidance",
+      "role": "service",
+      "department": "Andhra Pradesh Revenue Department / Village-Ward Secretariat",
+      "coverage": "Andhra Pradesh; residence guidance published by Palnadu district",
+      "description": "Official guidance explains general and passport-purpose residence certificates and the Village/Ward Secretariat or MeeSeva route.",
+      "officialPortal": "https://palnadu.ap.gov.in/service/residence-certificate/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://palnadu.ap.gov.in/service/residence-certificate/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the guidance for the certificate type you need.",
+        "Use the Village/Ward Secretariat or MeeSeva route stated by the authority."
+      ],
+      "conditions": [
+        "This is a guidance page, not an application form.",
+        "Confirm the issuing office for your address before applying."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LEGAL_HEIR"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-family-membership-guidance",
+      "role": "service",
+      "department": "Andhra Pradesh Revenue Department / Tahsildar",
+      "coverage": "Andhra Pradesh; family-membership guidance published by Srikakulam district",
+      "description": "The published administrative service is a Family Membership Certificate for specified government-employee benefits or social-security schemes.",
+      "officialPortal": "https://srikakulam.ap.gov.in/service/legal-heir-certificate/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://srikakulam.ap.gov.in/service/legal-heir-certificate/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Check whether the stated service covers the benefit or claim.",
+        "Ask the relevant MeeSeva centre or Tahsildar about the appropriate application."
+      ],
+      "conditions": [
+        "This administrative certificate must not be assumed to satisfy a court succession-certificate requirement.",
+        "This page provides guidance rather than an application form."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-meebhoomi",
+      "role": "service",
+      "department": "Andhra Pradesh Revenue Department",
+      "coverage": "Land records for land in Andhra Pradesh",
+      "description": "MeeBhoomi provides access to Andhra Pradesh land records and ownership-related entries.",
+      "officialPortal": "https://meebhoomi.ap.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://tirupati.ap.gov.in/service/land-records/",
+        "https://krishna.ap.gov.in/settlements-survey-land-records/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the relevant land-record service in MeeBhoomi.",
+        "Use the correct district, village and parcel identifiers."
+      ],
+      "conditions": [
+        "Viewing a land record is not an encumbrance-certificate application or a completed transfer."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-ntr-bharosa",
+      "role": "service",
+      "department": "Andhra Pradesh SERP / Rural Development Department",
+      "coverage": "Eligible applicants and beneficiaries of Andhra Pradesh NTR Bharosa pension schemes",
+      "description": "Official pension information, current notices, application-form downloads and disbursement information.",
+      "officialPortal": "https://sspensions.ap.gov.in/SSP/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://sspensions.ap.gov.in/SSP/",
+        "https://sspensions.ap.gov.in/SSP/Home/ContactUs"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the scheme and current application notices.",
+        "Use the published new-pension form and designated local application process."
+      ],
+      "conditions": [
+        "Confirm the eligibility for the selected pension category.",
+        "The administrative login is not a general citizen application form."
+      ],
+      "contactPhone": {
+        "number": "0866-2410017",
+        "purpose": "NTR Bharosa pension scheme enquiries",
+        "sourceUrl": "https://sspensions.ap.gov.in/SSP/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "ntrbharosapensionscheme@gmail.com",
+        "purpose": "Director, Social Security Pensions contact",
+        "sourceUrl": "https://sspensions.ap.gov.in/SSP/Home/ContactUs",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "ap",
+      "jurisdictionId": "ap-pgrs",
+      "role": "grievance",
+      "department": "Andhra Pradesh Public Grievance Redressal System",
+      "coverage": "Andhra Pradesh state-government departments and public authorities",
+      "description": "State grievance and follow-up channel for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://meekosam.ap.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://meekosam.ap.gov.in/",
+        "https://tirupati.ap.gov.in/helpline/",
+        "https://spsnellore.ap.gov.in/district-panchayat-office/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the citizen grievance option and describe the unresolved issue.",
+        "Keep the grievance number for status and follow-up."
+      ],
+      "conditions": [
+        "Use the relevant service application channel for a new certificate, benefit or approval."
+      ],
+      "contactPhone": {
+        "number": "1902",
+        "purpose": "Andhra Pradesh Public Grievance Redressal System",
+        "sourceUrl": "https://tirupati.ap.gov.in/helpline/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "pgrs-helpdesk@ap.gov.in",
+        "purpose": "PGRS portal helpdesk; not a service-application inbox",
+        "sourceUrl": "https://meekosam.ap.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE"
+      ],
+      "stateId": "kl",
+      "jurisdictionId": "kl-edistrict-certificates",
+      "role": "service",
+      "department": "Kerala Revenue Department / eDistrict",
+      "coverage": "Kerala; selected revenue certificate and its jurisdiction",
+      "description": "eDistrict lists caste, community, domicile and legal-heir certificate services.",
+      "officialPortal": "https://edistrict.kerala.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://edistrict.kerala.gov.in/",
+        "https://edistrict.kerala.gov.in/services.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the selected certificate service details.",
+        "Use the citizen account or seek assistance through a service centre.",
+        "Keep the application number for tracking."
+      ],
+      "conditions": [
+        "Requirements depend on the selected certificate and case.",
+        "An administrative legal-heir certificate is not a court succession certificate."
+      ],
+      "contactPhone": {
+        "number": "0471-2525444",
+        "purpose": "Kerala eDistrict portal support",
+        "sourceUrl": "https://edistrict.kerala.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "edistrict.ksitm@kerala.gov.in",
+        "purpose": "Kerala eDistrict portal support",
+        "sourceUrl": "https://edistrict.kerala.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "kl",
+      "jurisdictionId": "kl-relis-land",
+      "role": "service",
+      "department": "Kerala Revenue Department / ReLIS",
+      "coverage": "Kerala; land services available for the relevant village",
+      "description": "Revenue e-services provide access to ReLIS land-record and revenue services.",
+      "officialPortal": "https://revenue.kerala.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.revenue.kerala.gov.in/pages/home.php",
+        "https://revenue.kerala.gov.in/master.php/screen-reader.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the relevant land-record service.",
+        "Confirm the village and land details before proceeding."
+      ],
+      "conditions": [
+        "Use the separate Registration Department route for an encumbrance certificate."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "kl",
+      "jurisdictionId": "kl-registration-ec",
+      "role": "service",
+      "department": "Kerala Registration Department",
+      "coverage": "Property within Kerala registration jurisdiction",
+      "description": "Official encumbrance-certificate guidance from the Registration Department.",
+      "officialPortal": "https://registration.kerala.gov.in/en/encumbrance-certificate/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://registration.kerala.gov.in/en/encumbrance-certificate/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the official encumbrance-certificate procedure.",
+        "Follow the department link to its PEARL application service."
+      ],
+      "conditions": [
+        "This guidance page is not a submission form.",
+        "An EC request and a revenue-record transfer are separate services."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "kl",
+      "jurisdictionId": "kl-sevana-pension",
+      "role": "service",
+      "department": "Kerala Local Self Government institutions / Sevana Pension",
+      "coverage": "Eligible applicants and beneficiaries of Kerala social-security pension schemes",
+      "description": "Sevana publishes pension schemes, forms, beneficiary information and current notices.",
+      "officialPortal": "https://welfarepension.lsgkerala.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://welfarepension.lsgkerala.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the relevant scheme and read the current criteria and form.",
+        "Use the listed e-filing option or the applicable local-government process."
+      ],
+      "conditions": [
+        "The selected scheme and local-government authority determine the application process."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "kl",
+      "jurisdictionId": "kl-cmo-grievance",
+      "role": "grievance",
+      "department": "Kerala Chief Minister Public Grievance Redressal Cell",
+      "coverage": "Kerala state-government departments and public authorities",
+      "description": "State grievance and follow-up channel for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://www.cmo.kerala.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.cmo.kerala.gov.in/help-en.php",
+        "https://gad.kerala.gov.in/en/petitions-cm"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Use the online complaint portal, Akshaya centre or another option stated in the FAQ.",
+        "Keep the docket number and registered mobile number to check status."
+      ],
+      "conditions": [
+        "The official FAQ says complaints cannot be filed by phone or email. The phone contact is for help, status and follow-up.",
+        "Use the relevant application service for new certificates, benefits or approvals."
+      ],
+      "contactPhone": {
+        "number": "1076",
+        "purpose": "CM grievance help, status and follow-up; not phone complaint registration",
+        "sourceUrl": "https://www.cmo.kerala.gov.in/help-en.php",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "CASTE"
+      ],
+      "stateId": "wb",
+      "jurisdictionId": "wb-caste-oscar",
+      "role": "service",
+      "department": "West Bengal Backward Classes Welfare Department",
+      "coverage": "West Bengal; eligible applicants for the selected SC/ST/OBC certificate",
+      "description": "OSCAR is the official caste-certificate application and tracking portal.",
+      "officialPortal": "https://castcertificatewb.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://castcertificatewb.gov.in/how_to_applyy",
+        "https://jalpaiguri.gov.in/service/caste-certificate/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the current application guidelines.",
+        "Choose the certificate and residential jurisdiction.",
+        "Save the application acknowledgement."
+      ],
+      "conditions": [
+        "Choose the correct certificate category and current rules for your case."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RESIDENCE"
+      ],
+      "stateId": "wb",
+      "jurisdictionId": "wb-edistrict-residence",
+      "role": "service",
+      "department": "West Bengal eDistrict / responsible local issuing authority",
+      "coverage": "West Bengal; local residence or domicile certificate services",
+      "description": "eDistrict supports residence/domicile certificate services; Bangla Sahayata Kendras also list this service.",
+      "officialPortal": "https://www.edistrict.wb.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.edistrict.wb.gov.in/",
+        "https://wb.gov.in/e-services.aspx",
+        "https://bsk.wb.gov.in/v3_services?lang=en"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the residence/domicile service or seek help at a Bangla Sahayata Kendra.",
+        "Confirm the certificate format and issuing jurisdiction."
+      ],
+      "conditions": [
+        "The receiving authority may require a particular certificate format."
+      ],
+      "contactPhone": null,
+      "contactEmail": {
+        "address": "wbedistrict@wb.gov.in",
+        "purpose": "West Bengal eDistrict portal helpdesk",
+        "sourceUrl": "https://www.edistrict.wb.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "wb",
+      "jurisdictionId": "wb-banglarbhumi",
+      "role": "service",
+      "department": "West Bengal Land and Land Reforms and Refugee Relief and Rehabilitation Department",
+      "coverage": "Land records and listed land services in West Bengal",
+      "description": "BanglarBhumi provides Record of Rights, plot information, mutation and related citizen services.",
+      "officialPortal": "https://banglarbhumi.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://banglarbhumi.gov.in/",
+        "https://paschimmedinipur.gov.in/land-land-reforms-department/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the relevant citizen land service and sign in when required.",
+        "Confirm property identifiers and retain the application reference."
+      ],
+      "conditions": [
+        "A land-record or mutation service is not a court succession proceeding."
+      ],
+      "contactPhone": {
+        "number": "033-2479-5726",
+        "purpose": "Directorate of Land Records and Survey contact",
+        "sourceUrl": "https://banglarbhumi.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "dlrswb.grievancecell@gmail.com",
+        "purpose": "Land Records and Survey grievance-cell contact",
+        "sourceUrl": "https://banglarbhumi.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "wb",
+      "jurisdictionId": "wb-jai-bangla-pension",
+      "role": "service",
+      "department": "West Bengal Finance Department / administering social-pension department",
+      "coverage": "West Bengal social-pension schemes covered by Jai Bangla",
+      "description": "Jai Bangla is the umbrella social-pension portal and provides applicant-status access.",
+      "officialPortal": "https://jaibangla.wb.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://jaibangla.wb.gov.in/",
+        "https://finance.wb.gov.in/writereaddata/630-FB.pdf",
+        "https://bsk.wb.gov.in/v3_services?lang=en"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Identify the pension scheme and administering department.",
+        "Use applicant-status access for an existing application or confirm the application route with the authority."
+      ],
+      "conditions": [
+        "The public applicant-status feature is not a new-pension application form.",
+        "Eligibility and application routes depend on the scheme."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "wb",
+      "jurisdictionId": "wb-cmo-grievance",
+      "role": "grievance",
+      "department": "West Bengal Chief Minister Office / public grievance system",
+      "coverage": "West Bengal state-government departments and public authorities",
+      "description": "State grievance and follow-up channel for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://cmo.wb.gov.in/landing/landing-dashboard/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://cmo.wb.gov.in/landing/landing-dashboard/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Open Citizen Corner and choose Raise Your Grievance.",
+        "Keep the grievance reference for status and follow-up."
+      ],
+      "conditions": [
+        "Use the options currently published by the CMO. The helpdesk is not a benefit-application route."
+      ],
+      "contactPhone": {
+        "number": "82820 82820",
+        "purpose": "Current CMO portal helpdesk",
+        "sourceUrl": "https://cmo.wb.gov.in/landing/landing-dashboard/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "asap@wb.gov.in",
+        "purpose": "Current CMO portal email support",
+        "sourceUrl": "https://cmo.wb.gov.in/landing/landing-dashboard/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE",
+        "RATION"
+      ],
+      "stateId": "gj",
+      "jurisdictionId": "gj-digital-gujarat",
+      "role": "service",
+      "department": "Digital Gujarat / relevant revenue or civil-supplies authority",
+      "coverage": "Gujarat; the certificate or ration-card service selected in Digital Gujarat",
+      "description": "Digital Gujarat offers caste, domicile and ration-card services online and through assisted counters.",
+      "officialPortal": "https://www.digitalgujarat.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://dst.gujarat.gov.in/Home/ProjectsandInitiatives",
+        "https://darpg.gov.in/sites/default/files/NeSDA_March_2024.pdf"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the specific citizen service.",
+        "Read that service and use the online account or an authorised assistance counter."
+      ],
+      "conditions": [
+        "Choose the service matching your case; the portal does not establish eligibility by itself."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "gj",
+      "jurisdictionId": "gj-anyror-land",
+      "role": "service",
+      "department": "Gujarat Revenue Department / e-Dhara",
+      "coverage": "Gujarat land-record and mutation-status information",
+      "description": "AnyROR provides land-record information and mutation-entry status. e-Dhara and the competent revenue office handle relevant changes.",
+      "officialPortal": "https://anyror.gujarat.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://tapi.nic.in/service/land-records/",
+        "https://gil.gujarat.gov.in/edhara"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the appropriate rural or urban record option.",
+        "For changes or a required certified copy, follow the revenue authority process."
+      ],
+      "conditions": [
+        "A viewed record or status result is not a newly issued EC or completed transfer."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "gj",
+      "jurisdictionId": "gj-old-age-pension-guidance",
+      "role": "service",
+      "department": "Gujarat Director of Social Defense",
+      "coverage": "Gujarat; Niradhar Vriddha Pension Yojana applicants meeting the published criteria",
+      "description": "Guidance for the state destitute-old-age pension, including its specified disability-related eligibility provision.",
+      "officialPortal": "https://sje.gujarat.gov.in/dsd/schemes/2212?lang=english",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://sje.gujarat.gov.in/dsd/schemes/2212?lang=english"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the scheme-specific eligibility.",
+        "Use the listed Jan Seva Kendra, Mamlatdar office, Gram Panchayat or Digital Gujarat route."
+      ],
+      "conditions": [
+        "This record covers the named scheme, not every old-age, widow or disability benefit."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "gj",
+      "jurisdictionId": "gj-widow-pension-guidance",
+      "role": "service",
+      "department": "Gujarat Women and Child Development Department",
+      "coverage": "Gujarat; widow-pension application guidance",
+      "description": "The department publishes an official Widow Pension Form in its application-form directory.",
+      "officialPortal": "https://wcd.gujarat.gov.in/applicationform",
+      "linkType": "directory",
+      "sourceUrls": [
+        "https://wcd.gujarat.gov.in/applicationform"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Find the Widow Pension Form.",
+        "Confirm the current submission procedure with the administering office."
+      ],
+      "conditions": [
+        "This is a form directory, not an online pension submission form."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "gj",
+      "jurisdictionId": "gj-swagat",
+      "role": "grievance",
+      "department": "Gujarat Chief Minister Office / SWAGAT",
+      "coverage": "Gujarat; eligible unresolved grievances already raised with the appropriate authority",
+      "description": "State grievance follow-up for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://swagat.gujarat.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://isr.gujarat.gov.in/Home/HonbleCMOfficeWebsites",
+        "https://dst.gujarat.gov.in/Home/ProjectsandInitiatives"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "First approach the relevant department or district/sub-district authority.",
+        "For an unresolved eligible grievance, follow SWAGAT instructions and retain its reference."
+      ],
+      "conditions": [
+        "SWAGAT eligibility requires that the grievance was already presented to the appropriate authority and remains unresolved.",
+        "Use the relevant application service for new certificates, benefits or approvals."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE"
+      ],
+      "stateId": "rj",
+      "jurisdictionId": "rj-emitra-certificates",
+      "role": "service",
+      "department": "Rajasthan Revenue Department / eMitra",
+      "coverage": "Rajasthan; selected caste or bonafide/residence certificate services",
+      "description": "eMitra provides caste and bonafide/residence certificate services and assisted service delivery.",
+      "officialPortal": "https://emitra.rajasthan.gov.in/emitra/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://emitra.rajasthan.gov.in/emitra/",
+        "https://janaadhaar.rajasthan.gov.in/content/raj/janaadhaar/en/performance-dashboard/jan-aadhaar-services.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the exact certificate service through eMitra or its assisted route.",
+        "Read the current instructions and retain the acknowledgement."
+      ],
+      "conditions": [
+        "The certificate category and purpose determine the applicable service."
+      ],
+      "contactPhone": {
+        "number": "0141-2922241",
+        "purpose": "eMitra portal helpdesk",
+        "sourceUrl": "https://emitra.rajasthan.gov.in/emitra/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "helpdesk.emitra@rajasthan.gov.in",
+        "purpose": "eMitra portal helpdesk",
+        "sourceUrl": "https://emitra.rajasthan.gov.in/emitra/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "rj",
+      "jurisdictionId": "rj-apnakhata",
+      "role": "service",
+      "department": "Rajasthan Board of Revenue / Apna Khata",
+      "coverage": "Agricultural land records and listed land services in Rajasthan",
+      "description": "Apna Khata provides Jamabandi information, mutation applications and status services.",
+      "officialPortal": "https://apnakhata.rajasthan.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://apnakhata.rajasthan.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the land-record or mutation service.",
+        "Enter the correct land identifiers and retain any application reference."
+      ],
+      "conditions": [
+        "The site states that ordinary displayed Jamabandi information is not an authorised certified copy. Use the prescribed kiosk process when a certified copy is required."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "rj",
+      "jurisdictionId": "rj-rajssp",
+      "role": "service",
+      "department": "Rajasthan Social Justice and Empowerment Department / RajSSP",
+      "coverage": "Rajasthan social-security pension schemes; eligibility is scheme-specific",
+      "description": "RajSSP publishes pension information, eligibility criteria, reports and verification guidance.",
+      "officialPortal": "https://ssp.rajasthan.gov.in/",
+      "linkType": "guidance",
+      "sourceUrls": [
+        "https://ssp.rajasthan.gov.in/LoginContent/MidLogin.aspx",
+        "https://mmasy.rajasthan.gov.in/GeneralInformation.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Read the appropriate pension scheme and eligibility criteria.",
+        "Use the published application or yearly-verification route for your task."
+      ],
+      "conditions": [
+        "The administrative login is not a general citizen application form. Confirm the designated application route."
+      ],
+      "contactPhone": {
+        "number": "0141-5111007",
+        "purpose": "RajSSP pension portal helpdesk",
+        "sourceUrl": "https://ssp.rajasthan.gov.in/LoginContent/MidLogin.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "ssp-rj@nic.in",
+        "purpose": "RajSSP pension portal helpdesk",
+        "sourceUrl": "https://ssp.rajasthan.gov.in/LoginContent/MidLogin.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "rj",
+      "jurisdictionId": "rj-sampark",
+      "role": "grievance",
+      "department": "Rajasthan Public Grievance Redressal Department / Sampark",
+      "coverage": "Rajasthan state-government departments and public authorities",
+      "description": "State grievance and follow-up channel for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://sampark.rajasthan.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://sampark.rajasthan.gov.in/ContactUs",
+        "https://sectors.rajasthan.gov.in/pages/department-page/1433",
+        "https://udh.rajasthan.gov.in/content/raj/udh/udh-department/en/grievance-redressal--cm-helpline.html"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Use Sampark to lodge or follow up a state-government grievance.",
+        "Keep the grievance reference for further contact."
+      ],
+      "conditions": [
+        "For another state or a central-government organisation, follow the CPGRAMS direction published by Sampark.",
+        "Use the relevant application service for new certificates, benefits or approvals."
+      ],
+      "contactPhone": {
+        "number": "181",
+        "purpose": "Rajasthan Sampark grievance helpline",
+        "sourceUrl": "https://sampark.rajasthan.gov.in/ContactUs",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "CASTE",
+        "RESIDENCE"
+      ],
+      "stateId": "mp",
+      "jurisdictionId": "mp-edistrict-certificates",
+      "role": "service",
+      "department": "Madhya Pradesh eDistrict / competent revenue authority",
+      "coverage": "Madhya Pradesh; selected caste and domicile certificate services",
+      "description": "eDistrict provides certificate services online and through Lok Seva Kendra assistance.",
+      "officialPortal": "https://mpedistrict.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://jabalpur.mp.gov.in/services/",
+        "https://sidhi.nic.in/en/service/residence-certificate/",
+        "https://shajapur.nic.in/en/services/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the certificate in eDistrict or seek help at a Lok Seva Kendra.",
+        "Confirm the service and retain its acknowledgement."
+      ],
+      "conditions": [
+        "Requirements depend on the selected certificate and competent authority."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "LAND"
+      ],
+      "stateId": "mp",
+      "jurisdictionId": "mp-bhulekh-gis2",
+      "role": "service",
+      "department": "Madhya Pradesh Revenue Department / Commissioner Land Records",
+      "coverage": "Land records and listed land services in Madhya Pradesh",
+      "description": "Bhulekh provides land records, maps and certified-copy services. The current GIS 2.0 destination is linked by official district administration.",
+      "officialPortal": "https://webgis2.mpbhulekh.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://barwani.nic.in/en/service/land-records/",
+        "https://sidhi.nic.in/en/service/land-records/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Choose the land-record or copy service.",
+        "Check the district, village and parcel details."
+      ],
+      "conditions": [
+        "Use the designated certified-copy service when an authorised copy is required."
+      ],
+      "contactPhone": null,
+      "contactEmail": null
+    },
+    {
+      "categories": [
+        "PENSION"
+      ],
+      "stateId": "mp",
+      "jurisdictionId": "mp-socialsecurity-pension",
+      "role": "service",
+      "department": "Madhya Pradesh Social Justice and Empowerment of Persons with Disabilities Department",
+      "coverage": "Madhya Pradesh; listed social-security pension and assistance schemes",
+      "description": "The Social Security portal lists old-age, widow and disability pensions and related online services.",
+      "officialPortal": "https://socialsecurity.mp.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://socialsecurity.mp.gov.in/"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Select the pension scheme matching your enquiry.",
+        "Read its criteria and use the relevant citizen or local-body process."
+      ],
+      "conditions": [
+        "Scheme-specific eligibility applies. Administrative modules are intended for authorised officials."
+      ],
+      "contactPhone": null,
+      "contactEmail": {
+        "address": "dir.socialjustice@mp.gov.in",
+        "purpose": "Social Justice department correspondence",
+        "sourceUrl": "https://socialsecurity.mp.gov.in/",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    },
+    {
+      "categories": [
+        "RATION",
+        "CASTE",
+        "LEGAL_HEIR",
+        "RESIDENCE",
+        "LAND",
+        "BUILDING",
+        "PENSION",
+        "WASTE",
+        "SEWER",
+        "ROAD",
+        "ENCROACHMENT",
+        "ANIMALS",
+        "POWER",
+        "WATER",
+        "MOSQUITO",
+        "POLLUTION",
+        "STREETLIGHT"
+      ],
+      "stateId": "mp",
+      "jurisdictionId": "mp-cmhelpline",
+      "role": "grievance",
+      "department": "Madhya Pradesh Public Service Management / CM Helpline",
+      "coverage": "Madhya Pradesh state-government departments and public authorities",
+      "description": "State grievance and follow-up channel for unresolved public-service issues. It does not submit a new service application.",
+      "officialPortal": "https://cmhelpline.mp.gov.in/",
+      "linkType": "portal",
+      "sourceUrls": [
+        "https://www.cmhelpline.mp.gov.in/About.aspx",
+        "https://cmhelpline.mp.gov.in/ContactUs.aspx",
+        "https://cmhelpline.mp.gov.in/Public/OnlineComplaint.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "steps": [
+        "Use the portal or 181 to report a grievance about a state-government service.",
+        "Keep the complaint number for status and follow-up."
+      ],
+      "conditions": [
+        "Read the online complaint exclusions before submitting. A grievance does not replace a judicial proceeding.",
+        "Use the relevant application service for new certificates, benefits or approvals."
+      ],
+      "contactPhone": {
+        "number": "181",
+        "purpose": "CM Helpline from within Madhya Pradesh",
+        "sourceUrl": "https://cmhelpline.mp.gov.in/ContactUs.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactEmail": {
+        "address": "cmhelpline@mp.gov.in",
+        "purpose": "CM Helpline contact; use the portal or 181 for registration",
+        "sourceUrl": "https://cmhelpline.mp.gov.in/ContactUs.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      }
+    }
+  ]
+}
