@@ -42,7 +42,7 @@ class Understanding(BaseModel):
 @dataclass(frozen=True)
 class Settings:
     ollama_host: str = "http://127.0.0.1:11434"
-    model: str = "qwen3:4b"
+    model: str = "qwen3:1.7b"
     port: int = 8001
     timeout_seconds: float = 45
 
@@ -113,8 +113,12 @@ class StrandsInterpreter:
             model_id=config.model,
             temperature=0,
             max_tokens=900,
-            # Qwen3 enables thinking by default; this task needs a short schema result.
-            additional_args={"think": False} if config.model.split("/")[-1].startswith("qwen3") else {},
+            # Ollama does not support forced tool_choice. Native schema-constrained
+            # JSON avoids a second tool-call round and works with small local models.
+            additional_args={
+                "format": Understanding.model_json_schema(),
+                **({"think": False} if config.model.split("/")[-1].startswith("qwen3") else {}),
+            },
             ollama_client_args={
                 "timeout": config.timeout_seconds,
                 "trust_env": False,
@@ -132,13 +136,13 @@ class StrandsInterpreter:
 
         async def invoke():
             return await asyncio.wait_for(
-                agent.invoke_async(text, structured_output_model=Understanding),
+                agent.invoke_async(text),
                 timeout=config.timeout_seconds,
             )
 
         result = asyncio.run(invoke())
         # The Node backend additionally checks its current catalog and evidence.
-        return Understanding.model_validate(result.structured_output).model_dump(mode="json")
+        return Understanding.model_validate_json(str(result)).model_dump(mode="json")
 
 
 def _unique_object(pairs):
@@ -225,7 +229,9 @@ def create_server(settings, interpreter, *, port=None):
             if not self.allow_server_client():
                 return
             if self.path == "/health":
-                self.respond(200, {"status": "ok", "service": "strands-ollama"})
+                self.respond(200, {"status": "ok", "service": "strands-ollama",
+                                   "model": settings.model, "requestTimeoutSeconds": settings.timeout_seconds,
+                                   "processId": os.getpid()})
             else:
                 self.respond(404, {"error": "NOT_FOUND"})
 

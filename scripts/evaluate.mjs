@@ -36,7 +36,7 @@ for(const [text,expected] of cases){
  const scoped=shown(r).every(record=>record.coverage&&record.department&&record.officialPortal&&record.sourceUrls.length&&record.lastVerifiedAt);
  if(scoped&&same(shown(r).map(record=>record.id),expectedRecords.map(key))&&(r.hasDirectChannel||r.hasCommonGateway||r.directory?.isDirectory))scopedChannels++;
  else failures.push({request:text,check:'scoped directory output'});
- if(r.draft?.endsWith(text)&&r.reviewRequired&&r.stage==='ACT'&&['GENERATE_COMPLAINT','GENERATE_MESSAGE'].includes(r.nextAction))drafts++;
+ if(r.draft?.endsWith(text)&&r.reviewRequired&&r.stage==='ACT'&&['GENERATE_COMPLAINT','GENERATE_MESSAGE','CREATE_CHECKLIST'].includes(r.nextAction))drafts++;
  else failures.push({request:text,check:'reviewable draft'});
 }
 for(const category of categories){

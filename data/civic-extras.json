@@ -6,17 +6,18 @@
       "stateId": null,
       "cityId": null,
       "department": "Energy Efficiency Services Limited (EESL)",
-      "coverage": "Only streetlights maintained by EESL under an applicable local project; not every streetlight in India",
-      "description": "EESL publishes a consumer complaint channel for its projects. Confirm the streetlight operator with the local body before using this channel.",
+      "coverage": "Only streetlights confirmed as part of an EESL-maintained local project",
+      "description": "EESL publishes consumer complaint contacts for its projects. First confirm the streetlight's operator with the local body.",
       "steps": [
-        "Check whether the affected streetlight belongs to an EESL-maintained project.",
-        "Report the precise street, landmark and pole identifier if known, with the observed problem and duration.",
-        "Save the complaint reference and use EESL's grievance route if the regular complaint remains unresolved."
+        "Confirm that EESL maintains the affected streetlight.",
+        "Use EESL's published consumer complaint channel, phone or email and describe the problem.",
+        "Keep the complaint reference; ask the published EESL grievance cell about follow-up if the regular complaint remains unresolved."
       ],
       "conditions": [
-        "For another operator's streetlight, use the responsible municipality or operator's channel. Selecting a state does not establish EESL coverage."
+        "This channel does not cover every streetlight in India. A state or city name alone does not establish EESL responsibility.",
+        "The preparation suggestions are optional, not a verified list of mandatory portal fields. Check the current form before submitting."
       ],
-      "officialPortal": "https://support.eeslindia.org/crmx/consumer",
+      "officialPortal": "https://support.eeslindia.org/",
       "linkType": "portal",
       "contactPhone": {
         "number": "1800-180-3580",
@@ -36,12 +37,78 @@
       },
       "sourceUrls": [
         "https://eeslindia.org/wp-content/uploads/2022/08/Chapter-15-RTI-Mandatory-Disclosure.pdf",
-        "https://support.eeslindia.org/crmx/consumer"
+        "https://eeslindia.org/en/rti/",
+        "https://support.eeslindia.org/"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
       "verificationStatus": "VERIFIED",
-      "serviceScope": "EESL-maintained projects only"
+      "serviceScope": "EESL-maintained projects only",
+      "requiredDetails": [],
+      "preparationAdvice": [
+        "Note the street, a nearby landmark, the fault and how long you have observed it.",
+        "Add a pole number or photograph only if available and safe to obtain."
+      ],
+      "responsibility": "EESL handles complaints about assets within its applicable projects; another operator's streetlight needs that operator's channel.",
+      "escalation": "EESL's disclosure lists its grievance cell for complaints not resolved through the regular channels.",
+      "localized": {
+        "ta": {
+          "department": "Energy Efficiency Services Limited (EESL)",
+          "coverage": "EESL பராமரிக்கும் உள்ளூர்த் திட்டத்தின் கீழ் உள்ளதாக உறுதிப்படுத்தப்பட்ட தெருவிளக்குகளுக்கு மட்டும்",
+          "description": "EESL தனது திட்டங்கள் தொடர்பான புகார்களுக்குத் தொடர்பு வழிகளை வெளியிட்டுள்ளது. முதலில், அந்தத் தெருவிளக்கைப் பராமரிப்பது யார் என்பதை உள்ளாட்சி அமைப்பிடம் உறுதிப்படுத்தவும்.",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "தெரு, அருகிலுள்ள அடையாளம், கோளாறு மற்றும் எவ்வளவு காலமாக அதைக் கவனித்தீர்கள் என்பதைக் குறித்துக்கொள்ளவும்.",
+            "கம்ப எண் அல்லது புகைப்படம் கிடைத்தால், பாதுகாப்பாகப் பெற முடிந்தால் மட்டும் சேர்க்கவும்."
+          ],
+          "steps": [
+            "பாதிக்கப்பட்ட தெருவிளக்கை EESL பராமரிக்கிறதா என்பதை உறுதிப்படுத்தவும்.",
+            "EESL வெளியிட்டுள்ள புகார் இணையதளம், தொலைபேசி அல்லது மின்னஞ்சல் மூலம் பிரச்சினையைத் தெரிவிக்கவும்.",
+            "புகார் எண்ணைச் சேமிக்கவும். வழக்கமான புகார் வழியில் தீர்வு கிடைக்காவிட்டால், EESL வெளியிட்டுள்ள குறைதீர் பிரிவிடம் தொடர்நடவடிக்கை குறித்து விசாரிக்கவும்."
+          ],
+          "conditions": [
+            "இந்த வழி இந்தியாவில் உள்ள எல்லாத் தெருவிளக்குகளுக்கும் பொருந்தாது. மாநிலம் அல்லது நகரத்தின் பெயரை மட்டும் வைத்து EESL பொறுப்பு என்று முடிவு செய்ய முடியாது.",
+            "புகார் தயாரிப்புக்கான பரிந்துரைகள் விருப்பத்திற்குரியவை; அவை இணையப் படிவத்தின் கட்டாயத் தேவைகளாக உறுதிப்படுத்தப்பட்டவை அல்ல. சமர்ப்பிக்கும் முன் தற்போதைய படிவத்தைப் பார்க்கவும்."
+          ],
+          "responsibility": "தனது திட்டங்களின் கீழ் உள்ள சாதனங்கள் தொடர்பான புகார்களை EESL கையாளுகிறது. வேறு அமைப்பு பராமரிக்கும் தெருவிளக்கிற்கு அந்த அமைப்பின் புகார் வழியைப் பயன்படுத்தவும்.",
+          "escalation": "வழக்கமான புகார் வழிகளில் தீர்வு கிடைக்காதபோது அணுக வேண்டிய குறைதீர் பிரிவை EESL தனது வெளியீட்டில் குறிப்பிடுகிறது.",
+          "serviceScope": "EESL பராமரிக்கும் திட்டங்களுக்கு மட்டும்",
+          "contactPhone": {
+            "purpose": "EESL திட்டப் புகார்கள்; அந்தத் தெருவிளக்கை EESL பராமரிக்கிறதா என்பதை உறுதிப்படுத்தவும்"
+          },
+          "contactEmail": {
+            "purpose": "நுகர்வோர் புகார்களுக்காக EESL வெளியிட்டுள்ள மின்னஞ்சல்"
+          }
+        },
+        "hi": {
+          "department": "Energy Efficiency Services Limited (EESL)",
+          "coverage": "केवल उस स्थानीय परियोजना की स्ट्रीटलाइटें जिनका रखरखाव EESL करता है और जिसकी पुष्टि हो चुकी है",
+          "description": "EESL अपनी परियोजनाओं की शिकायतों के लिए संपर्क प्रकाशित करता है। पहले स्थानीय निकाय से पुष्टि करें कि स्ट्रीटलाइट का रखरखाव कौन करता है।",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "सड़क, पास का पहचान स्थल, खराबी और आपने इसे कब से देखा है, लिख लें।",
+            "खंभा संख्या या तस्वीर उपलब्ध हो और सुरक्षित ढंग से मिल सके, तभी जोड़ें।"
+          ],
+          "steps": [
+            "पुष्टि करें कि प्रभावित स्ट्रीटलाइट का रखरखाव EESL करता है।",
+            "EESL के प्रकाशित शिकायत पोर्टल, फोन या ईमेल से समस्या बताएँ।",
+            "शिकायत संख्या सुरक्षित रखें। नियमित शिकायत माध्यम से समाधान न मिले तो प्रकाशित EESL शिकायत प्रकोष्ठ से आगे की कार्रवाई पूछें।"
+          ],
+          "conditions": [
+            "यह माध्यम भारत की हर स्ट्रीटलाइट के लिए नहीं है। केवल राज्य या शहर का नाम EESL की जिम्मेदारी साबित नहीं करता।",
+            "तैयारी के सुझाव वैकल्पिक हैं; ये पोर्टल के सत्यापित अनिवार्य विवरणों की सूची नहीं हैं। भेजने से पहले मौजूदा फॉर्म देखें।"
+          ],
+          "responsibility": "EESL अपनी संबंधित परियोजनाओं की संपत्तियों की शिकायतें संभालता है। दूसरे संचालक की स्ट्रीटलाइट के लिए उसी संचालक का माध्यम चुनें।",
+          "escalation": "नियमित माध्यमों से शिकायत हल न होने पर EESL के प्रकाशित विवरण में शिकायत प्रकोष्ठ का संपर्क दिया गया है।",
+          "serviceScope": "केवल EESL के रखरखाव वाली परियोजनाएँ",
+          "contactPhone": {
+            "purpose": "EESL परियोजना की शिकायतें; पुष्टि करें कि स्ट्रीटलाइट का रखरखाव EESL करता है"
+          },
+          "contactEmail": {
+            "purpose": "उपभोक्ता शिकायतों के लिए EESL का प्रकाशित ईमेल"
+          }
+        }
+      }
     },
     {
       "category": "STREETLIGHT",
@@ -50,13 +117,13 @@
       "cityId": "chennai",
       "department": "Greater Chennai Corporation — Electrical Department",
       "coverage": "Streetlights maintained by Greater Chennai Corporation within its jurisdiction",
-      "description": "GCC's Electrical Department installs and maintains its streetlights. Use the municipal complaint system to report a non-burning light.",
+      "description": "GCC's Electrical Department maintains its streetlights. Report a light that is not working through the GCC public grievance service.",
       "steps": [
-        "Describe the streetlight fault with the street, landmark and pole number if available.",
-        "Submit through GCC's complaint system or call its published complaint number.",
-        "Keep the complaint reference when following up with the electrical department."
+        "Confirm that GCC maintains the streetlight.",
+        "Open the GCC complaint portal, choose the relevant complaint type and enter the location and observed problem; alternatively call 1913.",
+        "Review the details before submitting. Keep the complaint number to check status and follow up with the electrical department."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "contactPhone": {
         "number": "1913",
@@ -76,14 +143,81 @@
       },
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/department/electrical/",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://chennaicorporation.gov.in/gcc/",
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://gccservices.in/pgr/registercomplaints",
+        "https://www.chennaicorporation.gov.in/gcc/complaints/"
       ],
       "conditions": [
-        "This is a Chennai municipal channel, not a statewide Tamil Nadu streetlight service."
+        "This channel is for GCC-maintained streetlights in Chennai, not all of Tamil Nadu or every road within the city.",
+        "Preparation suggestions are optional. Follow the current portal's required fields; a photograph is not presented here as mandatory."
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
-      "verificationStatus": "VERIFIED"
+      "verificationStatus": "VERIFIED",
+      "requiredDetails": [],
+      "preparationAdvice": [
+        "Note the street, nearby landmark and when you first noticed the fault.",
+        "Add a pole number or photograph if available and safe to obtain."
+      ],
+      "responsibility": "GCC's Electrical Department installs and maintains streetlights under its responsibility.",
+      "escalation": "Use the complaint number when following up. GCC's electrical and complaints pages list the responsible departmental contacts.",
+      "localized": {
+        "ta": {
+          "department": "பெருநகர சென்னை மாநகராட்சி (GCC) — மின்துறை",
+          "coverage": "GCC எல்லைக்குள் மாநகராட்சி பராமரிக்கும் தெருவிளக்குகள்",
+          "description": "GCC மின்துறை அதன் பொறுப்பில் உள்ள தெருவிளக்குகளைப் பராமரிக்கிறது. எரியாத தெருவிளக்கைப் பற்றி GCC பொதுமக்கள் குறைதீர் சேவையில் புகார் அளிக்கலாம்.",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "தெரு, அருகிலுள்ள அடையாளம், கோளாறை முதலில் கவனித்த நேரம் ஆகியவற்றைக் குறித்துக்கொள்ளவும்.",
+            "கம்ப எண் அல்லது புகைப்படம் கிடைத்தால், பாதுகாப்பாகப் பெற முடிந்தால் சேர்க்கவும்."
+          ],
+          "steps": [
+            "அந்தத் தெருவிளக்கை GCC பராமரிக்கிறதா என்பதை உறுதிப்படுத்தவும்.",
+            "GCC புகார் இணையதளத்தில் பொருத்தமான புகார் வகையைத் தேர்ந்தெடுத்து, இடத்தையும் நீங்கள் கவனித்த பிரச்சினையையும் குறிப்பிடவும்; அல்லது 1913-ஐ அழைக்கவும்.",
+            "சமர்ப்பிக்கும் முன் விவரங்களைச் சரிபார்க்கவும். நிலையை அறியவும் மின்துறையிடம் தொடர்நடவடிக்கை கேட்கவும் புகார் எண்ணைச் சேமிக்கவும்."
+          ],
+          "conditions": [
+            "இந்த வழி சென்னையில் GCC பராமரிக்கும் தெருவிளக்குகளுக்கு மட்டுமே. தமிழ்நாடு முழுவதற்கோ நகரின் எல்லாச் சாலைகளுக்கோ பொருந்தாது.",
+            "புகார் தயாரிப்புக்கான பரிந்துரைகள் விருப்பத்திற்குரியவை. தற்போதைய இணையப் படிவம் கேட்கும் கட்டாய விவரங்களைப் பின்பற்றவும்; புகைப்படம் இங்கே கட்டாயமாகக் குறிப்பிடப்படவில்லை."
+          ],
+          "responsibility": "GCC மின்துறை தனது பொறுப்பில் உள்ள தெருவிளக்குகளை நிறுவிப் பராமரிக்கிறது.",
+          "escalation": "தொடர்நடவடிக்கை கேட்கும்போது புகார் எண்ணைக் குறிப்பிடவும். GCC மின்துறை மற்றும் புகார் பக்கங்களில் பொறுப்பான துறை அலுவலர்களின் தொடர்புகள் உள்ளன.",
+          "contactPhone": {
+            "purpose": "GCC எல்லைக்குட்பட்ட மாநகராட்சிப் புகார்களுக்கு"
+          },
+          "contactEmail": {
+            "purpose": "மின்துறையுடன் கடிதத் தொடர்பு மற்றும் தொடர்நடவடிக்கைக்கு; புகார் எண்ணைப் பெற புகார் இணையதளத்தைப் பயன்படுத்தவும்"
+          }
+        },
+        "hi": {
+          "department": "ग्रेटर चेन्नई कॉर्पोरेशन (GCC) — विद्युत विभाग",
+          "coverage": "GCC के अधिकार क्षेत्र में उसके द्वारा रखरखाव की जाने वाली स्ट्रीटलाइटें",
+          "description": "GCC का विद्युत विभाग अपनी जिम्मेदारी की स्ट्रीटलाइटों का रखरखाव करता है। बंद स्ट्रीटलाइट की शिकायत GCC की जन शिकायत सेवा में करें।",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "सड़क, पास का पहचान स्थल और खराबी पहली बार कब देखी, लिख लें।",
+            "खंभा संख्या या तस्वीर उपलब्ध हो और सुरक्षित ढंग से मिल सके तो जोड़ें।"
+          ],
+          "steps": [
+            "पुष्टि करें कि स्ट्रीटलाइट का रखरखाव GCC करता है।",
+            "GCC शिकायत पोर्टल में उचित शिकायत प्रकार चुनकर स्थान और देखी गई समस्या भरें; या 1913 पर कॉल करें।",
+            "भेजने से पहले विवरण जाँचें। स्थिति देखने और विद्युत विभाग से आगे की कार्रवाई पूछने के लिए शिकायत संख्या सुरक्षित रखें।"
+          ],
+          "conditions": [
+            "यह माध्यम चेन्नई में GCC के रखरखाव वाली स्ट्रीटलाइटों के लिए है, पूरे तमिलनाडु या शहर की हर सड़क के लिए नहीं।",
+            "तैयारी के सुझाव वैकल्पिक हैं। मौजूदा पोर्टल के अनिवार्य विवरण भरें; यहाँ तस्वीर को अनिवार्य नहीं बताया गया है।"
+          ],
+          "responsibility": "GCC का विद्युत विभाग अपनी जिम्मेदारी की स्ट्रीटलाइटें लगाता है और उनका रखरखाव करता है।",
+          "escalation": "आगे की कार्रवाई पूछते समय शिकायत संख्या दें। GCC के विद्युत विभाग और शिकायत पृष्ठों पर संबंधित विभागीय संपर्क उपलब्ध हैं।",
+          "contactPhone": {
+            "purpose": "GCC के अधिकार क्षेत्र की नगर निगम संबंधी शिकायतों के लिए"
+          },
+          "contactEmail": {
+            "purpose": "विद्युत विभाग से पत्राचार और आगे की कार्रवाई के लिए; शिकायत संख्या पाने के लिए शिकायत पोर्टल का उपयोग करें"
+          }
+        }
+      }
     },
     {
       "category": "POLLUTION",

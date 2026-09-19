@@ -8,15 +8,14 @@
       "cityId": null,
       "department": "Swachhata–MoHUA / participating urban local body",
       "coverage": "Participating urban local bodies in India; confirm availability in the app",
-      "description": "The Swachhata app forwards photographed sanitation complaints to the relevant municipal body. This page explains the app; it is not a web submission form.",
+      "description": "Swachhata connects residents with participating municipal bodies for sanitation complaints. The linked page introduces the app; it is not a web complaint form.",
       "requiredDetails": [
-        "Photograph of the issue",
-        "Complaint location"
+        "Issue photograph and complaint location, as described in the government's app overview"
       ],
       "steps": [
-        "Open the official Swachhata platform and follow its citizen-app link.",
-        "Check that your municipal body is supported, then report the waste problem with its location.",
-        "Use the app's updates and feedback to follow the complaint."
+        "Open the official Swachhata page and follow its citizen-app link.",
+        "Check that the local body is supported. Use the app to select the issue, add its location and photograph, and review before submitting.",
+        "Track the complaint in the app and provide feedback on the response."
       ],
       "officialPortal": "https://www.swachh.city/",
       "linkType": "guidance",
@@ -33,12 +32,79 @@
         "Availability depends on the participating local body; this is not a universal municipal complaint channel."
       ],
       "rights": {
-        "responsibility": "The participating municipal body receives the complaint through the Swachhata system.",
-        "complaintOptions": "Report the issue in the citizen app and follow its status updates.",
-        "escalation": "Use the app's comments and feedback for an unresolved complaint.",
-        "sourceUrl": "https://www.swachh.city/"
+        "responsibility": "The participating municipal body receives sanitation complaints through the Swachhata system.",
+        "complaintOptions": "Use the citizen app to report the issue and check its status.",
+        "escalation": "Track updates and give feedback in the app; ask the responsible local body about further follow-up.",
+        "sourceUrl": "https://www.ux4g.gov.in/aboutus/case-studies/ux4g-swachhata.php"
       },
-      "stateSelection": "on_portal"
+      "stateSelection": "on_portal",
+      "preparationAdvice": [
+        "Describe whether collection was missed or waste was dumped, and when you observed it.",
+        "Take any photograph from a safe place."
+      ],
+      "conditions": [
+        "The app overview describes photographs and location tagging. Follow the current app for its exact mandatory fields."
+      ],
+      "localized": {
+        "ta": {
+          "department": "Swachhata–MoHUA / பங்கேற்கும் நகர்ப்புற உள்ளாட்சி அமைப்பு",
+          "coverage": "இந்தியாவில் பங்கேற்கும் நகர்ப்புற உள்ளாட்சி அமைப்புகள்; உங்கள் பகுதிக்கான சேவையைச் செயலியில் உறுதிப்படுத்தவும்",
+          "description": "தூய்மை தொடர்பான புகார்களுக்கு Swachhata, பொதுமக்களைப் பங்கேற்கும் நகராட்சி அமைப்புகளுடன் இணைக்கிறது. இணைப்பில் உள்ள பக்கம் செயலியை அறிமுகப்படுத்துகிறது; அது இணையப் புகார் படிவம் அல்ல.",
+          "requiredDetails": [
+            "அரசின் செயலி அறிமுகத்தில் குறிப்பிடப்பட்டுள்ளபடி, பிரச்சினையின் புகைப்படம் மற்றும் புகார் இடம்"
+          ],
+          "preparationAdvice": [
+            "குப்பை சேகரிக்கப்படவில்லையா அல்லது கொட்டப்பட்டுள்ளதா, எப்போது கவனித்தீர்கள் என்பதைக் குறிப்பிடவும்.",
+            "புகைப்படத்தைப் பாதுகாப்பான இடத்திலிருந்து எடுக்கவும்."
+          ],
+          "steps": [
+            "அதிகாரப்பூர்வ Swachhata பக்கத்தில் பொதுமக்களுக்கான செயலி இணைப்பைத் திறக்கவும்.",
+            "உங்கள் உள்ளாட்சி அமைப்பு பங்கேற்கிறதா என்பதைச் சரிபார்க்கவும். செயலியில் பிரச்சினை வகையைத் தேர்ந்தெடுத்து, இடத்தையும் புகைப்படத்தையும் சேர்த்து, சமர்ப்பிக்கும் முன் சரிபார்க்கவும்.",
+            "செயலியில் புகார் நிலையைப் பார்த்து, எடுக்கப்பட்ட நடவடிக்கை குறித்த உங்கள் கருத்தைப் பதிவு செய்யவும்."
+          ],
+          "conditions": [
+            "அரசின் செயலி அறிமுகம் புகைப்படம் மற்றும் இடக்குறிப்பைப் பற்றிக் கூறுகிறது. தற்போதைய செயலியில் கட்டாயமாகக் கேட்கப்படும் விவரங்களைப் பின்பற்றவும்."
+          ],
+          "exceptions": [
+            "சேவை கிடைப்பது உள்ளாட்சி அமைப்பின் பங்கேற்பைப் பொறுத்தது; எல்லா நகராட்சிகளுக்கும் இந்தப் புகார் வழி கிடைக்கும் என்று உறுதியில்லை."
+          ],
+          "rights": {
+            "responsibility": "பங்கேற்கும் உள்ளாட்சி அமைப்பு Swachhata வழியாகத் தூய்மைப் புகார்களைப் பெறுகிறது.",
+            "complaintOptions": "பொதுமக்களுக்கான செயலியில் புகார் அளித்து அதன் நிலையைப் பார்க்கலாம்.",
+            "escalation": "செயலியில் நிலையைப் பார்த்துக் கருத்து தெரிவிக்கவும்; கூடுதல் தொடர்நடவடிக்கை குறித்து பொறுப்பான உள்ளாட்சி அமைப்பிடம் கேட்கவும்.",
+            "sourceUrl": "https://www.ux4g.gov.in/aboutus/case-studies/ux4g-swachhata.php"
+          }
+        },
+        "hi": {
+          "department": "Swachhata–MoHUA / भाग लेने वाला शहरी स्थानीय निकाय",
+          "coverage": "भारत के भाग लेने वाले शहरी स्थानीय निकाय; ऐप में अपने क्षेत्र की उपलब्धता जाँचें",
+          "description": "Swachhata सफाई की शिकायतों के लिए निवासियों को भाग लेने वाले नगर निकायों से जोड़ता है। दिया गया पृष्ठ ऐप का परिचय है, वेबसाइट पर शिकायत दर्ज करने का फॉर्म नहीं।",
+          "requiredDetails": [
+            "सरकार के ऐप परिचय के अनुसार, समस्या की तस्वीर और शिकायत का स्थान"
+          ],
+          "preparationAdvice": [
+            "बताएँ कि कचरा उठाने वाला नहीं आया या कचरा फेंका गया है, और आपने इसे कब देखा।",
+            "तस्वीर किसी सुरक्षित स्थान से लें।"
+          ],
+          "steps": [
+            "आधिकारिक Swachhata पृष्ठ से नागरिक ऐप का लिंक खोलें।",
+            "जाँचें कि आपका स्थानीय निकाय जुड़ा है। ऐप में समस्या चुनें, स्थान और तस्वीर जोड़ें, फिर भेजने से पहले जाँचें।",
+            "ऐप में शिकायत की स्थिति देखें और कार्रवाई पर अपनी प्रतिक्रिया दें।"
+          ],
+          "conditions": [
+            "सरकारी ऐप परिचय में तस्वीर और स्थान दर्ज करने की सुविधा बताई गई है। अनिवार्य विवरणों के लिए मौजूदा ऐप के निर्देश मानें।"
+          ],
+          "exceptions": [
+            "उपलब्धता स्थानीय निकाय की भागीदारी पर निर्भर है; यह सभी नगर निकायों के लिए सार्वभौमिक शिकायत माध्यम नहीं है।"
+          ],
+          "rights": {
+            "responsibility": "भाग लेने वाला नगर निकाय Swachhata से सफाई संबंधी शिकायतें प्राप्त करता है।",
+            "complaintOptions": "नागरिक ऐप में समस्या बताएँ और उसकी स्थिति देखें।",
+            "escalation": "ऐप में अपडेट देखें और प्रतिक्रिया दें; आगे की कार्रवाई के लिए जिम्मेदार स्थानीय निकाय से पूछें।",
+            "sourceUrl": "https://www.ux4g.gov.in/aboutus/case-studies/ux4g-swachhata.php"
+          }
+        }
+      }
     },
     {
       "category": "WASTE",
@@ -46,14 +112,15 @@
       "stateId": "tn",
       "cityId": "chennai",
       "department": "Greater Chennai Corporation — Solid Waste Management",
-      "coverage": "Greater Chennai Corporation limits",
+      "coverage": "Waste collection and clearance within Greater Chennai Corporation's service area",
       "description": "Report missed household waste collection or garbage dumped in public places within GCC's area.",
       "requiredDetails": [],
       "steps": [
-        "Register through GCC's complaint portal or call 1913.",
-        "Keep the complaint number for tracking."
+        "Confirm that the location is served by GCC.",
+        "Choose the relevant waste complaint on the GCC portal and enter the location and observed problem; alternatively call 1913.",
+        "Review before submitting. Save the complaint number for status checks and departmental follow-up."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "complaintEmail": null,
       "contactEmail": {
@@ -67,18 +134,20 @@
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/department/solid-waste-management/",
         "https://www.chennaicorporation.gov.in/gcc/complaints/",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://chennaicorporation.gov.in/gcc/",
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://gccservices.in/pgr/registercomplaints"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
       "verificationStatus": "VERIFIED",
       "exceptions": [
-        "For locations outside GCC, use your local body's channel or check Swachhata participation."
+        "Outside GCC's service area, use the responsible local body's channel or check participation in Swachhata."
       ],
       "rights": {
-        "responsibility": "GCC's Solid Waste Management department manages waste clearance and door-to-door collection.",
-        "complaintOptions": "GCC online grievance system or 1913.",
-        "escalation": "The official complaints page lists the Solid Waste Management department's supervisory contacts.",
+        "responsibility": "GCC's Solid Waste Management department handles waste clearance and door-to-door collection.",
+        "complaintOptions": "GCC online grievance service or 1913.",
+        "escalation": "Use the complaint number when following up; GCC's complaints page lists supervisory contacts for waste services.",
         "sourceUrl": "https://www.chennaicorporation.gov.in/gcc/complaints/"
       },
       "contactPhone": {
@@ -88,6 +157,81 @@
         "lastVerifiedAt": "2026-09-19",
         "reviewBy": "2026-12-19",
         "verificationStatus": "VERIFIED"
+      },
+      "preparationAdvice": [
+        "Note the street, a nearby landmark, what happened and when.",
+        "Add a photograph if available and safe to take; include an earlier complaint number only if you have one."
+      ],
+      "conditions": [
+        "Preparation suggestions are optional, not a universal list of mandatory documents or evidence. Follow the current portal's required fields."
+      ],
+      "localized": {
+        "ta": {
+          "department": "பெருநகர சென்னை மாநகராட்சி (GCC) — திடக்கழிவு மேலாண்மைத் துறை",
+          "coverage": "GCC சேவைப் பகுதிக்குள் குப்பை சேகரிப்பு மற்றும் அகற்றுதல்",
+          "description": "GCC பகுதியில் வீட்டுக் குப்பை சேகரிக்கப்படாதது அல்லது பொது இடங்களில் குப்பை கொட்டப்பட்டிருப்பது குறித்துப் புகார் அளிக்கலாம்.",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "தெரு, அருகிலுள்ள அடையாளம், என்ன நடந்தது, எப்போது நடந்தது ஆகியவற்றைக் குறித்துக்கொள்ளவும்.",
+            "புகைப்படம் கிடைத்தால், பாதுகாப்பாக எடுக்க முடிந்தால் சேர்க்கவும். ஏற்கெனவே புகார் அளித்திருந்தால் மட்டும் அதன் எண்ணைக் குறிப்பிடவும்."
+          ],
+          "steps": [
+            "அந்த இடத்திற்கு GCC சேவை வழங்குகிறதா என்பதை உறுதிப்படுத்தவும்.",
+            "GCC இணையதளத்தில் பொருத்தமான குப்பைப் புகார் வகையைத் தேர்ந்தெடுத்து, இடத்தையும் நீங்கள் கவனித்த பிரச்சினையையும் குறிப்பிடவும்; அல்லது 1913-ஐ அழைக்கவும்.",
+            "சமர்ப்பிக்கும் முன் சரிபார்க்கவும். நிலையை அறியவும் துறையிடம் தொடர்நடவடிக்கை கேட்கவும் புகார் எண்ணைச் சேமிக்கவும்."
+          ],
+          "conditions": [
+            "புகார் தயாரிப்புக்கான பரிந்துரைகள் விருப்பத்திற்குரியவை; அவை எல்லா இடங்களுக்கும் பொருந்தும் கட்டாய ஆவணங்கள் அல்லது சான்றுகளின் பட்டியல் அல்ல. தற்போதைய இணையப் படிவம் கேட்கும் கட்டாய விவரங்களைப் பின்பற்றவும்."
+          ],
+          "exceptions": [
+            "GCC சேவைப் பகுதிக்கு வெளியே, பொறுப்பான உள்ளாட்சி அமைப்பின் புகார் வழியைப் பயன்படுத்தவும் அல்லது அது Swachhata-வில் பங்கேற்கிறதா என்பதைப் பார்க்கவும்."
+          ],
+          "rights": {
+            "responsibility": "GCC திடக்கழிவு மேலாண்மைத் துறை குப்பை அகற்றுதல் மற்றும் வீடு வீடாகக் குப்பை சேகரித்தலை மேற்கொள்கிறது.",
+            "complaintOptions": "GCC இணையக் குறைதீர் சேவை அல்லது 1913.",
+            "escalation": "தொடர்நடவடிக்கை கேட்கும்போது புகார் எண்ணைக் குறிப்பிடவும். GCC புகார் பக்கத்தில் குப்பை சேவைகளுக்கான மேற்பார்வை அலுவலர்களின் தொடர்புகள் உள்ளன.",
+            "sourceUrl": "https://www.chennaicorporation.gov.in/gcc/complaints/"
+          },
+          "contactPhone": {
+            "purpose": "GCC எல்லைக்குட்பட்ட மாநகராட்சிப் புகார்களுக்கு"
+          },
+          "contactEmail": {
+            "purpose": "திடக்கழிவு மேலாண்மைத் துறையைத் தொடர்புகொள்வதற்கு"
+          }
+        },
+        "hi": {
+          "department": "ग्रेटर चेन्नई कॉर्पोरेशन (GCC) — ठोस कचरा प्रबंधन विभाग",
+          "coverage": "GCC के सेवा क्षेत्र में कचरा संग्रह और सफाई",
+          "description": "GCC क्षेत्र में घर से कचरा न उठाए जाने या सार्वजनिक स्थान पर कचरा फेंके जाने की शिकायत करें।",
+          "requiredDetails": [],
+          "preparationAdvice": [
+            "सड़क, पास का पहचान स्थल, क्या हुआ और कब हुआ, लिख लें।",
+            "तस्वीर उपलब्ध हो और सुरक्षित ढंग से ले सकें तो जोड़ें। पिछली शिकायत संख्या हो तभी लिखें।"
+          ],
+          "steps": [
+            "पुष्टि करें कि उस स्थान पर GCC सेवा देता है।",
+            "GCC पोर्टल पर कचरे से संबंधित शिकायत प्रकार चुनकर स्थान और देखी गई समस्या भरें; या 1913 पर कॉल करें।",
+            "भेजने से पहले जाँचें। स्थिति देखने और विभाग से आगे की कार्रवाई पूछने के लिए शिकायत संख्या सुरक्षित रखें।"
+          ],
+          "conditions": [
+            "तैयारी के सुझाव वैकल्पिक हैं; ये हर जगह लागू होने वाली अनिवार्य दस्तावेज़ों या प्रमाणों की सूची नहीं हैं। मौजूदा पोर्टल के अनिवार्य विवरण भरें।"
+          ],
+          "exceptions": [
+            "GCC के सेवा क्षेत्र के बाहर जिम्मेदार स्थानीय निकाय का शिकायत माध्यम इस्तेमाल करें या Swachhata में उसकी भागीदारी जाँचें।"
+          ],
+          "rights": {
+            "responsibility": "GCC का ठोस कचरा प्रबंधन विभाग कचरा हटाने और घर-घर से कचरा एकत्र करने का काम संभालता है।",
+            "complaintOptions": "GCC ऑनलाइन शिकायत सेवा या 1913।",
+            "escalation": "आगे की कार्रवाई पूछते समय शिकायत संख्या दें। GCC के शिकायत पृष्ठ पर कचरा सेवाओं के पर्यवेक्षी अधिकारियों के संपर्क हैं।",
+            "sourceUrl": "https://www.chennaicorporation.gov.in/gcc/complaints/"
+          },
+          "contactPhone": {
+            "purpose": "GCC के अधिकार क्षेत्र की नगर निगम संबंधी शिकायतों के लिए"
+          },
+          "contactEmail": {
+            "purpose": "ठोस कचरा प्रबंधन विभाग से संपर्क के लिए"
+          }
+        }
       }
     },
     {
@@ -143,7 +287,7 @@
         "Register through GCC's complaint portal or call 1913.",
         "Keep the complaint number for tracking."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "complaintEmail": null,
       "contactEmail": {
@@ -157,7 +301,8 @@
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/department/road/",
         "https://www.chennaicorporation.gov.in/gcc/complaints/",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://chennaicorporation.gov.in/gcc/"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
@@ -193,14 +338,15 @@
         "Register a public-road or footpath obstruction through GCC's complaint portal.",
         "Keep the complaint number and confirm the responsible agency for parked vehicles."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "complaintEmail": null,
       "contactEmail": null,
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/rules-and-procedure/road-maintenance/",
         "https://www.chennaicorporation.gov.in/images/nmt%20english.pdf",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://chennaicorporation.gov.in/gcc/"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
@@ -236,7 +382,7 @@
         "Register through GCC's complaint portal or call 1913.",
         "Keep the complaint number for tracking."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "complaintEmail": null,
       "contactEmail": {
@@ -250,7 +396,8 @@
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/veterinary/about/",
         "https://chennaicorporation.gov.in/gcc/department/health/",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://chennaicorporation.gov.in/gcc/"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",
@@ -364,7 +511,7 @@
         "Register through GCC's complaint portal or call 1913.",
         "Keep the complaint number for tracking."
       ],
-      "officialPortal": "https://erp.chennaicorporation.gov.in/pgr/",
+      "officialPortal": "https://gccservices.chennaicorporation.gov.in/pgr",
       "linkType": "portal",
       "complaintEmail": null,
       "contactEmail": {
@@ -377,7 +524,8 @@
       },
       "sourceUrls": [
         "https://chennaicorporation.gov.in/gcc/department/health/",
-        "https://erp.chennaicorporation.gov.in/pgr/"
+        "https://gccservices.chennaicorporation.gov.in/pgr",
+        "https://chennaicorporation.gov.in/gcc/"
       ],
       "lastVerifiedAt": "2026-09-19",
       "reviewBy": "2026-12-19",

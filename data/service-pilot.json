@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "category": "CASTE",
+      "jurisdictionId": "tn-community-pilot",
+      "stateId": "tn",
+      "cityId": null,
+      "role": "service",
+      "supersedes": [
+        "tn-esevai-caste"
+      ],
+      "serviceName": "Tamil Nadu Community Certificate (REV-101)",
+      "department": "Tamil Nadu Revenue Administration / e-Sevai",
+      "coverage": "Tamil Nadu — REV-101 Community Certificate applications; the Revenue authority decides each claim.",
+      "description": "Apply for the Revenue Department certificate recording your community. This guide covers Tamil Nadu REV-101, with citizen login or assisted application at an e-Sevai centre.",
+      "eligibility": [
+        "The official Tamil Nadu service profile accepts applicants of all ages.",
+        "A Citizen Access Number (CAN) is needed for the e-District application. Register for one if you do not already have it.",
+        "Application access is not proof of entitlement. Confirm community-specific eligibility with the Revenue authority; the reviewed public service pages do not set out every special case."
+      ],
+      "documents": [
+        "Applicant photograph.",
+        "Address proof.",
+        "Applicant self-declaration.",
+        "A father’s, mother’s or sibling’s Community Certificate, if available. The official service profile lists this as optional supporting evidence.",
+        "The service list also names a DNC certificate. Confirm whether that evidence applies to your case; do not treat it as required from every applicant."
+      ],
+      "requiredDetails": [
+        "CAN and the applicant details attached to it.",
+        "Current and permanent address, contact details and community information requested in the application."
+      ],
+      "steps": [
+        "Open the Tamil Nadu e-Sevai portal, choose Citizen Login and register or sign in. An e-Sevai centre can assist if needed.",
+        "Under Revenue Department, choose REV-101 Community Certificate and proceed. Find your CAN, or register a CAN and complete the requested OTP verification.",
+        "Check the applicant and address details, then complete the community-certificate form. Correct CAN details through the portal before continuing if needed.",
+        "Upload the required documents in the file types and sizes shown by the portal. Add applicable supporting evidence and review the declaration.",
+        "Check the displayed amount, complete payment and save the acknowledgement/application number. A saved draft is not a completed application.",
+        "Use Check Status with the application number. If returned, open the service’s Returned application section and address the stated issue. After approval and digital signing, download the certificate or obtain it through the assisting centre."
+      ],
+      "fees": "The published e-Sevai schedule lists ₹0 department/application fee and ₹60 service charge for REV-101. Check the amount displayed before payment and keep the receipt.",
+      "processingTime": null,
+      "onlineOption": "Citizen application through the official Tamil Nadu e-Sevai portal.",
+      "offlineOption": "Visit an e-Sevai centre for assisted online submission and certificate download. This is an assisted counter service, not a verified paper-only application route.",
+      "responsibility": "Tamil Nadu Revenue Administration processes the certificate. The e-Sevai helpdesk supports use of the portal.",
+      "escalation": "Check application status and any return message first. Contact the listed e-Sevai helpdesk for portal problems; it is not a certificate-approval or complaint-submission inbox.",
+      "conditions": [
+        "This checklist applies only to Tamil Nadu REV-101. An OBC Certificate (REV-115) and the separately listed certificate for converted BC Muslim applicants (REV-126) have different service routes.",
+        "The family-certificate item is optional in the official service profile, while the service list includes it among supporting documents. Confirm the evidence requested for your case on the live form or at the centre.",
+        "No processing deadline is published for REV-101 in the reviewed service list. Approval and certificate issue are not guaranteed by completing this checklist."
+      ],
+      "contactEmail": {
+        "address": "tnesevaihelpdesk@tn.gov.in",
+        "purpose": "Tamil Nadu e-Sevai technical portal helpdesk; not an application or complaint-submission inbox",
+        "sourceUrl": "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "contactPhone": {
+        "number": "18004256000",
+        "purpose": "Tamil Nadu e-Sevai portal helpdesk",
+        "sourceUrl": "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx",
+        "lastVerifiedAt": "2026-09-19",
+        "reviewBy": "2026-12-19",
+        "verificationStatus": "VERIFIED"
+      },
+      "checklist": [
+        {
+          "id": "photo",
+          "label": "Applicant photograph",
+          "required": true,
+          "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+        },
+        {
+          "id": "address-proof",
+          "label": "Address proof",
+          "required": true,
+          "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+        },
+        {
+          "id": "self-declaration",
+          "label": "Applicant self-declaration",
+          "required": true,
+          "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+        },
+        {
+          "id": "family-community-evidence",
+          "label": "Family member’s Community Certificate",
+          "required": false,
+          "condition": "Optional supporting evidence: provide a father’s, mother’s or sibling’s certificate if available; confirm any live-form request.",
+          "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+        },
+        {
+          "id": "dnc-applicability",
+          "label": "DNC certificate: check applicability",
+          "required": false,
+          "condition": "The official list names this evidence without explaining when it applies. Ask the e-Sevai centre or Revenue authority before treating it as needed in your case.",
+          "sourceUrl": "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx"
+        },
+        {
+          "id": "can",
+          "label": "Find or register the applicant’s CAN",
+          "required": true,
+          "sourceUrl": "https://www.tnesevai.tn.gov.in/Citizen/PPT/CSCOperator_REV-101_CommunityCertificate.pdf"
+        }
+      ],
+      "officialPortal": "https://www.tnesevai.tn.gov.in/",
+      "linkType": "portal",
+      "complaintEmail": null,
+      "sourceUrls": [
+        "https://serviceonline.gov.in/configuretn/",
+        "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx",
+        "https://tnesevai.tn.gov.in/Pages/EsevaiServiceList.aspx",
+        "https://www.tnesevai.tn.gov.in/citizen/Pages/FAQ.aspx",
+        "https://www.tnesevai.tn.gov.in/Citizen/PPT/CSCOperator_REV-101_CommunityCertificate.pdf",
+        "https://www.tnesevai.tn.gov.in/Citizen/UserManual.html",
+        "https://deg.tn.gov.in/services.html",
+        "https://www.tnesevai.tn.gov.in/Citizen/PortalLogin.aspx"
+      ],
+      "lastVerifiedAt": "2026-09-19",
+      "reviewBy": "2026-12-19",
+      "verificationStatus": "VERIFIED",
+      "localized": {
+        "ta": {
+          "serviceName": "தமிழ்நாடு சாதிச் சான்றிதழ் (REV-101)",
+          "department": "தமிழ்நாடு வருவாய் நிர்வாகம் / இ-சேவை",
+          "coverage": "தமிழ்நாடு — REV-101 சாதிச் சான்றிதழ் விண்ணப்பங்கள்; ஒவ்வொரு கோரிக்கையையும் வருவாய்த் துறை பரிசீலித்து முடிவு செய்கிறது.",
+          "description": "உங்கள் சாதியைப் பதிவு செய்யும் வருவாய்த் துறைச் சான்றிதழுக்கு விண்ணப்பிக்கலாம். இந்த வழிகாட்டி தமிழ்நாட்டின் REV-101 சேவைக்கானது. குடிமக்கள் உள்நுழைவு மூலமாகவோ இ-சேவை மைய உதவியுடனோ விண்ணப்பிக்கலாம்.",
+          "eligibility": [
+            "தமிழ்நாட்டின் அதிகாரப்பூர்வ சேவை விவரப்படி அனைத்து வயதினரும் விண்ணப்பிக்கலாம்.",
+            "இ-மாவட்ட விண்ணப்பத்திற்கு குடிமக்கள் அணுகல் எண் (CAN) தேவை. ஏற்கெனவே இல்லையெனில் பதிவு செய்யவும்.",
+            "விண்ணப்பிக்க முடிவதால் மட்டும் சான்றிதழ் பெறும் தகுதி உறுதியாகாது. உங்கள் சமூகப் பிரிவுக்குரிய தகுதியை வருவாய்த் துறையிடம் உறுதிப்படுத்தவும்; பரிசீலித்த பொதுச் சேவைப் பக்கங்களில் எல்லாச் சிறப்பு நிலைகளும் விளக்கப்படவில்லை."
+          ],
+          "documents": [
+            "விண்ணப்பதாரரின் புகைப்படம்.",
+            "முகவரிச் சான்று.",
+            "விண்ணப்பதாரரின் சுய உறுதிமொழி.",
+            "இருந்தால் தந்தை, தாய் அல்லது உடன்பிறந்தவரின் சாதிச் சான்றிதழ். அதிகாரப்பூர்வ சேவை விவரத்தில் இது விருப்ப ஆதாரமாகக் குறிப்பிடப்பட்டுள்ளது.",
+            "சேவைப் பட்டியலில் DNC சான்றிதழும் குறிப்பிடப்பட்டுள்ளது. அது உங்கள் விண்ணப்பத்திற்குப் பொருந்துமா என்று உறுதிப்படுத்தவும்; அனைவருக்கும் கட்டாயம் எனக் கருத வேண்டாம்."
+          ],
+          "requiredDetails": [
+            "CAN எண் மற்றும் அதில் பதிவான விண்ணப்பதாரர் விவரங்கள்.",
+            "தற்போதைய மற்றும் நிரந்தர முகவரி, தொடர்பு விவரங்கள், விண்ணப்பத்தில் கேட்கப்படும் சமூகப் பிரிவு விவரங்கள்."
+          ],
+          "steps": [
+            "தமிழ்நாடு இ-சேவைத் தளத்தில் குடிமக்கள் உள்நுழைவைத் தேர்ந்தெடுத்து பதிவு செய்யவும் அல்லது உள்நுழையவும். தேவைப்பட்டால் இ-சேவை மையத்தின் உதவியைப் பெறலாம்.",
+            "வருவாய்த் துறையின் கீழ் REV-101 சாதிச் சான்றிதழைத் தேர்ந்தெடுத்து தொடரவும். உங்கள் CAN பதிவைக் கண்டறியவும்; இல்லையெனில் CAN பதிவு செய்து கேட்கப்படும் OTP சரிபார்ப்பை முடிக்கவும்.",
+            "விண்ணப்பதாரர் மற்றும் முகவரி விவரங்களைச் சரிபார்த்து சாதிச் சான்றிதழ் படிவத்தை நிரப்பவும். தேவைப்பட்டால் தொடரும் முன் தளத்தின் வழியாக CAN விவரங்களைத் திருத்தவும்.",
+            "தளத்தில் குறிப்பிடப்பட்ட கோப்பு வகை மற்றும் அளவின்படி தேவையான ஆவணங்களைப் பதிவேற்றவும். பொருந்தும் கூடுதல் ஆதாரங்களைச் சேர்த்து உறுதிமொழியைச் சரிபார்க்கவும்.",
+            "காட்டப்படும் தொகையைச் சரிபார்த்து பணம் செலுத்தவும்; ஒப்புகை மற்றும் விண்ணப்ப எண்ணைச் சேமிக்கவும். வரைவைச் சேமிப்பது மட்டும் விண்ணப்பத்தை முடிப்பதாகாது.",
+            "விண்ணப்ப எண்ணுடன் Check Status பகுதியைப் பார்க்கவும். திருப்பி அனுப்பப்பட்டிருந்தால் அந்தச் சேவையின் Returned application பகுதியில் காரணத்தைப் பார்த்து சரிசெய்யவும். ஒப்புதல் மற்றும் மின்னொப்பத்திற்குப் பிறகு சான்றிதழைப் பதிவிறக்கவும் அல்லது உதவிய இ-சேவை மையத்தில் பெறவும்."
+          ],
+          "fees": "வெளியிடப்பட்ட இ-சேவை அட்டவணையில் REV-101க்கு துறை/விண்ணப்பக் கட்டணம் ₹0, சேவைக் கட்டணம் ₹60 என உள்ளது. செலுத்தும் முன் தளத்தில் காட்டப்படும் தொகையைச் சரிபார்த்து ரசீதை வைத்திருக்கவும்.",
+          "processingTime": null,
+          "onlineOption": "தமிழ்நாடு அரசின் இ-சேவைத் தளத்தில் குடிமக்கள் விண்ணப்பம்.",
+          "offlineOption": "ஆன்லைன் விண்ணப்பம் மற்றும் சான்றிதழ் பதிவிறக்கத்திற்கான உதவிக்கு இ-சேவை மையத்திற்குச் செல்லவும். இது நேரடி மையத்தில் உதவியுடன் வழங்கப்படும் இணையச் சேவை; காகித விண்ணப்பம் மட்டுமே ஏற்கப்படும் வழியாகச் சரிபார்க்கப்படவில்லை.",
+          "responsibility": "சான்றிதழைத் தமிழ்நாடு வருவாய் நிர்வாகம் பரிசீலிக்கிறது. இ-சேவை உதவி மையம் தளத்தைப் பயன்படுத்த உதவுகிறது.",
+          "escalation": "முதலில் விண்ணப்ப நிலை மற்றும் திருப்பி அனுப்பப்பட்டதற்கான செய்தியைப் பார்க்கவும். தளத் தொழில்நுட்பச் சிக்கல்களுக்கு பட்டியலிட்ட இ-சேவை உதவி மையத்தை அணுகவும்; அது சான்றிதழுக்கு ஒப்புதல் வழங்கும் அல்லது புகார் சமர்ப்பிக்கும் மின்னஞ்சல் முகவரி அல்ல.",
+          "conditions": [
+            "இந்தப் பட்டியல் தமிழ்நாட்டின் REV-101 சேவைக்கு மட்டுமே. OBC சான்றிதழ் (REV-115), மதம் மாறிய பிற்படுத்தப்பட்ட முஸ்லிம் விண்ணப்பதாரர்களுக்கான தனிச் சான்றிதழ் (REV-126) ஆகியவற்றுக்குத் தனி சேவைகள் உள்ளன.",
+            "அதிகாரப்பூர்வ சேவை விவரத்தில் குடும்ப உறுப்பினரின் சான்றிதழ் விருப்ப ஆதாரம் என உள்ளது; சேவைப் பட்டியலிலும் அது ஆதார ஆவணமாக இடம்பெற்றுள்ளது. உங்கள் விண்ணப்பத்திற்கு வேண்டிய ஆதாரத்தை நடப்பு படிவம் அல்லது மையத்தில் உறுதிப்படுத்தவும்.",
+            "பரிசீலித்த சேவைப் பட்டியலில் REV-101க்கான காலக்கெடு வெளியிடப்படவில்லை. இந்தப் பட்டியலை முடிப்பதால் ஒப்புதலோ சான்றிதழ் வழங்குவதோ உறுதி செய்யப்படாது."
+          ],
+          "contactEmail": {
+            "purpose": "தமிழ்நாடு இ-சேவைத் தளத்தின் தொழில்நுட்ப உதவி; விண்ணப்பம் அல்லது புகார் சமர்ப்பிக்கும் முகவரி அல்ல"
+          },
+          "contactPhone": {
+            "purpose": "தமிழ்நாடு இ-சேவைத் தள உதவி மையம்"
+          },
+          "checklist": [
+            {
+              "id": "photo",
+              "label": "விண்ணப்பதாரரின் புகைப்படம்",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "address-proof",
+              "label": "முகவரிச் சான்று",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "self-declaration",
+              "label": "விண்ணப்பதாரரின் சுய உறுதிமொழி",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "family-community-evidence",
+              "label": "குடும்ப உறுப்பினரின் சாதிச் சான்றிதழ்",
+              "required": false,
+              "condition": "விருப்ப ஆதாரம்: இருந்தால் தந்தை, தாய் அல்லது உடன்பிறந்தவரின் சான்றிதழை வழங்கவும்; நடப்பு படிவத்தின் தேவையை உறுதிப்படுத்தவும்.",
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "dnc-applicability",
+              "label": "DNC சான்றிதழ்: பொருந்துமா எனச் சரிபார்க்கவும்",
+              "required": false,
+              "condition": "எப்போது தேவை என்பதை விளக்காமல் அதிகாரப்பூர்வ பட்டியல் இந்த ஆதாரத்தைக் குறிப்பிடுகிறது. உங்கள் விண்ணப்பத்திற்கு இது தேவையா என்பதை இ-சேவை மையம் அல்லது வருவாய்த் துறையிடம் கேட்கவும்.",
+              "sourceUrl": "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx"
+            },
+            {
+              "id": "can",
+              "label": "விண்ணப்பதாரரின் CAN எண்ணைக் கண்டறியவும் அல்லது பதிவு செய்யவும்",
+              "required": true,
+              "sourceUrl": "https://www.tnesevai.tn.gov.in/Citizen/PPT/CSCOperator_REV-101_CommunityCertificate.pdf"
+            }
+          ]
+        },
+        "hi": {
+          "serviceName": "तमिलनाडु समुदाय/जाति प्रमाणपत्र (REV-101)",
+          "department": "तमिलनाडु राजस्व प्रशासन / ई-सेवई",
+          "coverage": "तमिलनाडु — REV-101 समुदाय प्रमाणपत्र के आवेदन; हर दावे का निर्णय राजस्व अधिकारी करते हैं।",
+          "description": "अपने समुदाय का अभिलेख देने वाले राजस्व विभाग के प्रमाणपत्र के लिए आवेदन करें। यह मार्गदर्शिका तमिलनाडु की REV-101 सेवा के लिए है। नागरिक लॉगिन से या ई-सेवई केंद्र की सहायता से आवेदन किया जा सकता है।",
+          "eligibility": [
+            "तमिलनाडु की आधिकारिक सेवा जानकारी के अनुसार सभी आयु के आवेदक आवेदन कर सकते हैं।",
+            "ई-डिस्ट्रिक्ट आवेदन के लिए Citizen Access Number (CAN) जरूरी है। पहले से न हो तो उसका पंजीकरण करें।",
+            "आवेदन कर पाना पात्रता का प्रमाण नहीं है। अपने समुदाय से जुड़ी पात्रता राजस्व अधिकारी से सुनिश्चित करें; जाँचे गए सार्वजनिक सेवा पृष्ठ हर विशेष परिस्थिति का विवरण नहीं देते।"
+          ],
+          "documents": [
+            "आवेदक का फोटो।",
+            "पते का प्रमाण।",
+            "आवेदक की स्व-घोषणा।",
+            "उपलब्ध होने पर पिता, माता या भाई-बहन का समुदाय प्रमाणपत्र। आधिकारिक सेवा जानकारी इसे वैकल्पिक सहायक दस्तावेज बताती है।",
+            "सेवा सूची में DNC प्रमाणपत्र भी है। अपने मामले में इसकी जरूरत की पुष्टि करें; इसे हर आवेदक के लिए अनिवार्य न मानें।"
+          ],
+          "requiredDetails": [
+            "CAN और उससे जुड़े आवेदक के विवरण।",
+            "वर्तमान और स्थायी पता, संपर्क विवरण तथा आवेदन में माँगी गई समुदाय की जानकारी।"
+          ],
+          "steps": [
+            "तमिलनाडु ई-सेवई पोर्टल पर Citizen Login चुनकर पंजीकरण करें या लॉगिन करें। जरूरत हो तो ई-सेवई केंद्र की सहायता लें।",
+            "Revenue Department में REV-101 Community Certificate चुनकर आगे बढ़ें। अपना CAN खोजें; न हो तो CAN पंजीकरण और माँगा गया OTP सत्यापन पूरा करें।",
+            "आवेदक और पते के विवरण जाँचें, फिर समुदाय प्रमाणपत्र का फॉर्म भरें। जरूरत हो तो आगे बढ़ने से पहले पोर्टल से CAN विवरण सुधारें।",
+            "पोर्टल में बताए फाइल प्रकार और आकार के अनुसार जरूरी दस्तावेज अपलोड करें। लागू सहायक प्रमाण जोड़ें और घोषणा की समीक्षा करें।",
+            "दिखाई गई राशि जाँचकर भुगतान पूरा करें और रसीद/आवेदन संख्या संभालें। केवल ड्राफ्ट सहेजने से आवेदन पूरा नहीं होता।",
+            "आवेदन संख्या से Check Status देखें। आवेदन वापस आया हो तो उस सेवा के Returned application भाग में कारण देखकर सुधारें। स्वीकृति और डिजिटल हस्ताक्षर के बाद प्रमाणपत्र डाउनलोड करें या सहायता देने वाले केंद्र से प्राप्त करें।"
+          ],
+          "fees": "प्रकाशित ई-सेवई शुल्क सूची में REV-101 का विभाग/आवेदन शुल्क ₹0 और सेवा शुल्क ₹60 है। भुगतान से पहले दिखाई गई राशि जाँचें और रसीद रखें।",
+          "processingTime": null,
+          "onlineOption": "तमिलनाडु के आधिकारिक ई-सेवई पोर्टल से नागरिक आवेदन।",
+          "offlineOption": "ऑनलाइन आवेदन और प्रमाणपत्र डाउनलोड में सहायता के लिए ई-सेवई केंद्र जाएँ। यह केंद्र पर सहायता से मिलने वाली ऑनलाइन सेवा है; केवल कागजी आवेदन की अलग प्रक्रिया सत्यापित नहीं है।",
+          "responsibility": "तमिलनाडु राजस्व प्रशासन प्रमाणपत्र का आवेदन देखता है। ई-सेवई हेल्पडेस्क पोर्टल के उपयोग में सहायता करता है।",
+          "escalation": "पहले आवेदन की स्थिति और लौटाए जाने का संदेश देखें। पोर्टल की तकनीकी समस्या के लिए सूचीबद्ध ई-सेवई हेल्पडेस्क से संपर्क करें; यह प्रमाणपत्र स्वीकृति या शिकायत जमा करने का ईमेल पता नहीं है।",
+          "conditions": [
+            "यह सूची केवल तमिलनाडु की REV-101 सेवा के लिए है। OBC प्रमाणपत्र (REV-115) और धर्म परिवर्तन करने वाले BC मुस्लिम आवेदकों का अलग प्रमाणपत्र (REV-126) अलग सेवाएँ हैं।",
+            "आधिकारिक सेवा जानकारी परिवार के प्रमाणपत्र को वैकल्पिक बताती है, जबकि सेवा सूची में यह सहायक दस्तावेज के रूप में है। अपने मामले की जरूरत वर्तमान फॉर्म या केंद्र से सुनिश्चित करें।",
+            "जाँची गई सेवा सूची में REV-101 के लिए समयसीमा प्रकाशित नहीं है। इस सूची को पूरा करना स्वीकृति या प्रमाणपत्र मिलने की गारंटी नहीं है।"
+          ],
+          "contactEmail": {
+            "purpose": "तमिलनाडु ई-सेवई पोर्टल की तकनीकी सहायता; आवेदन या शिकायत जमा करने का पता नहीं"
+          },
+          "contactPhone": {
+            "purpose": "तमिलनाडु ई-सेवई पोर्टल हेल्पडेस्क"
+          },
+          "checklist": [
+            {
+              "id": "photo",
+              "label": "आवेदक का फोटो",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "address-proof",
+              "label": "पते का प्रमाण",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "self-declaration",
+              "label": "आवेदक की स्व-घोषणा",
+              "required": true,
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "family-community-evidence",
+              "label": "परिवार के सदस्य का समुदाय प्रमाणपत्र",
+              "required": false,
+              "condition": "वैकल्पिक सहायक प्रमाण: उपलब्ध हो तो पिता, माता या भाई-बहन का प्रमाणपत्र दें; वर्तमान फॉर्म की माँग सुनिश्चित करें।",
+              "sourceUrl": "https://serviceonline.gov.in/configuretn/"
+            },
+            {
+              "id": "dnc-applicability",
+              "label": "DNC प्रमाणपत्र: जरूरत की पुष्टि करें",
+              "required": false,
+              "condition": "आधिकारिक सूची में यह प्रमाण है, लेकिन कब जरूरी है यह नहीं बताया गया है। अपने मामले में इसकी जरूरत ई-सेवई केंद्र या राजस्व अधिकारी से पूछें।",
+              "sourceUrl": "https://tnesevai.tn.gov.in/Pages/ServiceList.aspx"
+            },
+            {
+              "id": "can",
+              "label": "आवेदक का CAN खोजें या पंजीकरण करें",
+              "required": true,
+              "sourceUrl": "https://www.tnesevai.tn.gov.in/Citizen/PPT/CSCOperator_REV-101_CommunityCertificate.pdf"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

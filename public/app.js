@@ -1,8 +1,10 @@
 import {content} from './content.js';
 import {catalog,groups,pick,extraText} from './catalog.js';
+import {createSessionState} from './session-state.js';
 const $=id=>document.getElementById(id);
 let selected='auto',currentLanguage='en',result=null,mode='local',busy=false;
-let subjectChoice,stateId,choiceRequest='',stateRequestKey='';
+let subjectChoice,stateId,authorityId,choiceRequest='',stateRequestKey='',factsRequest='',facts={};
+const session=createSessionState();
 const langNames={en:'English',ta:'தமிழ்',hi:'हिन्दी'};
 function localize(lang){
  currentLanguage=lang;document.documentElement.lang=lang;const c=content[lang];
@@ -18,8 +20,8 @@ function localize(lang){
  $('step2').textContent=pick(['Find the right official channel','சரியான அதிகாரப்பூர்வ வழியைக் கண்டறியவும்','सही आधिकारिक माध्यम पाएँ'],lang);
  $('step2-desc').textContent=pick(['Use common links directly. Choose a state for regional links and contacts.','பொதுவான இணைப்புகளை நேரடியாகப் பயன்படுத்தவும். மாநில இணைப்புகள் மற்றும் தொடர்புகளுக்கு மாநிலத்தைத் தேர்ந்தெடுக்கவும்.','साझा लिंक सीधे खोलें। क्षेत्रीय लिंक और संपर्कों के लिए राज्य चुनें।'],lang);
  $('step3-desc').textContent=pick(['Edit a message, copy it or open an email draft.','செய்தியைத் திருத்தி, நகலெடுக்கவும் அல்லது மின்னஞ்சல் வரைவைத் திறக்கவும்.','संदेश संपादित करें, कॉपी करें या ईमेल मसौदा खोलें।'],lang);
- let picker=$('catalog');if(!picker){picker=node('section');picker.id='catalog';$('mode').before(picker);}
- picker.replaceChildren();
+ let picker=$('catalog');if(!picker){picker=node('details');picker.id='catalog';$('mode').before(picker);}
+ picker.replaceChildren(node('summary',say(lang,'Browse all services and complaints','அனைத்து சேவைகள் மற்றும் புகார்களைக் காண்க','सभी सेवाएँ और शिकायतें देखें')));
  for(const kind of ['service','civic']){const section=node('section',undefined,'category-section');section.append(node('h2',kind==='service'?c.service:c.civic));for(const [groupId,label] of Object.entries(groups)){const entries=Object.entries(catalog).filter(([,r])=>r.kind===kind&&r.group===groupId);if(!entries.length)continue;const group=node('div',undefined,'category-group');group.append(node('h3',pick(label,lang)));const buttons=node('div',undefined,'examples');for(const [id,entry] of entries){const button=node('button',pick(entry.title,lang));button.type='button';button.dataset.category=id;button.onclick=()=>{$('request').value=pick(entry.title,lang);subjectChoice=id;choiceRequest=$('request').value;submit();};buttons.append(button);}group.append(buttons);section.append(group);}picker.append(section);}
  document.querySelectorAll('[data-lang]').forEach(b=>{b.classList.toggle('selected',b.dataset.lang===selected);b.setAttribute('aria-pressed',String(b.dataset.lang===selected));});
 }
@@ -35,19 +37,25 @@ function emailUrl(address,subject,body){
  if(body)query.push(`body=${encodeURIComponent(body.replace(/\r\n|\r|\n/g,'\r\n'))}`);
  return `mailto:${encodeURIComponent(address).replace(/%40/g,'@')}${query.length?'?'+query.join('&'):''}`;
 }
-function actionPanel(card,data,c){
+const draftContext=data=>JSON.stringify([data.language,data.category,data.stateId,data.confirmedAuthority?.id,data.draft]);
+function actionPanel(card,data,c,focus=true){
  const existing=card.querySelector('.action-panel');if(existing){existing.querySelector('textarea').focus();return;}
  const lang=data.language,panel=node('section',undefined,'action-panel');panel.tabIndex=-1;
  const title=say(lang,'Your message draft','உங்கள் செய்தி வரைவு','आपके संदेश का मसौदा');
  panel.append(node('h3',title),node('p',say(lang,'Review and edit before sending. Nothing is sent by this application.','அனுப்பும் முன் சரிபார்த்துத் திருத்தவும். இந்தச் செயலி எதையும் அனுப்பாது.','भेजने से पहले जाँचें और संपादित करें। यह ऐप कुछ भी नहीं भेजता।')));
- const draft=node('textarea',undefined,'draft');draft.value=data.draft;draft.setAttribute('aria-label',title);panel.append(draft);
+ const saved=session.openDraft(data.requestKey,data.draft,draftContext(data));
+ const draft=node('textarea',undefined,'draft');draft.value=saved.text;draft.setAttribute('aria-label',title);panel.append(draft);
+ if(saved.preserved)panel.append(node('p',say(lang,'Your edits were kept. Review the language, recipient and coverage again, or replace them with a new draft.','உங்கள் திருத்தங்கள் பாதுகாக்கப்பட்டுள்ளன. மொழி, பெறுநர் மற்றும் சேவைப் பகுதியை மீண்டும் சரிபார்க்கவும் அல்லது புதிய வரைவைப் பயன்படுத்தவும்.','आपके बदलाव सुरक्षित हैं। भाषा, प्राप्तकर्ता और सेवा क्षेत्र दोबारा जाँचें या नया मसौदा चुनें।'),'notice'));
+ draft.addEventListener('input',()=>session.editDraft(data.requestKey,draft.value));
  const controls=node('div',undefined,'draft-controls');
  const edit=node('button',say(lang,'Edit','திருத்து','संपादित करें'),'secondary');edit.onclick=()=>draft.focus();
  const copy=node('button',say(lang,'Copy','நகலெடு','कॉपी करें'),'secondary');
  const feedback=node('p');feedback.setAttribute('role','status');
  copy.onclick=async()=>{try{await navigator.clipboard.writeText(draft.value);feedback.textContent=say(lang,'Copied','நகலெடுக்கப்பட்டது','कॉपी किया गया');}catch{draft.focus();draft.select();feedback.textContent=say(lang,'Select and copy the draft using your keyboard.','விசைப்பலகை மூலம் வரைவை நகலெடுக்கவும்.','कीबोर्ड से मसौदे को चुनें और कॉपी करें।');}};
  const save=node('button',say(lang,'Download','பதிவிறக்கு','डाउनलोड'),'secondary');save.onclick=()=>download(draft.value,'message-draft.txt');controls.append(edit,copy,save);panel.append(controls,feedback);
- const contacts=[...(data.officialOptions||[]),...(data.followUpOptions||[])].filter((o,i,all)=>o.contactEmail?.draftAllowed&&all.findIndex(x=>x.contactEmail?.address===o.contactEmail.address)===i);
+ const replace=node('button',say(lang,'Use new draft','புதிய வரைவைப் பயன்படுத்து','नया मसौदा उपयोग करें'),'secondary');replace.onclick=()=>{if(session.draft(data.requestKey)?.dirty&&!confirm(say(lang,'Replace your edits with a new draft using the current details?','உங்கள் திருத்தங்களை நீக்கி தற்போதைய விவரங்களுடன் புதிய வரைவைப் பயன்படுத்தவா?','आपके बदलाव हटाकर वर्तमान विवरण से नया मसौदा बनाएँ?')))return;session.resetDraft(data.requestKey,data.draft,draftContext(data));panel.remove();actionPanel(card,data,c);};controls.append(replace);
+ const eligible=(data.officialOptions||[]).filter(o=>!o.requiresConfirmation&&o.contactEmail?.draftAllowed);
+ const contacts=eligible.filter((o,i,all)=>all.findIndex(x=>x.contactEmail.address===o.contactEmail.address)===i);
  if(contacts.length){
   const review=node('label',undefined,'review-row'),check=node('input');check.type='checkbox';review.append(check,node('span',say(lang,'I reviewed the message, recipient and service coverage.','செய்தி, பெறுநர் மற்றும் சேவைப் பகுதியைச் சரிபார்த்தேன்.','मैंने संदेश, प्राप्तकर्ता और सेवा क्षेत्र की समीक्षा की है।')));panel.append(review);
   const emails=[];
@@ -56,7 +64,7 @@ function actionPanel(card,data,c){
   const update=()=>{for(const [a,address] of emails){a.setAttribute('aria-disabled',String(!check.checked));a.tabIndex=check.checked?0:-1;if(check.checked)a.href=emailUrl(address,data.title,draft.value);else a.removeAttribute('href');}};
   check.onchange=update;draft.oninput=()=>{check.checked=false;update();};update();
  }
- card.append(panel);panel.focus();
+ card.append(panel);if(focus)panel.focus();
 }
 function renderChannel(option,data){
  const lang=data.language,c=content[lang],channel=node('section',undefined,'service-channel');
@@ -66,6 +74,7 @@ function renderChannel(option,data){
  if(option.eligibility)paragraph(channel,say(lang,'Who can apply','விண்ணப்பத் தகுதி','कौन आवेदन कर सकता है'),Array.isArray(option.eligibility)?option.eligibility.join(' '):option.eligibility);
  if(option.documents?.length)list(channel,say(lang,'Published document guidance','வெளியிடப்பட்ட ஆவண வழிகாட்டல்','प्रकाशित दस्तावेज़ मार्गदर्शन'),option.documents);
  if(option.requiredDetails?.length)list(channel,say(lang,'Details for this channel','இந்த வழிக்கான விவரங்கள்','इस माध्यम के लिए विवरण'),option.requiredDetails);
+ if(option.preparationAdvice?.length)list(channel,say(lang,'Optional preparation advice','விருப்பமான தயாரிப்பு ஆலோசனைகள்','वैकल्पिक तैयारी के सुझाव'),option.preparationAdvice);
  if(option.fees)paragraph(channel,say(lang,'Published fees','வெளியிடப்பட்ட கட்டணம்','प्रकाशित शुल्क'),option.fees);
  if(option.processingTime)paragraph(channel,say(lang,'Published timing','வெளியிடப்பட்ட கால அளவு','प्रकाशित समय'),option.processingTime);
  if(option.offlineOption)paragraph(channel,say(lang,'Offline option','நேரடி விண்ணப்ப வழி','ऑफलाइन विकल्प'),option.offlineOption);
@@ -87,10 +96,56 @@ function renderChannel(option,data){
  for(const [i,url] of urls.entries())sources.append(externalLink(`${say(lang,'Source','ஆதாரம்','स्रोत')} ${i+1} · ${new URL(url).hostname} ↗`,url));
  channel.append(sources);return channel;
 }
+function checklistPanel(card,data){
+ const existing=card.querySelector('.checklist-panel');if(existing){existing.focus();return;}
+ const lang=data.language,c=content[lang],panel=node('section',undefined,'checklist-panel');panel.tabIndex=-1;
+ panel.append(node('h3',c.checklistTitle),node('p',say(lang,'Mark an item after preparing it or confirming that its condition does not apply. This is preparation, not an application or an eligibility decision. Progress stays only in this open page.','ஆவணத்தைத் தயாரித்ததும் அல்லது நிபந்தனை உங்களுக்குப் பொருந்தாது என்பதை உறுதி செய்ததும் குறிக்கவும். இது தயாரிப்புப் பட்டியல் மட்டுமே; விண்ணப்பமோ தகுதி முடிவோ அல்ல. முன்னேற்றம் இந்தப் பக்கம் திறந்திருக்கும் வரை மட்டுமே இருக்கும்.','विवरण तैयार होने पर या शर्त लागू न होने की पुष्टि के बाद चिह्न लगाएँ। यह तैयारी है, आवेदन या पात्रता का निर्णय नहीं। प्रगति केवल इस खुले पृष्ठ में रहती है।')));
+ const options=data.officialOptions.filter(o=>o.checklist?.length);
+ const rows=[];
+ for(const option of options){
+  panel.append(node('h3',option.department),node('p',`${option.coverage} · ${c.verified}: ${option.lastVerifiedAt}`));
+  for(const item of option.checklist){
+   const row=node('div',undefined,'checklist-item'),label=node('label',undefined,'check-row'),check=node('input');check.type='checkbox';check.checked=session.checklist(option.id).has(item.id);
+   const text=node('span',item.label);if(item.condition)text.append(node('small',`${say(lang,'Condition','நிபந்தனை','शर्त')}: ${item.condition}`));else if(!item.required)text.append(node('small',say(lang,'If applicable — confirm with the authority','பொருந்தினால் மட்டும் — அதிகாரியிடம் உறுதிப்படுத்தவும்','यदि लागू हो — प्राधिकरण से पुष्टि करें')));
+   label.append(check,text);row.append(label,externalLink(say(lang,'Official requirement source ↗','அதிகாரப்பூர்வ ஆவண ஆதாரம் ↗','आधिकारिक आवश्यकता का स्रोत ↗'),item.sourceUrl));panel.append(row);
+   rows.push({option,item,check});check.onchange=()=>{session.check(option.id,item.id,check.checked);update();};
+  }
+ }
+ const progress=node('p',undefined,'checklist-progress');progress.setAttribute('role','status');
+ const update=()=>{progress.textContent=`${rows.filter(r=>r.check.checked).length} / ${rows.length} ${c.progress}`;};update();panel.append(progress);
+ const controls=node('div',undefined,'draft-controls'),save=node('button',c.checklistDownload,'secondary');
+ save.onclick=()=>download([data.title,...options.map(o=>`${o.department}\n${o.coverage}\n${c.verified}: ${o.lastVerifiedAt}\n${o.officialPortal}`),...rows.map(({item,check})=>`${check.checked?'[x]':'[ ]'} ${item.label}${item.condition?' — '+item.condition:''}\n${item.sourceUrl}`)].join('\n\n'),'service-checklist.txt');
+ controls.append(save);for(const option of options)controls.append(externalLink(c.portal,option.officialPortal));panel.append(controls);card.append(panel);panel.focus();
+}
+
+function factReview(card,data){
+ const lang=data.language,details=node('details',undefined,'fact-review');details.append(node('summary',say(lang,'Review location and complaint details','இடம் மற்றும் புகார் விவரங்களைச் சரிபார்க்கவும்','स्थान और शिकायत का विवरण जाँचें')));
+ const fieldset=node('div',undefined,'fact-fields'),inputs={};
+ const fields=[['location',say(lang,'City / locality (optional)','நகரம் / பகுதி (விருப்பம்)','शहर / इलाका (वैकल्पिक)')],['duration',say(lang,'Duration (optional)','கால அளவு (விருப்பம்)','अवधि (वैकल्पिक)')],['street',say(lang,'Street (optional)','தெரு (விருப்பம்)','सड़क (वैकल्पिक)')],['landmark',say(lang,'Landmark (optional)','அடையாளம் (விருப்பம்)','पहचान स्थल (वैकल्पिक)')],['ward',say(lang,'Ward (optional)','வார்டு (விருப்பம்)','वार्ड (वैकल्पिक)')]];
+ if(data.category==='STREETLIGHT')fields.push(['poleNumber',say(lang,'Pole number (if available)','கம்ப எண் (இருந்தால்)','खंभा संख्या (यदि उपलब्ध हो)')]);
+ for(const [key,title] of fields){const label=node('label',title),input=node('input');input.type='text';input.maxLength=180;input.value=facts[key]??data.entities?.[key]??'';input.autocomplete='off';label.append(input);fieldset.append(label);inputs[key]=input;}
+ const use=node('button',say(lang,'Use these details','இந்த விவரங்களைப் பயன்படுத்து','इन विवरणों का उपयोग करें'),'secondary');use.type='button';use.onclick=()=>{facts=Object.fromEntries(Object.entries(inputs).map(([key,input])=>[key,input.value.trim()]));authorityId=undefined;submit();};
+ fieldset.append(use,node('small',say(lang,'A place name does not confirm which authority owns the asset. Confirm coverage below.','இடத்தின் பெயர் மட்டும் பொறுப்பான அதிகாரியை உறுதி செய்யாது. கீழே சேவைப் பகுதியை உறுதிப்படுத்தவும்.','स्थान का नाम संपत्ति के जिम्मेदार प्राधिकरण की पुष्टि नहीं करता। नीचे सेवा क्षेत्र की पुष्टि करें।')));details.append(fieldset);card.append(details);
+}
+
+function authorityReview(card,data){
+ if(!data.authorityChoices?.length&&!data.confirmedAuthority&&!data.authorityDeclined)return;
+ const lang=data.language,section=node('section',undefined,'authority-review');
+ if(data.authorityDeclined){section.append(node('p',say(lang,'Service coverage is not confirmed. You can still prepare a complaint.','சேவைப் பகுதி உறுதிப்படுத்தப்படவில்லை. புகார் வரைவைத் தயாரிக்கலாம்.','सेवा क्षेत्र की पुष्टि नहीं हुई है। आप फिर भी शिकायत का मसौदा बना सकते हैं।')));const retry=node('button',say(lang,'Review available authorities','கிடைக்கும் அதிகாரிகளை மீண்டும் பார்க்கவும்','उपलब्ध प्राधिकरण फिर देखें'),'secondary');retry.onclick=()=>{authorityId=undefined;submit();};section.append(retry);card.append(section);return;}
+ if(data.confirmedAuthority){section.append(node('h3',say(lang,'Confirmed service coverage','உறுதிப்படுத்தப்பட்ட சேவைப் பகுதி','पुष्ट सेवा क्षेत्र')),node('p',data.confirmedAuthority.coverage));const change=node('button',say(lang,'Change authority','அதிகாரியை மாற்று','प्राधिकरण बदलें'),'secondary');change.onclick=()=>{authorityId=undefined;submit();};section.append(change);}
+ else{
+  section.append(node('h3',say(lang,'Confirm the responsible authority','பொறுப்பான அதிகாரியை உறுதிப்படுத்தவும்','जिम्मेदार प्राधिकरण की पुष्टि करें')),node('p',say(lang,'Open a local channel only after checking its coverage. Your city name alone is not enough.','சேவைப் பகுதியைச் சரிபார்த்த பின்னரே உள்ளூர் வழியைத் திறக்கவும். நகரத்தின் பெயர் மட்டும் போதாது.','सेवा क्षेत्र जाँचकर ही स्थानीय माध्यम खोलें। केवल शहर का नाम पर्याप्त नहीं है।')));
+  for(const option of data.authorityChoices){const choice=node('div',undefined,'authority-choice');choice.append(node('strong',option.department),node('p',option.coverage));if(option.serviceScope)choice.append(node('p',option.serviceScope));const confirm=node('button',say(lang,'This authority covers my issue','இந்த அதிகாரியின் சேவைப் பகுதிக்குள் என் புகார் உள்ளது','मेरी समस्या इस प्राधिकरण के क्षेत्र में है'),'secondary');confirm.onclick=()=>{authorityId=option.id;submit();};choice.append(confirm);section.append(choice);}
+  const none=node('button',say(lang,'Not listed / I am not sure','பட்டியலில் இல்லை / உறுதியாகத் தெரியவில்லை','सूची में नहीं / मुझे निश्चित नहीं है'),'secondary');none.onclick=()=>{authorityId='none';submit();};section.append(none);
+ }
+ card.append(section);
+}
+
 function render(data){
  const lang=data.language,c=content[lang],root=$('result');root.replaceChildren();root.hidden=false;
  const card=node('article',undefined,'card result-card'),top=node('div',undefined,'result-top');
  top.append(node('span',data.intent==='CIVIC_ISSUE'?c.civic:data.intent==='GOVERNMENT_SERVICE'?c.service:c.unknown,'badge'),node('small',langNames[lang]));card.append(top,node('h2',data.title),node('p',data.summary));
+ card.append(node('p',data.classification?.method==='user'?say(lang,'Category chosen by you','நீங்கள் தேர்ந்தெடுத்த வகை','आपके द्वारा चुनी गई श्रेणी'):data.mode==='strands'?say(lang,'Understood with local Strands AI','உள்ளூர் Strands AI மூலம் புரிந்துகொள்ளப்பட்டது','स्थानीय Strands AI से समझा गया'):data.mode==='bedrock'?say(lang,'Understood with Amazon Bedrock','Amazon Bedrock மூலம் புரிந்துகொள்ளப்பட்டது','Amazon Bedrock से समझा गया'):say(lang,'Understood with basic matching — check the category','அடிப்படை பொருத்தம் மூலம் கண்டறியப்பட்டது — வகையைச் சரிபார்க்கவும்','बुनियादी मिलान से समझा गया — श्रेणी जाँचें'),'understanding-method'));
  if(data.languageNotice)card.append(node('p',data.languageNotice,'notice'));
  if(data.warning)card.append(node('p',c.fallback,'notice'));
  const categories=node('div',undefined,'examples');
@@ -103,31 +158,37 @@ function render(data){
   const select=node('select');select.id='state-select';select.setAttribute('aria-describedby','state-help');
   const placeholder=node('option',say(lang,'Choose your state','உங்கள் மாநிலத்தைத் தேர்ந்தெடுக்கவும்','अपना राज्य चुनें'));placeholder.value='';select.append(placeholder);
   for(const state of data.stateOptions){const option=node('option',state.name);option.value=state.id;select.append(option);}select.value=data.stateId||'';
-  select.onchange=()=>{stateId=select.value||undefined;submit();};
+  select.onchange=()=>{stateId=select.value||undefined;authorityId=undefined;submit();};
   const help=node('small',data.requiresState?say(lang,'The available portal or contact varies by state. City-specific coverage is shown on each result.','தளம் அல்லது தொடர்பு மாநிலத்திற்கு மாறுபடும். நகர சேவைப் பகுதி முடிவில் காட்டப்படும்.','पोर्टल या संपर्क राज्य के अनुसार बदलता है। हर परिणाम में शहर का सेवा क्षेत्र दिया गया है।'):say(lang,'Optional: choose a state for additional local links and contacts. You can use the common official link without this choice.','விருப்பத் தேர்வு: கூடுதல் மாநில இணைப்புகள் மற்றும் தொடர்புகளுக்கு மாநிலத்தைத் தேர்ந்தெடுக்கவும். இதைத் தேர்வு செய்யாமல் பொதுவான அதிகாரப்பூர்வ இணைப்பைப் பயன்படுத்தலாம்.','वैकल्पिक: अतिरिक्त स्थानीय लिंक और संपर्कों के लिए राज्य चुनें। साझा आधिकारिक लिंक के लिए यह चुनाव जरूरी नहीं है।'));help.id='state-help';field.append(label,select,help);
   if(data.requiresState)card.append(field);
   else{optionalStatePicker=node('details',undefined,'optional-state');optionalStatePicker.open=Boolean(data.stateId);optionalStatePicker.append(node('summary',say(lang,'View state-specific links and contacts (optional)','மாநில இணைப்புகள் மற்றும் தொடர்புகளைக் காண்க (விருப்பத் தேர்வு)','राज्य के खास लिंक और संपर्क देखें (वैकल्पिक)')),field);}
  }
  if(data.entities?.duration)paragraph(card,say(lang,'Reported duration','தெரிவித்த கால அளவு','बताई गई अवधि'),data.entities.duration);
+ if(data.entities?.location)paragraph(card,say(lang,'Reported location — confirm coverage','தெரிவித்த இடம் — சேவைப் பகுதியை உறுதிப்படுத்தவும்','बताया गया स्थान — सेवा क्षेत्र की पुष्टि करें'),data.entities.location);
+ if(data.intent==='CIVIC_ISSUE'){factReview(card,data);authorityReview(card,data);}
  card.append(node('p',data.notice,'coverage-note'));
- if(data.officialOptions?.length)card.append(node('h3',say(lang,'Official services and contacts','அதிகாரப்பூர்வ சேவைகள் மற்றும் தொடர்புகள்','आधिकारिक सेवाएँ और संपर्क')));
- for(const option of data.officialOptions||[])card.append(renderChannel(option,data));
+ const visible=(data.officialOptions||[]).filter(o=>!o.requiresConfirmation);
+ if(visible.length)card.append(node('h3',say(lang,'Official services and contacts','அதிகாரப்பூர்வ சேவைகள் மற்றும் தொடர்புகள்','आधिकारिक सेवाएँ और संपर्क')));
+ for(const option of visible)card.append(renderChannel(option,data));
  if(!data.hasDirectChannel&&!data.hasCommonGateway&&!data.needsState)card.append(node('p',data.stateId?say(lang,'We do not yet have a verified submission portal covering this entire state for this request. Any listed city, operator or specialist channel applies only to its stated coverage. You can use the official directory or prepare a message.','இந்தக் கோரிக்கைக்கு மாநிலம் முழுவதற்குமான சரிபார்க்கப்பட்ட சமர்ப்பிப்பு தளம் இன்னும் இல்லை. நகரம் அல்லது நிறுவன வழிகள் குறிப்பிடப்பட்ட பகுதிக்கு மட்டுமே பொருந்தும். அதிகாரப்பூர்வ பட்டியலைப் பயன்படுத்தலாம் அல்லது செய்தி உருவாக்கலாம்.','इस अनुरोध के लिए पूरे राज्य को कवर करने वाला सत्यापित आवेदन पोर्टल अभी उपलब्ध नहीं है। सूचीबद्ध शहर, संचालक या विशेष सेवा का माध्यम केवल बताए क्षेत्र में लागू है। निर्देशिका देखें या संदेश तैयार करें।'):say(lang,'No current verified direct channel is available for this request. You can use the official directory or prepare a message.','இந்தக் கோரிக்கைக்கு தற்போதைய சரிபார்க்கப்பட்ட நேரடி வழி இல்லை. அதிகாரப்பூர்வ பட்டியலைப் பயன்படுத்தலாம் அல்லது செய்தி உருவாக்கலாம்.','इस अनुरोध के लिए वर्तमान सत्यापित सीधा माध्यम उपलब्ध नहीं है। आधिकारिक निर्देशिका देखें या संदेश तैयार करें।'),'notice'));
  if(data.directory&&!data.needsState&&!data.officialOptions?.some(o=>o.linkType==='directory'))card.append(externalLink(data.directory.label+' ↗',data.directory.url));
  if(optionalStatePicker)card.append(optionalStatePicker);
- const next=node('div',undefined,'next'),button=node('button',data.intent==='CIVIC_ISSUE'?c.generate:say(lang,'Generate Message','செய்தி உருவாக்கு','संदेश बनाएँ'),'primary');button.onclick=()=>actionPanel(card,data,c);next.append(node('strong',c.next),button);card.append(next);
+ const next=node('div',undefined,'next'),button=node('button',data.nextAction==='CREATE_CHECKLIST'?c.checklist:data.intent==='CIVIC_ISSUE'?c.generate:say(lang,'Generate Message','செய்தி உருவாக்கு','संदेश बनाएँ'),'primary');button.onclick=()=>data.nextAction==='CREATE_CHECKLIST'?checklistPanel(card,data):actionPanel(card,data,c);next.append(node('strong',c.next),button);card.append(next);
+ if(data.nextAction==='CREATE_CHECKLIST'){const message=node('button',say(lang,'Generate enquiry message','விசாரணைச் செய்தி உருவாக்கு','पूछताछ का संदेश बनाएँ'),'secondary');message.onclick=()=>actionPanel(card,data,c);next.append(message);}
  if(data.followUpOptions?.length){const follow=node('details',undefined,'follow-up');follow.append(node('summary',say(lang,'State grievance and follow-up','மாநில புகார் மற்றும் தொடர் விசாரணை','राज्य शिकायत और आगे पूछताछ')));for(const option of data.followUpOptions)follow.append(renderChannel(option,data));card.append(follow);}
  if(data.accountabilityOptions?.length){const accountability=node('details',undefined,'follow-up');accountability.append(node('summary',say(lang,'Further grievance or information-request options','கூடுதல் புகார் அல்லது தகவல் கோரிக்கை வழிகள்','आगे शिकायत या सूचना माँगने के विकल्प')));for(const option of data.accountabilityOptions)accountability.append(renderChannel({...option,role:option.id==='cpgrams'?'grievance':'information'},{...data,intent:'GOVERNMENT_SERVICE'}));card.append(accountability);}
+ if(session.draft(data.requestKey)?.opened)actionPanel(card,data,c,false);
  root.append(card);root.focus();
 }
 async function submit(){
  if(busy||!$('ask-form').reportValidity())return;
  if(choiceRequest!==$('request').value)subjectChoice=undefined;
  const requestKey=JSON.stringify([$('request').value,subjectChoice||null]);
- if(requestKey!==stateRequestKey){stateId=undefined;stateRequestKey=requestKey;}
+ if(requestKey!==stateRequestKey){stateId=undefined;authorityId=undefined;stateRequestKey=requestKey;}
+ const text=$('request').value.trim();if(text!==factsRequest){facts={};factsRequest=text;}
  busy=true;$('submit').disabled=true;document.querySelectorAll('[data-lang],.examples button').forEach(b=>b.disabled=true);$('result').hidden=true;$('status').textContent=content[currentLanguage].loading;
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),mode==='strands'?55000:23000);
- try{const response=await fetch('/api/assist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:$('request').value,language:selected,subjectChoice,stateId}),signal:controller.signal});if(!response.ok)throw new Error();result=await response.json();localize(result.language);render(result);$('status').textContent='';}catch{$('status').textContent=content[currentLanguage].error;}finally{clearTimeout(timer);busy=false;$('submit').disabled=false;document.querySelectorAll('[data-lang],.examples button').forEach(b=>b.disabled=false);}
+ try{const response=await fetch('/api/assist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text,language:selected,subjectChoice,stateId,authorityId,...facts}),signal:controller.signal});if(!response.ok)throw new Error();result=await response.json();result.requestKey=text;localize(result.language);render(result);$('status').textContent='';}catch{$('status').textContent=content[currentLanguage].error;}finally{clearTimeout(timer);busy=false;$('submit').disabled=false;document.querySelectorAll('[data-lang],.examples button').forEach(b=>b.disabled=false);}
 }
 $('ask-form').onsubmit=e=>{e.preventDefault();submit();};
 document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>{selected=b.dataset.lang;localize(selected==='auto'?(result?.language||'en'):selected);if(result)submit();});

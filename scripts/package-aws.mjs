@@ -11,6 +11,7 @@ export const PACKAGE_FILES = Object.freeze([
   'server.mjs',
   'package.json',
   'lib/assistant.mjs',
+  'lib/authority.mjs',
   'lib/civic.mjs',
   'lib/directory.mjs',
   'lib/http.mjs',
@@ -21,6 +22,7 @@ export const PACKAGE_FILES = Object.freeze([
   'public/app.js',
   'public/catalog.js',
   'public/content.js',
+  'public/session-state.js',
   'public/index.html',
   'public/style.css',
   'data/accountability.json',
@@ -31,6 +33,7 @@ export const PACKAGE_FILES = Object.freeze([
   'data/ration-portals.json',
   'data/services-civic.json',
   'data/services-government.json',
+  'data/service-pilot.json',
   'data/state-portals-a.json',
   'data/state-portals-b.json'
 ]);

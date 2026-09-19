@@ -6,8 +6,8 @@ from http.client import HTTPConnection
 import io
 import importlib.util
 import json
+import os
 import threading
-from types import SimpleNamespace
 import unittest
 
 from agents.server import (
@@ -37,7 +37,7 @@ class ValidationTests(unittest.TestCase):
                 validate_ollama_host(host)
 
     def test_settings_reject_cloud_models_and_unbounded_timeouts(self):
-        self.assertEqual(Settings.from_env({}).model, "qwen3:4b")
+        self.assertEqual(Settings.from_env({}).model, "qwen3:1.7b")
         for env in ({"OLLAMA_MODEL": "qwen3:cloud"}, {"OLLAMA_MODEL": "https://remote/model"},
                     {"STRANDS_PORT": "0"}, {"STRANDS_TIMEOUT_SECONDS": "nan"},
                     {"STRANDS_TIMEOUT_SECONDS": "46"}, {"OLLAMA_HOST": "http://ollama:11434"}):
@@ -85,14 +85,14 @@ class RuntimeTests(unittest.TestCase):
             constructed.append(agent)
 
             async def no_inference(*_args, **_kwargs):
-                return SimpleNamespace(structured_output=Understanding.model_validate(output()))
+                return json.dumps(output(), ensure_ascii=False)
 
             agent.invoke_async = no_inference
             return agent
 
         runner = StrandsInterpreter(Settings(), agent_factory=factory, model_factory=OllamaModel)
         self.assertEqual(runner("Test catalog", "Test request"), output())
-        self.assertEqual(constructed[0].model.get_config()["model_id"], "qwen3:4b")
+        self.assertEqual(constructed[0].model.get_config()["model_id"], "qwen3:1.7b")
         self.assertEqual(constructed[0].messages, [])
 
     def test_each_call_gets_a_fresh_tool_free_agent_and_structured_schema(self):
@@ -105,7 +105,7 @@ class RuntimeTests(unittest.TestCase):
 
             async def invoke_async(self, text, **kwargs):
                 prompts.append((text, kwargs))
-                return SimpleNamespace(structured_output=Understanding.model_validate(output()))
+                return json.dumps(output(), ensure_ascii=False)
 
         def model_factory(**kwargs):
             models.append(kwargs)
@@ -127,10 +127,11 @@ class RuntimeTests(unittest.TestCase):
             self.assertFalse(agent.kwargs["load_tools_from_directory"])
             self.assertFalse(agent.kwargs["background_tasks"])
         self.assertEqual([text for text, _ in prompts], ["first citizen request", "second citizen request"])
-        self.assertTrue(all(params["structured_output_model"] is Understanding for _, params in prompts))
+        self.assertTrue(all(params == {} for _, params in prompts))
         self.assertFalse(models[0]["ollama_client_args"]["trust_env"])
         self.assertFalse(models[0]["ollama_client_args"]["follow_redirects"])
-        self.assertEqual(models[0]["additional_args"], {"think": False})
+        self.assertEqual(models[0]["additional_args"], {"think": False,
+                                                     "format": Understanding.model_json_schema()})
 
     def test_total_inference_timeout_cancels_the_model_invocation(self):
         cancelled = []
@@ -209,7 +210,9 @@ class HttpTests(unittest.TestCase):
     def test_health_checks_do_not_call_the_model(self):
         status, _, body = self.request(method="GET", path="/health", body=b"")
         self.assertEqual(status, 200)
-        self.assertEqual(body, {"status": "ok", "service": "strands-ollama"})
+        self.assertEqual(body, {"status": "ok", "service": "strands-ollama",
+                                "model": "qwen3:1.7b", "requestTimeoutSeconds": 45,
+                                "processId": os.getpid()})
         self.assertEqual(self.requests, [])
 
     def test_failures_do_not_log_or_return_private_request_or_model_text(self):

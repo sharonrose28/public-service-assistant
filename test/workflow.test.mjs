@@ -36,7 +36,10 @@ test('Retired categories do not remain in the service directory',()=>{
 test('Available channels preserve coverage without assigning the user a regional authority',async()=>{
  const unlocated=await workflow(request,options);
  const elsewhere=await workflow({...request,location:'Mumbai, Maharashtra',authorityId:'gcc',locationConfirmed:true},options);
- assert.deepEqual(elsewhere.officialOptions,unlocated.officialOptions);
+ assert.ok(unlocated.officialOptions.some(option=>option.cityId==='chennai'&&option.requiresConfirmation));
+ assert.ok(elsewhere.officialOptions.every(option=>!option.cityId&&!option.stateId));
+ assert.equal(elsewhere.locationConflict,true);assert.equal(elsewhere.confirmedAuthority,null);
+ assert.deepEqual(elsewhere.followUpOptions,[]);
  for(const field of ['serviceRecord','department','source','authorityId','locationConfirmed'])assert.equal(elsewhere[field],undefined);
  assert.doesNotMatch(elsewhere.draft,/Greater Chennai Corporation|seswm@/);assert.match(elsewhere.draft,/Mumbai, Maharashtra/);
  assert.equal(elsewhere.stateId,'tn');assert.equal(elsewhere.needsState,false);
@@ -102,7 +105,7 @@ test('Directories and guidance pages remain distinguishable from submission port
 test('Local requirements, fees, exceptions and escalation remain attached to the relevant record',async()=>{
  const seed=serviceRecords.find(r=>r.category==='CASTE');
  const record={...seed,coverage:'Test authority limits',documents:['Conditional supporting record'],fees:'Only the published test amount',processingTime:'Only the published test period',exceptions:['A specific local exception'],escalation:'Use the published review procedure'};
- const r=await workflow({text:'Caste certificate',stateId:'tn',location:'Mumbai, Maharashtra'},{...options,records:[record]});
+ const r=await workflow({text:'Caste certificate',stateId:'tn',location:'Chennai, Tamil Nadu'},{...options,records:[record]});
  assert.deepEqual(r.officialOptions[0].documents,record.documents);assert.equal(r.officialOptions[0].coverage,record.coverage);
  assert.equal(r.officialOptions[0].fees,record.fees);assert.equal(r.officialOptions[0].processingTime,record.processingTime);
  assert.ok(r.officialOptions[0].conditions.includes(record.exceptions[0]));assert.equal(r.officialOptions[0].escalation,record.escalation);
@@ -135,7 +138,7 @@ test('Complaint drafts preserve supplied facts and leave missing facts as placeh
  const detailed=await complaintDraft({...request,location:'Mumbai, Maharashtra',street:'Test Lane',landmark:'Library',ward:'7',poleNumber:'AB-12'},options);
  for(const fact of ['Test Lane','Mumbai, Maharashtra','Library','two weeks','AB-12'])assert.ok(detailed.draft.includes(fact));
  assert.match(detailed.draft,/Ward: 7/);assert.doesNotMatch(detailed.draft,/Greater Chennai Corporation|@chennaicorporation/);
- assert.ok(detailed.draft.endsWith(request.text));
+ assert.ok(!detailed.draft.includes('My request (review before sending)'));
 });
 
 test('Animal complaints do not invent an injury or medical history',async()=>{

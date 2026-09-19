@@ -76,6 +76,22 @@ test('User category correction avoids model calls and preserves original facts',
  assert.equal(r.subject,'power');assert.equal(r.entities.duration,'two weeks');assert.equal(r.entities.location,'Chennai');assert.equal(r.classification.method,'user');
 });
 
+test('Model output cannot bypass explicit multiple-issue or unsupported-topic clarification',async()=>{
+ for(const text of ['The streetlights are broken and the rubbish collection has stopped.','எனக்கு பிறப்புச் சான்றிதழ் வேண்டும்.','मुझे जन्म प्रमाण पत्र चाहिए','I need a passport']){
+  const r=await answer({text},{env,fetchImpl:async()=>modelResponse(interpretation({intent:'GOVERNMENT_SERVICE',category:'RESIDENCE',confidence:.95}))});
+  assert.equal(r.intent,'UNKNOWN',text);assert.equal(r.classification.safeguard,'catalog-clarification');
+  assert.equal(r.mode,'bedrock');assert.equal(r.warning,false);assert.ok(r.clarificationChoices.length);
+ }
+});
+
+test('Supporting documents and explicit user corrections remain allowed through clarification safeguards',async()=>{
+ const text='I need a legal heir certificate using a death certificate as proof';
+ const r=await answer({text},{env,fetchImpl:async()=>modelResponse(interpretation({intent:'GOVERNMENT_SERVICE',category:'LEGAL_HEIR',confidence:.95}))});
+ assert.equal(r.subject,'legal_heir');assert.equal(r.classification.safeguard,undefined);
+ const corrected=await answer({text:'Streetlight and garbage collection problems',subjectChoice:'streetlight'},{env,fetchImpl:async()=>assert.fail('User correction needs no model')});
+ assert.equal(corrected.subject,'streetlight');assert.equal(corrected.classification.method,'user');
+});
+
 test('HTTP validates inputs, denies secrets and cross-origin requests',async t=>{
  const server=createServer(local);await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  t.after(()=>new Promise(resolve=>server.close(resolve)));

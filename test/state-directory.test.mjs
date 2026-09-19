@@ -66,7 +66,7 @@ test('Common national entry points stay available when optional state contacts a
  const waste=await workflow({text:'Garbage is not collected'},options);
  const swachhata=waste.officialOptions.find(record=>record.id==='swachhata-participating-cities:WASTE');
  assert.match(swachhata.coverage,/participat/i);assert.equal(swachhata.linkType,'guidance');
- assert.match(swachhata.description,/not a web submission form/);
+ assert.match(swachhata.description,/not a web (?:submission|complaint) form/);
  const land=await workflow({text:'Land records'},options);
  assert.equal(land.officialOptions.find(record=>record.id==='dolr-records-directory:LAND').linkType,'directory');
 });
