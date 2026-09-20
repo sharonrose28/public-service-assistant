@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+# Free demonstration: deterministic understanding, no hosted AI or paid add-ons.
+services:
+  - type: web
+    name: public-service-assistant
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: node --check server.mjs
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: AI_PROVIDER
+        value: local
+      - key: PUBLIC_ORIGIN
+        sync: false
