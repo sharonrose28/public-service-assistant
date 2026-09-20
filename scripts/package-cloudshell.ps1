@@ -14,6 +14,7 @@ try {
     [IO.File]::WriteAllText((Join-Path $taskStaging 'template.yaml'), ($taskTemplate | ConvertTo-Json -Depth 100))
     $taskDeploy = [IO.File]::ReadAllText((Join-Path $taskProjectRoot 'deployment/deploy-cloudshell.sh')).Replace("`r`n", "`n")
     [IO.File]::WriteAllText((Join-Path $taskStaging 'deploy-cloudshell.sh'), $taskDeploy)
+    Copy-Item -LiteralPath (Join-Path $taskProjectRoot 'deployment/check-free-plan.py') -Destination (Join-Path $taskStaging 'check-free-plan.py')
     $taskZip = Join-Path $taskBuildRoot 'public-service-assistant-mumbai.zip'
     if (Test-Path -LiteralPath $taskZip) {
         if ((Get-Item -LiteralPath $taskZip).Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'The archive must not be a link.' }

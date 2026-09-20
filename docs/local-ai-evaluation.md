@@ -2,6 +2,16 @@
 
 Measured on 19 September 2026 using actual local model inference. These are small synthetic development checks, **not production accuracy, user research, or a held-out language benchmark**. No rule-based fallback was called by the benchmark.
 
+## Submission rehearsal — 20 September 2026
+
+At 09:45 UTC, the current working build completed the exact Tamil demonstration request through `POST /api/assist`, without a category override:
+
+```text
+சென்னை அடையாறில் எங்கள் தெருவில் இரண்டு வாரமாக தெருவிளக்கு எரியவில்லை.
+```
+
+The actual response was HTTP 200, `mode: "strands"`, `warning: false`, `classification.method: "strands"`, `intent: "CIVIC_ISSUE"`, `subject: "streetlight"` and language `ta`. It preserved location `சென்னை அடையாறில்` and duration `இரண்டு வாரமாக`. The request took **36.67 seconds** after restarting the local runtime; this is startup/rehearsal evidence, not a general speed claim. The earlier warmed measurements below remain separate. Strands, Ollama and the model ran locally with no AWS-hosted inference. Recording/upload and the final submission commit are still pending.
+
 ## Runtime
 
 - AWS open-source Strands Agents **1.56.0**, Python Ollama client **0.6.2**, Pydantic **2.13.5**, Python **3.12.14**.

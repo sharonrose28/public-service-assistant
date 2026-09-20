@@ -10,6 +10,7 @@ export const PACKAGE_FILES = Object.freeze([
   'lambda.mjs',
   'server.mjs',
   'package.json',
+  'lib/ai-budget.mjs',
   'lib/assistant.mjs',
   'lib/authority.mjs',
   'lib/civic.mjs',

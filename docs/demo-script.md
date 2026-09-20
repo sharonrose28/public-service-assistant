@@ -61,6 +61,14 @@ The scoped pilot is Tamil Nadu Community Certificate **REV-101**. See [its sourc
 
 ## Record evidence, then upload
 
+Suggested YouTube title: **Public Service Assistant | Tamil civic help with AWS Strands | AWS First Commit**
+
+Suggested description (replace the video and commit placeholders in the submission record after upload):
+
+> Public Service Assistant turns citizen requests into sourced guidance, an editable complaint and a service checklist. This Build It demo uses AWS's open-source Strands Agents SDK with a local Ollama/Qwen3 model, running entirely on the developer's machine. Repository: https://github.com/sharonrose28/public-service-assistant. Development assistance: OpenAI Codex. Dependency, model and data credits are recorded in docs/submission.md.
+
+Upload as **public or unlisted** and check playback while signed out. A script, screenshot or local video file does not satisfy the required YouTube link. Record the actual running application; if it is stopped, follow the local setup before recording.
+
 - [ ] Actual model request succeeded; response and model version are recorded.
 - [ ] Tamil interpretation, confirmed authority, Coimbatore exclusion and draft edit were observed on the final commit.
 - [ ] The checklist's conditional labels and source links were legible in the video.

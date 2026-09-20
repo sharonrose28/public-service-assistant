@@ -87,7 +87,9 @@ test('AWS packaging rejects source directories redirected outside the project', 
   await rm(library, {recursive: true});
   const outside = join(container, 'outside-lib');
   await mkdir(outside);
-  await writeFile(join(outside, 'assistant.mjs'), 'private source');
+  for (const file of PACKAGE_FILES.filter(file => file.startsWith('lib/'))) {
+    await writeFile(join(outside, file.slice('lib/'.length)), 'private source');
+  }
   await symlink(outside, library, process.platform === 'win32' ? 'junction' : 'dir');
   try {
     await assert.rejects(packageAws({projectRoot}), /source must be a regular file/);
@@ -105,15 +107,17 @@ test('SAM defaults to local inference with one HTTPS origin and narrowly scoped 
   const api = template.Resources.HttpApi.Properties;
   assert.equal(api.StageName, '$default');
   assert.equal(api.CorsConfiguration, undefined);
-  assert.ok(api.DefaultRouteSettings.ThrottlingRateLimit > 0 && api.DefaultRouteSettings.ThrottlingRateLimit <= 10);
-  assert.ok(api.DefaultRouteSettings.ThrottlingBurstLimit <= 20);
+  assert.equal(api.DefaultRouteSettings.ThrottlingRateLimit, 1);
+  assert.equal(api.DefaultRouteSettings.ThrottlingBurstLimit, 10);
   const accessLog = JSON.parse(api.AccessLogSettings.Format);
   assert.deepEqual(Object.keys(accessLog).sort(), ['method', 'requestId', 'responseLength', 'status']);
   const fn = template.Resources.AssistantFunction.Properties;
   assert.equal(fn.Runtime, 'nodejs24.x');
   assert.equal(fn.Handler, 'lambda.handler');
   assert.equal(resolve(repositoryRoot, 'deployment', fn.CodeUri), resolve(repositoryRoot, '.build/aws'));
-  assert.deepEqual(Object.keys(fn.Environment.Variables).sort(), ['AI_PROVIDER', 'BEDROCK_MODEL_ID']);
+  assert.deepEqual(Object.keys(fn.Environment.Variables).sort(), ['AI_BUDGET_TABLE', 'AI_DAILY_LIMIT', 'AI_PROVIDER', 'BEDROCK_MODEL_ID']);
+  assert.deepEqual(fn.Environment.Variables.AI_BUDGET_TABLE, {'Fn::If': ['UseBedrock', {Ref: 'AiBudgetTable'}, {Ref: 'AWS::NoValue'}]});
+  assert.deepEqual(fn.Environment.Variables.AI_DAILY_LIMIT, {'Fn::If': ['UseBedrock', '100', {Ref: 'AWS::NoValue'}]});
   const event = fn.Events.AllRequests;
   assert.equal(event.Type, 'HttpApi');
   assert.deepEqual(event.Properties.ApiId, {Ref: 'HttpApi'});
@@ -127,6 +131,18 @@ test('SAM defaults to local inference with one HTTPS origin and narrowly scoped 
   const policy = template.Resources.BedrockModelPolicy;
   assert.equal(policy.Condition, 'UseBedrock');
   assert.deepEqual(policy.Properties.PolicyDocument.Statement, [{Effect: 'Allow', Action: 'bedrock:InvokeModel', Resource: {Ref: 'BedrockModelArn'}}]);
+  const table = template.Resources.AiBudgetTable;
+  assert.equal(table.Type, 'AWS::DynamoDB::Table');
+  assert.equal(table.Condition, 'UseBedrock');
+  assert.equal(table.Properties.BillingMode, 'PAY_PER_REQUEST');
+  assert.deepEqual(table.Properties.AttributeDefinitions, [{AttributeName: 'day', AttributeType: 'S'}]);
+  assert.deepEqual(table.Properties.KeySchema, [{AttributeName: 'day', KeyType: 'HASH'}]);
+  assert.deepEqual(table.Properties.TimeToLiveSpecification, {AttributeName: 'expiresAt', Enabled: true});
+  assert.equal(table.Properties.StreamSpecification, undefined);
+  const budgetPolicy = template.Resources.AiBudgetPolicy;
+  assert.equal(budgetPolicy.Condition, 'UseBedrock');
+  assert.deepEqual(budgetPolicy.Properties.Roles, [{Ref: 'FunctionRole'}]);
+  assert.deepEqual(budgetPolicy.Properties.PolicyDocument.Statement, [{Effect: 'Allow', Action: 'dynamodb:UpdateItem', Resource: {'Fn::GetAtt': ['AiBudgetTable', 'Arn']}}]);
   const arnPattern = new RegExp(template.Parameters.BedrockModelArn.AllowedPattern);
   assert.ok(arnPattern.test('arn:aws:bedrock:ap-south-1::foundation-model/provider.model-v1:0'));
   assert.ok(!arnPattern.test('arn:aws:bedrock:*::foundation-model/*'));

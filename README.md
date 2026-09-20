@@ -22,11 +22,13 @@ Open http://localhost:3000/. The benchmark uses synthetic requests, not producti
 - **Tamil Nadu Community Certificate (REV-101):** eligibility guidance, a six-item checklist with conditional evidence, published fees, application steps and field-level sources. No unsupported processing deadline is shown.
 - Edited drafts survive language/state changes in page memory. Checklist progress stays per service record. Closing or reloading the page clears that working state. Corrected facts replace stale wording in newly generated drafts; replacing an edited draft requires confirmation.
 
-See the [civic source audit](docs/pilot-sources.md), [certificate source audit](docs/service-pilot-sources.md), [demo script](docs/demo-script.md), [submission draft](docs/submission.md) and [blank human-testing worksheet](docs/user-testing.md). These materials do not constitute a submitted contest entry or completed human testing.
+See the [civic source audit](docs/pilot-sources.md), [certificate source audit](docs/service-pilot-sources.md), [demo script](docs/demo-script.md), [short AWS writeup](docs/aws-writeup.md), [submission draft](docs/submission.md) and [blank human-testing worksheet](docs/user-testing.md). These materials do not constitute a submitted contest entry or completed human testing.
 
 ## Build It / Ship It
 
 Local development is account-free. The basic classifier needs only Node; optional Strands + Ollama runs model inference on the same machine. The AWS deployment targets **Mumbai (`ap-south-1`)** with SAM, Lambda, API Gateway and CloudWatch, and outputs a public HTTPS URL after a successful deployment. Cloud AI is disabled by default.
+
+**Current status:** real local Strands inference has been evaluated. AWS deployment is prepared but remains blocked by AWS account verification as of 20 September 2026; no live cloud URL or successful Bedrock inference is claimed. The AI deployment includes a shared allowance of 100 model attempts per UTC day, while the deployment script requires an active AWS Free account plan with credits.
 
 See [the setup and deployment guide](docs/deployment.md), [local Strands instructions](agents/README.md), and [the AWS service choices and credit conditions](docs/aws-service-choices.md). The selected services cover this app's current needs; the other tools in the proposed AWS list are alternatives or future additions.
 

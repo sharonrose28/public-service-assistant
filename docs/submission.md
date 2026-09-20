@@ -2,7 +2,9 @@
 
 **Ask. Understand. Act.**
 
-Prepared on 19 September 2026 for AWS First Commit. **This is a prepared submission package, not a completed contest submission.** Public repository access, the recorded demo, human testing and the submission form remain to be confirmed. Live Strands/Ollama inference has been verified; see the [dated evaluation and limitations](local-ai-evaluation.md).
+Updated on 20 September 2026 for AWS First Commit. **This is a prepared submission package, not a completed contest submission.** Public repository access, the recorded demo and the submission form remain to be confirmed. Human usability testing is also pending, but is separate from the three submission artifacts. Live Strands/Ollama inference has been verified; see the [dated evaluation and limitations](local-ai-evaluation.md).
+
+**Submission route: Build It.** The event explicitly lists local Strands Agents SDK usage. AWS account activation and a hosted URL are not prerequisites for this route. Record the real local model workflow and submit the public repository, YouTube demo and short writeup; cloud deployment preparation is optional background.
 
 ## Submission details to complete
 
@@ -10,7 +12,7 @@ Prepared on 19 September 2026 for AWS First Commit. **This is a prepared submiss
 | --- | --- |
 | Team name and members | Pending — enter registered details |
 | Intended track | Build It: local AWS open-source tooling |
-| Public repository URL | [Repository](https://github.com/sharonrose28/public-service-assistant) — currently private; public visibility awaits approval because existing commits contain a Gmail author address |
+| Public repository URL | [Repository](https://github.com/sharonrose28/public-service-assistant) — owner approved publication with existing history on 20 September; GitHub email verification and public-access confirmation are pending |
 | Submitted commit SHA | Pending — record the commit shown in the video |
 | YouTube demo URL | Pending — record, upload and verify access |
 | Strands version; Ollama version; model name/digest | Strands 1.56.0; Ollama 0.34.2; qwen3:1.7b. Digest and exact results: [evaluation](local-ai-evaluation.md) |
@@ -20,11 +22,13 @@ Prepared on 19 September 2026 for AWS First Commit. **This is a prepared submiss
 
 ## Short project write-up
 
+Use the [concise AWS writeup](aws-writeup.md) for the submission form. The expanded explanation follows.
+
 Citizens often know their problem but do not know the responsible authority, the official application route or what to write. Public Service Assistant turns a request into a category, a checked official source and a practical next step. English, Tamil and Hindi interfaces make the same flow accessible without requiring citizens to know department names.
 
 The prototype separates language interpretation from government facts. An optional local Strands agent uses Ollama to interpret the request; the backend validates its structured output. Official links, contact purposes, requirements and review dates come from maintained records. Location and authority confirmation help prevent a plausible answer from sending a citizen to the wrong body.
 
-The demonstration follows a Tamil streetlight complaint in Chennai, prepares an editable message and checks that a correction to Coimbatore excludes the Chennai authority. A second flow presents a sourced Tamil Nadu Community Certificate checklist, including conditional evidence instead of treating every document as universally required. Citizens review their message before opening their email app; the application does not send it automatically.
+The prepared demo script follows a Tamil streetlight complaint in Chennai, prepares an editable message and checks that a correction to Coimbatore excludes the Chennai authority. A second flow presents a sourced Tamil Nadu Community Certificate checklist, including conditional evidence instead of treating every document as universally required. Citizens review their message before opening their email app; the application does not send it automatically.
 
 AWS's open-source Strands SDK provides the local model integration. This Build It setup uses no AWS-hosted inference or deployment. The Node application also has an explicit rules fallback and clarification safeguards. Actual Tamil inference through the full API returned the streetlight category, location and duration using Strands without fallback. The small model still makes errors, documented in the live evaluation. The contribution is a working application with scoped civic information, not evidence of nationwide coverage or measured public impact.
 
@@ -61,13 +65,14 @@ OpenAI Codex assisted with application code, tests, research, translations and d
 
 - **Strands Agents:** [official repository](https://github.com/strands-agents/harness-sdk), Apache-2.0; retain its applicable notices. This project uses the Python SDK.
 - **Ollama:** [MIT-licensed runtime](https://github.com/ollama/ollama/blob/main/LICENSE). Downloaded model weights have their own terms; the runtime licence does not cover every model.
+- **Qwen3 1.7B:** the downloaded local model's licence is Apache-2.0, recorded in its Ollama manifest. The model name, quantization and digest are retained in [the evaluation](local-ai-evaluation.md).
 - **Location data:** Countries States Cities Database by Darshan Gada and contributors, ODbL 1.0. See [the project attribution](../data/README.md), [retained licence](../data/LOCATION-DATA-LICENSE.txt) and [upstream database](https://github.com/dr5hn/countries-states-cities-database). This community dataset is not an official boundary register.
 - **Government information:** official source URLs and review metadata are retained in the data records; the pilot's field-level references are in [the source audit](service-pilot-sources.md). No government endorsement is claimed.
 - **Other dependencies:** retain their licences and version information; Python dependencies are recorded in [requirements.txt](../agents/requirements.txt).
 
 ## Contest checks before submission
 
-The [official rules](https://www.wemakedevs.org/aws/first-commit/rules), checked on 19 September 2026, require an eligible India-based university student team, members aged 18+, individual registration and Builder Center enrolment verification. They allow one team of 1–4 per participant and one project per team. Confirm eligibility and the stated pending-verification exception directly with the organiser where relevant.
+The [official rules](https://www.wemakedevs.org/aws/first-commit/rules), checked on 20 September 2026, require an eligible India-based university student team, members aged 18+, individual registration and Builder Center enrolment verification. They allow one team of 1–4 per participant and one project per team. Confirm eligibility and the stated pending-verification exception directly with the organiser where relevant.
 
 - [ ] Confirm all members' registration and eligibility.
 - [ ] Confirm the project's work history satisfies the event's build-window rule; an existing project cannot simply be relabelled.

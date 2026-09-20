@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
-  "Description": "Public Service Assistant: one HTTPS origin for the static interface and stateless API. JSON syntax is valid YAML. Local interpretation is the default.",
+  "Description": "Public Service Assistant: one HTTPS origin for the static interface and API, with an optional daily AI allowance. JSON syntax is valid YAML. Local interpretation is the default.",
   "Parameters": {
     "AIProvider": {
       "Type": "String",
@@ -155,13 +155,39 @@
         }
       }
     },
+    "AiBudgetTable": {
+      "Type": "AWS::DynamoDB::Table",
+      "Condition": "UseBedrock",
+      "Properties": {
+        "BillingMode": "PAY_PER_REQUEST",
+        "AttributeDefinitions": [{"AttributeName": "day", "AttributeType": "S"}],
+        "KeySchema": [{"AttributeName": "day", "KeyType": "HASH"}],
+        "TimeToLiveSpecification": {"AttributeName": "expiresAt", "Enabled": true}
+      }
+    },
+    "AiBudgetPolicy": {
+      "Type": "AWS::IAM::Policy",
+      "Condition": "UseBedrock",
+      "Properties": {
+        "PolicyName": "ReserveDailyAiAttempt",
+        "Roles": [{"Ref": "FunctionRole"}],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [{
+            "Effect": "Allow",
+            "Action": "dynamodb:UpdateItem",
+            "Resource": {"Fn::GetAtt": ["AiBudgetTable", "Arn"]}
+          }]
+        }
+      }
+    },
     "HttpApi": {
       "Type": "AWS::Serverless::HttpApi",
       "Properties": {
         "StageName": "$default",
         "DefaultRouteSettings": {
           "ThrottlingBurstLimit": 10,
-          "ThrottlingRateLimit": 5,
+          "ThrottlingRateLimit": 1,
           "DetailedMetricsEnabled": false
         },
         "AccessLogSettings": {
@@ -207,6 +233,12 @@
             },
             "BEDROCK_MODEL_ID": {
               "Ref": "BedrockModelId"
+            },
+            "AI_BUDGET_TABLE": {
+              "Fn::If": ["UseBedrock", {"Ref": "AiBudgetTable"}, {"Ref": "AWS::NoValue"}]
+            },
+            "AI_DAILY_LIMIT": {
+              "Fn::If": ["UseBedrock", "100", {"Ref": "AWS::NoValue"}]
             }
           }
         },
