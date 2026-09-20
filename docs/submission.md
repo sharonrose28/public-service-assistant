@@ -2,7 +2,7 @@
 
 **Ask. Understand. Act.**
 
-Updated on 20 September 2026 for AWS First Commit. **This is a prepared submission package, not a completed contest submission.** Public repository access, the recorded demo and the submission form remain to be confirmed. Human usability testing is also pending, but is separate from the three submission artifacts. Live Strands/Ollama inference has been verified; see the [dated evaluation and limitations](local-ai-evaluation.md).
+Updated on 20 September 2026 for AWS First Commit. **This is a prepared submission package, not a completed contest submission.** Public repository access is confirmed; the recorded demo and the submission form remain to be confirmed. Human usability testing is also pending, but is separate from the three submission artifacts. Live Strands/Ollama inference has been verified; see the [dated evaluation and limitations](local-ai-evaluation.md). An additional [free Render demo](https://public-service-assistant.onrender.com/) uses basic matching; it is not evidence of hosted Strands or AWS services.
 
 **Submission route: Build It.** The event explicitly lists local Strands Agents SDK usage. AWS account activation and a hosted URL are not prerequisites for this route. Record the real local model workflow and submit the public repository, YouTube demo and short writeup; cloud deployment preparation is optional background.
 
@@ -12,7 +12,7 @@ Updated on 20 September 2026 for AWS First Commit. **This is a prepared submissi
 | --- | --- |
 | Team name and members | Pending — enter registered details |
 | Intended track | Build It: local AWS open-source tooling |
-| Public repository URL | [Repository](https://github.com/sharonrose28/public-service-assistant) — owner approved publication with existing history on 20 September; GitHub email verification and public-access confirmation are pending |
+| Public repository URL | [Repository](https://github.com/sharonrose28/public-service-assistant) — publication approved and public access confirmed on 20 September; Render successfully cloned the public repository without expanded GitHub access |
 | Submitted commit SHA | Pending — record the commit shown in the video |
 | YouTube demo URL | Pending — record, upload and verify access |
 | Strands version; Ollama version; model name/digest | Strands 1.56.0; Ollama 0.34.2; qwen3:1.7b. Digest and exact results: [evaluation](local-ai-evaluation.md) |

@@ -2,6 +2,8 @@
 
 **Ask. Understand. Act.**
 
+**Live demo:** [public-service-assistant.onrender.com](https://public-service-assistant.onrender.com/). The free Render version uses basic request matching, with official guidance, editable drafts and supported checklists. The Strands/Ollama AI demonstration runs locally. Free hosting sleeps when idle; see [deployment details](docs/free-deployment.md).
+
 Choose a supported service or civic complaint, or describe it in English, Tamil or Hindi. The app provides official procedures, scoped links, verified phone/email contacts and an editable message draft. Common official portals and directories open without a state question. State selection is required only to choose between regional destinations when no applicable common entry point exists. Municipal and limited utility links require explicit coverage confirmation. Known city mismatches exclude incompatible city channels; a conflicting state choice asks for correction. No city dropdown is required.
 
 ## Run and validate
@@ -28,7 +30,7 @@ See the [civic source audit](docs/pilot-sources.md), [certificate source audit](
 
 Local development is account-free. The basic classifier needs only Node; optional Strands + Ollama runs model inference on the same machine. The AWS deployment targets **Mumbai (`ap-south-1`)** with SAM, Lambda, API Gateway and CloudWatch, and outputs a public HTTPS URL after a successful deployment. Cloud AI is disabled by default.
 
-**Current status:** real local Strands inference has been evaluated. AWS deployment is prepared but remains blocked by AWS account verification as of 20 September 2026; no live cloud URL or successful Bedrock inference is claimed. The AI deployment includes a shared allowance of 100 model attempts per UTC day, while the deployment script requires an active AWS Free account plan with credits.
+**Current status:** real local Strands inference has been evaluated. A free Render website using basic matching is live and tested as of 20 September 2026. AWS deployment is prepared but remains blocked by AWS account verification; no live AWS application URL or successful Bedrock inference is claimed. The optional AWS AI deployment includes a shared allowance of 100 model attempts per UTC day, while the deployment script requires an active AWS Free account plan with credits.
 
 See [the setup and deployment guide](docs/deployment.md), [local Strands instructions](agents/README.md), and [the AWS service choices and credit conditions](docs/aws-service-choices.md). The selected services cover this app's current needs; the other tools in the proposed AWS list are alternatives or future additions.
 
